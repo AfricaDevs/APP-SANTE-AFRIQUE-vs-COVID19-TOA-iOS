@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D0A293024A65AE300A36C56 /* TOA.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.xcdatamodel; path = TOA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0A293024A65AE300A36C56 /* TOA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0A293324A65AE300A36C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D0A293524A65AE300A36C56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2D0A293724A65AE300A36C56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -289,6 +289,7 @@
 				DEVELOPMENT_TEAM = PYR8254W73;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TOA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +310,7 @@
 				DEVELOPMENT_TEAM = PYR8254W73;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TOA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
