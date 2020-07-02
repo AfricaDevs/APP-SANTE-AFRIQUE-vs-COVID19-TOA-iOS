@@ -88,13 +88,14 @@
 		2D0A293224A65AE300A36C56 /* TOA */ = {
 			isa = PBXGroup;
 			children = (
+				2DB15BEF24AE5362003D2353 /* Diagnosis */,
 				2DB15BD424AD75DD003D2353 /* Prevention */,
 				2D0A293324A65AE300A36C56 /* AppDelegate.swift */,
 				2D0A293524A65AE300A36C56 /* SceneDelegate.swift */,
-				2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */,
 				2D0A293724A65AE300A36C56 /* ContentView.swift */,
-				2DB15BCE24AD6A49003D2353 /* SplashView.swift */,
 				2DB15BD524AD8445003D2353 /* MainView.swift */,
+				2DB15BCE24AD6A49003D2353 /* SplashView.swift */,
+				2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */,
 				2D0A293924A65AE700A36C56 /* Assets.xcassets */,
 				2DB15BD724AE46DD003D2353 /* Lottie */,
 				2DB15BD224AD7039003D2353 /* Colors.xcassets */,
@@ -136,6 +137,13 @@
 				2DB15BE024AE46DD003D2353 /* lottie_location.json */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		2DB15BEF24AE5362003D2353 /* Diagnosis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Diagnosis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
