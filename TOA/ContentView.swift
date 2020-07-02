@@ -9,13 +9,36 @@
 import SwiftUI
 
 struct ContentView: View {
- 
+  
+    @State var isActive = false
+    
     var body: some View {
-        VStack {
-            Text("e")
+    VStack {
+        Spacer(minLength: 0) 
+        // 2.
+        if self.isActive {
+            // 3.
+            MainView()
+        } else {
+            // 4.
+            
+            //Text("splashhh")
+            SplashView()
+        }
+        }.background(Color("colorMainWhiteBg"))
+    // 5.
+    .onAppear {
+        // 6.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            // 7.
+            withAnimation {
+                self.isActive = true
+            }
         }
     }
 }
+}
+
 
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {

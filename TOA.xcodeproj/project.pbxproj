@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,22 @@
 		2D0A293A24A65AE700A36C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293924A65AE700A36C56 /* Assets.xcassets */; };
 		2D0A293D24A65AE700A36C56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */; };
 		2D0A294024A65AE700A36C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */; };
+		2DB15BCD24AD689F003D2353 /* PreventionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BCC24AD689F003D2353 /* PreventionView.swift */; };
+		2DB15BCF24AD6A49003D2353 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BCE24AD6A49003D2353 /* SplashView.swift */; };
+		2DB15BD124AD6D65003D2353 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BD024AD6D65003D2353 /* Utils.swift */; };
+		2DB15BD324AD7039003D2353 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BD224AD7039003D2353 /* Colors.xcassets */; };
+		2DB15BD624AD8445003D2353 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BD524AD8445003D2353 /* MainView.swift */; };
+		2DB15BE124AE46DE003D2353 /* lottie_water.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BD824AE46DD003D2353 /* lottie_water.json */; };
+		2DB15BE224AE46DE003D2353 /* lottie_trash_clean.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BD924AE46DD003D2353 /* lottie_trash_clean.json */; };
+		2DB15BE324AE46DE003D2353 /* lottie_sad.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BDA24AE46DD003D2353 /* lottie_sad.json */; };
+		2DB15BE424AE46DE003D2353 /* covid_doctor.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BDB24AE46DD003D2353 /* covid_doctor.json */; };
+		2DB15BE524AE46DE003D2353 /* lottie_social_distancing.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BDC24AE46DD003D2353 /* lottie_social_distancing.json */; };
+		2DB15BE624AE46DE003D2353 /* lottie_covid_mask.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BDD24AE46DD003D2353 /* lottie_covid_mask.json */; };
+		2DB15BE724AE46DE003D2353 /* lottie_covid_hands.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BDE24AE46DD003D2353 /* lottie_covid_hands.json */; };
+		2DB15BE824AE46DE003D2353 /* covid_armor.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BDF24AE46DD003D2353 /* covid_armor.json */; };
+		2DB15BE924AE46DE003D2353 /* lottie_location.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BE024AE46DD003D2353 /* lottie_location.json */; };
+		2DB15BEC24AE4915003D2353 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2DB15BEB24AE4915003D2353 /* Lottie */; };
+		2DB15BEE24AE4A35003D2353 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BED24AE4A35003D2353 /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +40,21 @@
 		2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D0A293F24A65AE700A36C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0A294124A65AE700A36C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB15BCC24AD689F003D2353 /* PreventionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionView.swift; sourceTree = "<group>"; };
+		2DB15BCE24AD6A49003D2353 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		2DB15BD024AD6D65003D2353 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2DB15BD224AD7039003D2353 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2DB15BD524AD8445003D2353 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2DB15BD824AE46DD003D2353 /* lottie_water.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_water.json; sourceTree = "<group>"; };
+		2DB15BD924AE46DD003D2353 /* lottie_trash_clean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_trash_clean.json; sourceTree = "<group>"; };
+		2DB15BDA24AE46DD003D2353 /* lottie_sad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_sad.json; sourceTree = "<group>"; };
+		2DB15BDB24AE46DD003D2353 /* covid_doctor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covid_doctor.json; sourceTree = "<group>"; };
+		2DB15BDC24AE46DD003D2353 /* lottie_social_distancing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_social_distancing.json; sourceTree = "<group>"; };
+		2DB15BDD24AE46DD003D2353 /* lottie_covid_mask.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_covid_mask.json; sourceTree = "<group>"; };
+		2DB15BDE24AE46DD003D2353 /* lottie_covid_hands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_covid_hands.json; sourceTree = "<group>"; };
+		2DB15BDF24AE46DD003D2353 /* covid_armor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covid_armor.json; sourceTree = "<group>"; };
+		2DB15BE024AE46DD003D2353 /* lottie_location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_location.json; sourceTree = "<group>"; };
+		2DB15BED24AE4A35003D2353 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB15BEC24AE4915003D2353 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,13 +88,21 @@
 		2D0A293224A65AE300A36C56 /* TOA */ = {
 			isa = PBXGroup;
 			children = (
+				2DB15BEF24AE5362003D2353 /* Diagnosis */,
+				2DB15BD424AD75DD003D2353 /* Prevention */,
 				2D0A293324A65AE300A36C56 /* AppDelegate.swift */,
 				2D0A293524A65AE300A36C56 /* SceneDelegate.swift */,
 				2D0A293724A65AE300A36C56 /* ContentView.swift */,
-				2D0A293924A65AE700A36C56 /* Assets.xcassets */,
+				2DB15BD524AD8445003D2353 /* MainView.swift */,
+				2DB15BCE24AD6A49003D2353 /* SplashView.swift */,
 				2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */,
+				2D0A293924A65AE700A36C56 /* Assets.xcassets */,
+				2DB15BD724AE46DD003D2353 /* Lottie */,
+				2DB15BD224AD7039003D2353 /* Colors.xcassets */,
+				2DB15BD024AD6D65003D2353 /* Utils.swift */,
 				2D0A294124A65AE700A36C56 /* Info.plist */,
 				2D0A293B24A65AE700A36C56 /* Preview Content */,
+				2DB15BED24AE4A35003D2353 /* LottieView.swift */,
 			);
 			path = TOA;
 			sourceTree = "<group>";
@@ -73,6 +113,37 @@
 				2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DB15BD424AD75DD003D2353 /* Prevention */ = {
+			isa = PBXGroup;
+			children = (
+				2DB15BCC24AD689F003D2353 /* PreventionView.swift */,
+			);
+			path = Prevention;
+			sourceTree = "<group>";
+		};
+		2DB15BD724AE46DD003D2353 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				2DB15BD824AE46DD003D2353 /* lottie_water.json */,
+				2DB15BD924AE46DD003D2353 /* lottie_trash_clean.json */,
+				2DB15BDA24AE46DD003D2353 /* lottie_sad.json */,
+				2DB15BDB24AE46DD003D2353 /* covid_doctor.json */,
+				2DB15BDC24AE46DD003D2353 /* lottie_social_distancing.json */,
+				2DB15BDD24AE46DD003D2353 /* lottie_covid_mask.json */,
+				2DB15BDE24AE46DD003D2353 /* lottie_covid_hands.json */,
+				2DB15BDF24AE46DD003D2353 /* covid_armor.json */,
+				2DB15BE024AE46DD003D2353 /* lottie_location.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		2DB15BEF24AE5362003D2353 /* Diagnosis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Diagnosis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +162,9 @@
 			dependencies = (
 			);
 			name = TOA;
+			packageProductDependencies = (
+				2DB15BEB24AE4915003D2353 /* Lottie */,
+			);
 			productName = TOA;
 			productReference = 2D0A293024A65AE300A36C56 /* TOA.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 2D0A292724A65AE300A36C56;
+			packageReferences = (
+				2DB15BEA24AE4915003D2353 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 2D0A293124A65AE300A36C56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,9 +210,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB15BE624AE46DE003D2353 /* lottie_covid_mask.json in Resources */,
+				2DB15BE424AE46DE003D2353 /* covid_doctor.json in Resources */,
 				2D0A294024A65AE700A36C56 /* LaunchScreen.storyboard in Resources */,
+				2DB15BD324AD7039003D2353 /* Colors.xcassets in Resources */,
+				2DB15BE124AE46DE003D2353 /* lottie_water.json in Resources */,
+				2DB15BE824AE46DE003D2353 /* covid_armor.json in Resources */,
+				2DB15BE524AE46DE003D2353 /* lottie_social_distancing.json in Resources */,
+				2DB15BE224AE46DE003D2353 /* lottie_trash_clean.json in Resources */,
+				2DB15BE924AE46DE003D2353 /* lottie_location.json in Resources */,
 				2D0A293D24A65AE700A36C56 /* Preview Assets.xcassets in Resources */,
+				2DB15BE324AE46DE003D2353 /* lottie_sad.json in Resources */,
 				2D0A293A24A65AE700A36C56 /* Assets.xcassets in Resources */,
+				2DB15BE724AE46DE003D2353 /* lottie_covid_hands.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB15BCD24AD689F003D2353 /* PreventionView.swift in Sources */,
+				2DB15BD624AD8445003D2353 /* MainView.swift in Sources */,
 				2D0A293424A65AE300A36C56 /* AppDelegate.swift in Sources */,
+				2DB15BCF24AD6A49003D2353 /* SplashView.swift in Sources */,
 				2D0A293624A65AE300A36C56 /* SceneDelegate.swift in Sources */,
 				2D0A293824A65AE300A36C56 /* ContentView.swift in Sources */,
+				2DB15BD124AD6D65003D2353 /* Utils.swift in Sources */,
+				2DB15BEE24AE4A35003D2353 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +436,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DB15BEA24AE4915003D2353 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DB15BEB24AE4915003D2353 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DB15BEA24AE4915003D2353 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D0A292824A65AE300A36C56 /* Project object */;
 }
