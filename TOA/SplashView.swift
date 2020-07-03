@@ -25,10 +25,11 @@ struct SplashView: View {
             HStack{
                 
                 Spacer()
+                
                 Image("logo_round")
                     .resizable().aspectRatio(contentMode: .fill)
                     .frame(width:self.animateLogo ? 120 : 150, height: self.animateLogo ? 120 : 150)
-                    .shadow(color: Color.white, radius: 5, x: 0, y: 1)
+                    .shadow(color: Color.white, radius: 5, x: 0, y: 2)
             Spacer()
             }
             .padding(EdgeInsets(top:  self.animateLogo ? geometry.safeAreaInsets.top + 70 : .zero, leading: .zero, bottom: geometry.safeAreaInsets.bottom + 70, trailing: .zero))

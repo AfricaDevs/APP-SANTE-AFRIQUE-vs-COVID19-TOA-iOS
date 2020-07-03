@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TOA
+
+  Created by Steven on 7/3/20.
+  Copyright © 2020 Coolectif TOA. All rights reserved.
+*/
+"mainIntro" = "Chercheurs, médecins et scientifiques ont créé cette application rien que pour TOÂ. Pour promouvoir les bonnes pratiques pour faire face à la pandémie de Covid-19 en Afrique.";
+"mainPreventionButtonTitle" = "COMMENT\nSE POTEGER\nTOUS LES JOURS?";
+"mainAnalysisButtonTitle" = "ANALYSEZ\nVOS SYMPTOMES";
+"mainAnalysisComment" = "et recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
