@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0314681F8C9A6D34AECC48C2D717EAB7 /* FacesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C48EE2D03C1C4092B406A956254902 /* FacesDrawer.swift */; };
+		0A150442D31EC0DF22527A28484590FB /* DefaultAnimationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1EC9951376952340D53A625E43B6BA /* DefaultAnimationDataSource.swift */; };
+		0DBF6EAAAA07FD32182AD84CD9C51B96 /* ImageAnimationCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9490AB1EAE6B78610CAADC86EC6EA /* ImageAnimationCalculator.swift */; };
+		11D824427BE51449EB97D91CE005FA1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		167E973A102D868A0D0A1D6232A1AAEC /* CALayer+Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E569BDB98B19A45B57F21586658F3E /* CALayer+Pause.swift */; };
+		1BB117B01B6292450FAB2E092657CFFB /* RuntimeProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582BCB1859B484A1A83638686D8A4AEC /* RuntimeProperties.swift */; };
+		42D958A8F960DA0ADC929B4CF21888CC /* AnimationDataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B3C3C06984C91008A73ED414A66E8 /* AnimationDataSourceFactory.swift */; };
+		49785DCAE25BEE3CD46AA090FE964F11 /* AnimationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AC2161BE98730ACAAF3FA2B3FAAED9 /* AnimationDataSource.swift */; };
+		5184B7E921EF7F816F36663C15FD3457 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6CC817E3F3771D3C115AC605C9E3E /* Random.swift */; };
+		5AFDAC7C37E7E65AB51BC060953CFD0B /* UIImage+FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DA460082A72E2F073FAE2E9F624FD /* UIImage+FaceDetection.swift */; };
+		6808F6A6A328B0A7F3103BB9B609EA65 /* Pods-TOA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB480DAF9DA0AB90596334A8551CC302 /* Pods-TOA-dummy.m */; };
+		695C8FEEAD9EF52832E0F4CB974B07E1 /* APKenBurnsView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF8D1D1F5BC8A8B549415BEB3A5FB8 /* APKenBurnsView-dummy.m */; };
+		84871391810D0B185C304145AABD0591 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		92DC207BCFD0AF393D0B6AA7FCFEBA24 /* FaceAnimationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64259B4538A9827250A74AA884E96C /* FaceAnimationDataSource.swift */; };
+		A21B90AFF28BDC11AD7735D6012A0335 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F0FEEB60F0340783949562633322A /* StopWatch.swift */; };
+		A772EFDA2D3F3DB77A2FEAF9662BFA4F /* UIImageView+ImageAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163114997B9885D5D891CACBEEB5372 /* UIImageView+ImageAnimation.swift */; };
+		B5CF15539E681FB514D8A9A2B0D055ED /* UIView+RestoreAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE30C8946AAF9980B34D8DC3F87B8BB /* UIView+RestoreAnimations.swift */; };
+		B62E68755C46757611B359B90E4CAEB1 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9E9498C8D375F192EA6055938C83F /* RandomGenerator.swift */; };
+		C735D2B71B5049133A920F8B48C070E6 /* BlockTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678BCF203AB68DB1B97C985F67FCC0F6 /* BlockTimer.swift */; };
+		CD2C265F6B051760B7F718A1C75DD002 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB17C2161C00130147059907C4497E /* Helpers.swift */; };
+		D81A119D184E62ADFA288952D5A1449F /* APKenBurnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC1C3F9250CDB7E972315AF8E915EC7 /* APKenBurnsView.swift */; };
+		DE30FC860627CA74C097C8728BB42DB9 /* APKenBurnsView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB5F2E3846D88B5CC42A7C06AF48FB6A /* APKenBurnsView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE17E0D680540BA5B5DC31C87F6B950D /* Pods-TOA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E1AFC9BA910E1BFCF504033FE0F668 /* Pods-TOA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6DE5A147C348FECEB96F9A670FFA61F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7413E2FFD54623CC619C359E9C53D53 /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6157B1CC9FD191FBFE94E8030F9FABE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8FB87955852DBF543D0D4DE446FBD0E;
+			remoteInfo = APKenBurnsView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C1EC9951376952340D53A625E43B6BA /* DefaultAnimationDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimationDataSource.swift; path = Pod/Classes/Private/AnimationDataSources/DefaultAnimationDataSource.swift; sourceTree = "<group>"; };
+		2163114997B9885D5D891CACBEEB5372 /* UIImageView+ImageAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+ImageAnimation.swift"; path = "Pod/Classes/Private/AnimationHelpers/UIImageView+ImageAnimation.swift"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38A9E9498C8D375F192EA6055938C83F /* RandomGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomGenerator.swift; path = Pod/Classes/Private/Random/RandomGenerator.swift; sourceTree = "<group>"; };
+		3AC1C3F9250CDB7E972315AF8E915EC7 /* APKenBurnsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APKenBurnsView.swift; path = Pod/Classes/APKenBurnsView.swift; sourceTree = "<group>"; };
+		3C999E60BA0DDD543D79F48811ACF0F1 /* Pods-TOA-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TOA-acknowledgements.plist"; sourceTree = "<group>"; };
+		3CDD52C82DFE3EA11BAA9B5C46A06D1E /* Pods-TOA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TOA.debug.xcconfig"; sourceTree = "<group>"; };
+		409555E829948D1A03E12CCE32D1D85C /* Pods-TOA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TOA.modulemap"; sourceTree = "<group>"; };
+		4CA70593BBAA6B869D57A43230271A83 /* Pods-TOA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TOA.release.xcconfig"; sourceTree = "<group>"; };
+		4DA06EC02AFF41BCE2360841568A5774 /* APKenBurnsView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = APKenBurnsView.framework; path = APKenBurnsView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EBFBCAC826154D32B1539CC77369683 /* APKenBurnsView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APKenBurnsView.debug.xcconfig; sourceTree = "<group>"; };
+		569B3C3C06984C91008A73ED414A66E8 /* AnimationDataSourceFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationDataSourceFactory.swift; path = Pod/Classes/Private/AnimationDataSources/AnimationDataSourceFactory.swift; sourceTree = "<group>"; };
+		582BCB1859B484A1A83638686D8A4AEC /* RuntimeProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuntimeProperties.swift; path = Pod/Classes/Private/RuntimeProperties.swift; sourceTree = "<group>"; };
+		5D1F0FEEB60F0340783949562633322A /* StopWatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StopWatch.swift; path = Pod/Classes/Private/Timing/StopWatch.swift; sourceTree = "<group>"; };
+		678BCF203AB68DB1B97C985F67FCC0F6 /* BlockTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockTimer.swift; path = Pod/Classes/Private/Timing/BlockTimer.swift; sourceTree = "<group>"; };
+		71A6470B3199DB9481F92418537B0664 /* APKenBurnsView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APKenBurnsView.release.xcconfig; sourceTree = "<group>"; };
+		74DB17C2161C00130147059907C4497E /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Pod/Classes/Private/Helpers.swift; sourceTree = "<group>"; };
+		86E569BDB98B19A45B57F21586658F3E /* CALayer+Pause.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Pause.swift"; path = "Pod/Classes/Private/AnimationHelpers/CALayer+Pause.swift"; sourceTree = "<group>"; };
+		88AB366643ED3AF04076F74F59C75692 /* APKenBurnsView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APKenBurnsView-prefix.pch"; sourceTree = "<group>"; };
+		8C8DA460082A72E2F073FAE2E9F624FD /* UIImage+FaceDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+FaceDetection.swift"; path = "Pod/Classes/Private/FaceRecognition/UIImage+FaceDetection.swift"; sourceTree = "<group>"; };
+		99AC2161BE98730ACAAF3FA2B3FAAED9 /* AnimationDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationDataSource.swift; path = Pod/Classes/Private/AnimationDataSources/AnimationDataSource.swift; sourceTree = "<group>"; };
+		9AE30C8946AAF9980B34D8DC3F87B8BB /* UIView+RestoreAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RestoreAnimations.swift"; path = "Pod/Classes/Private/AnimationHelpers/UIView+RestoreAnimations.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B6C48EE2D03C1C4092B406A956254902 /* FacesDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacesDrawer.swift; path = Pod/Classes/Private/FaceRecognition/FacesDrawer.swift; sourceTree = "<group>"; };
+		B871F3EC8A07AB50846F50A8A3C2828F /* APKenBurnsView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "APKenBurnsView-Info.plist"; sourceTree = "<group>"; };
+		B96AC208B6B66B7771B0793D6B721D15 /* Pods-TOA-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TOA-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BEA9490AB1EAE6B78610CAADC86EC6EA /* ImageAnimationCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageAnimationCalculator.swift; path = Pod/Classes/Private/ImageAnimationCalculator.swift; sourceTree = "<group>"; };
+		C0CF8D1D1F5BC8A8B549415BEB3A5FB8 /* APKenBurnsView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APKenBurnsView-dummy.m"; sourceTree = "<group>"; };
+		CE64259B4538A9827250A74AA884E96C /* FaceAnimationDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceAnimationDataSource.swift; path = Pod/Classes/Private/AnimationDataSources/FaceAnimationDataSource.swift; sourceTree = "<group>"; };
+		D4004B12163D040509C2B81B5891B827 /* Pods-TOA-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TOA-frameworks.sh"; sourceTree = "<group>"; };
+		D7413E2FFD54623CC619C359E9C53D53 /* Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Pod/Classes/Private/Models.swift; sourceTree = "<group>"; };
+		D9E1AFC9BA910E1BFCF504033FE0F668 /* Pods-TOA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TOA-umbrella.h"; sourceTree = "<group>"; };
+		DB5F2E3846D88B5CC42A7C06AF48FB6A /* APKenBurnsView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APKenBurnsView-umbrella.h"; sourceTree = "<group>"; };
+		E1E6CC817E3F3771D3C115AC605C9E3E /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Random.swift; path = Pod/Classes/Private/Random/Random.swift; sourceTree = "<group>"; };
+		E2AE179DA3FCE09AD5159987386CC279 /* Pods-TOA-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TOA-Info.plist"; sourceTree = "<group>"; };
+		E5733C67336E4AC51E20606EBE1E7AE4 /* APKenBurnsView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = APKenBurnsView.modulemap; sourceTree = "<group>"; };
+		EB480DAF9DA0AB90596334A8551CC302 /* Pods-TOA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TOA-dummy.m"; sourceTree = "<group>"; };
+		F5D2B63FF2FFCE16BE683DABEA505C35 /* Pods_TOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TOA.framework; path = "Pods-TOA.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		460EA7170A59FDED58668C16C55452ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84871391810D0B185C304145AABD0591 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478A8FE2CE442F90836E16B8A299A7E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D824427BE51449EB97D91CE005FA1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F9BD737696107F47B9D03AC1F6BBAA9 /* APKenBurnsView */ = {
+			isa = PBXGroup;
+			children = (
+				99AC2161BE98730ACAAF3FA2B3FAAED9 /* AnimationDataSource.swift */,
+				569B3C3C06984C91008A73ED414A66E8 /* AnimationDataSourceFactory.swift */,
+				3AC1C3F9250CDB7E972315AF8E915EC7 /* APKenBurnsView.swift */,
+				678BCF203AB68DB1B97C985F67FCC0F6 /* BlockTimer.swift */,
+				86E569BDB98B19A45B57F21586658F3E /* CALayer+Pause.swift */,
+				0C1EC9951376952340D53A625E43B6BA /* DefaultAnimationDataSource.swift */,
+				CE64259B4538A9827250A74AA884E96C /* FaceAnimationDataSource.swift */,
+				B6C48EE2D03C1C4092B406A956254902 /* FacesDrawer.swift */,
+				74DB17C2161C00130147059907C4497E /* Helpers.swift */,
+				BEA9490AB1EAE6B78610CAADC86EC6EA /* ImageAnimationCalculator.swift */,
+				D7413E2FFD54623CC619C359E9C53D53 /* Models.swift */,
+				E1E6CC817E3F3771D3C115AC605C9E3E /* Random.swift */,
+				38A9E9498C8D375F192EA6055938C83F /* RandomGenerator.swift */,
+				582BCB1859B484A1A83638686D8A4AEC /* RuntimeProperties.swift */,
+				5D1F0FEEB60F0340783949562633322A /* StopWatch.swift */,
+				8C8DA460082A72E2F073FAE2E9F624FD /* UIImage+FaceDetection.swift */,
+				2163114997B9885D5D891CACBEEB5372 /* UIImageView+ImageAnimation.swift */,
+				9AE30C8946AAF9980B34D8DC3F87B8BB /* UIView+RestoreAnimations.swift */,
+				450EBACFD1A5DAFC347341DC00327708 /* Support Files */,
+			);
+			name = APKenBurnsView;
+			path = APKenBurnsView;
+			sourceTree = "<group>";
+		};
+		2C74DB6606993970F53BD63931622E11 /* Pods-TOA */ = {
+			isa = PBXGroup;
+			children = (
+				409555E829948D1A03E12CCE32D1D85C /* Pods-TOA.modulemap */,
+				B96AC208B6B66B7771B0793D6B721D15 /* Pods-TOA-acknowledgements.markdown */,
+				3C999E60BA0DDD543D79F48811ACF0F1 /* Pods-TOA-acknowledgements.plist */,
+				EB480DAF9DA0AB90596334A8551CC302 /* Pods-TOA-dummy.m */,
+				D4004B12163D040509C2B81B5891B827 /* Pods-TOA-frameworks.sh */,
+				E2AE179DA3FCE09AD5159987386CC279 /* Pods-TOA-Info.plist */,
+				D9E1AFC9BA910E1BFCF504033FE0F668 /* Pods-TOA-umbrella.h */,
+				3CDD52C82DFE3EA11BAA9B5C46A06D1E /* Pods-TOA.debug.xcconfig */,
+				4CA70593BBAA6B869D57A43230271A83 /* Pods-TOA.release.xcconfig */,
+			);
+			name = "Pods-TOA";
+			path = "Target Support Files/Pods-TOA";
+			sourceTree = "<group>";
+		};
+		450EBACFD1A5DAFC347341DC00327708 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5733C67336E4AC51E20606EBE1E7AE4 /* APKenBurnsView.modulemap */,
+				C0CF8D1D1F5BC8A8B549415BEB3A5FB8 /* APKenBurnsView-dummy.m */,
+				B871F3EC8A07AB50846F50A8A3C2828F /* APKenBurnsView-Info.plist */,
+				88AB366643ED3AF04076F74F59C75692 /* APKenBurnsView-prefix.pch */,
+				DB5F2E3846D88B5CC42A7C06AF48FB6A /* APKenBurnsView-umbrella.h */,
+				4EBFBCAC826154D32B1539CC77369683 /* APKenBurnsView.debug.xcconfig */,
+				71A6470B3199DB9481F92418537B0664 /* APKenBurnsView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/APKenBurnsView";
+			sourceTree = "<group>";
+		};
+		64C45AD55D8066F6FE35148485D2AF15 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C74DB6606993970F53BD63931622E11 /* Pods-TOA */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				EA124B8A657833BAB7C5C3DF430C3AED /* Pods */,
+				EC64C962E03114AD9B6309B076E85022 /* Products */,
+				64C45AD55D8066F6FE35148485D2AF15 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA124B8A657833BAB7C5C3DF430C3AED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BD737696107F47B9D03AC1F6BBAA9 /* APKenBurnsView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC64C962E03114AD9B6309B076E85022 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DA06EC02AFF41BCE2360841568A5774 /* APKenBurnsView.framework */,
+				F5D2B63FF2FFCE16BE683DABEA505C35 /* Pods_TOA.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8201F6370CFF1A7AB14C5AF3E7C27B7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE17E0D680540BA5B5DC31C87F6B950D /* Pods-TOA-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A82F165271D2C69A546CBC452502E780 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE30FC860627CA74C097C8728BB42DB9 /* APKenBurnsView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A8FB87955852DBF543D0D4DE446FBD0E /* APKenBurnsView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CDA0B063F516AB1350E29F3F3CBF0CA /* Build configuration list for PBXNativeTarget "APKenBurnsView" */;
+			buildPhases = (
+				A82F165271D2C69A546CBC452502E780 /* Headers */,
+				FC6C6B769948540E0CABD0D3E11C779B /* Sources */,
+				478A8FE2CE442F90836E16B8A299A7E2 /* Frameworks */,
+				D331B47910D5DAE2B7D6CFD9B255F711 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APKenBurnsView;
+			productName = APKenBurnsView;
+			productReference = 4DA06EC02AFF41BCE2360841568A5774 /* APKenBurnsView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD143CD9E5994DD79FD472B32CE678AB /* Pods-TOA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF46617DBE9C8A80FA8BF19C2BC9677B /* Build configuration list for PBXNativeTarget "Pods-TOA" */;
+			buildPhases = (
+				8201F6370CFF1A7AB14C5AF3E7C27B7C /* Headers */,
+				8BF8E0FA534B1B703D3F348FC53D69B4 /* Sources */,
+				460EA7170A59FDED58668C16C55452ED /* Frameworks */,
+				71EDE93A14BB0A514ABE8F3407FA5D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51781734E1A1146484B4647437496C0A /* PBXTargetDependency */,
+			);
+			name = "Pods-TOA";
+			productName = "Pods-TOA";
+			productReference = F5D2B63FF2FFCE16BE683DABEA505C35 /* Pods_TOA.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EC64C962E03114AD9B6309B076E85022 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8FB87955852DBF543D0D4DE446FBD0E /* APKenBurnsView */,
+				FD143CD9E5994DD79FD472B32CE678AB /* Pods-TOA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71EDE93A14BB0A514ABE8F3407FA5D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D331B47910D5DAE2B7D6CFD9B255F711 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BF8E0FA534B1B703D3F348FC53D69B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6808F6A6A328B0A7F3103BB9B609EA65 /* Pods-TOA-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC6C6B769948540E0CABD0D3E11C779B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49785DCAE25BEE3CD46AA090FE964F11 /* AnimationDataSource.swift in Sources */,
+				42D958A8F960DA0ADC929B4CF21888CC /* AnimationDataSourceFactory.swift in Sources */,
+				695C8FEEAD9EF52832E0F4CB974B07E1 /* APKenBurnsView-dummy.m in Sources */,
+				D81A119D184E62ADFA288952D5A1449F /* APKenBurnsView.swift in Sources */,
+				C735D2B71B5049133A920F8B48C070E6 /* BlockTimer.swift in Sources */,
+				167E973A102D868A0D0A1D6232A1AAEC /* CALayer+Pause.swift in Sources */,
+				0A150442D31EC0DF22527A28484590FB /* DefaultAnimationDataSource.swift in Sources */,
+				92DC207BCFD0AF393D0B6AA7FCFEBA24 /* FaceAnimationDataSource.swift in Sources */,
+				0314681F8C9A6D34AECC48C2D717EAB7 /* FacesDrawer.swift in Sources */,
+				CD2C265F6B051760B7F718A1C75DD002 /* Helpers.swift in Sources */,
+				0DBF6EAAAA07FD32182AD84CD9C51B96 /* ImageAnimationCalculator.swift in Sources */,
+				F6DE5A147C348FECEB96F9A670FFA61F /* Models.swift in Sources */,
+				5184B7E921EF7F816F36663C15FD3457 /* Random.swift in Sources */,
+				B62E68755C46757611B359B90E4CAEB1 /* RandomGenerator.swift in Sources */,
+				1BB117B01B6292450FAB2E092657CFFB /* RuntimeProperties.swift in Sources */,
+				A21B90AFF28BDC11AD7735D6012A0335 /* StopWatch.swift in Sources */,
+				5AFDAC7C37E7E65AB51BC060953CFD0B /* UIImage+FaceDetection.swift in Sources */,
+				A772EFDA2D3F3DB77A2FEAF9662BFA4F /* UIImageView+ImageAnimation.swift in Sources */,
+				B5CF15539E681FB514D8A9A2B0D055ED /* UIView+RestoreAnimations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51781734E1A1146484B4647437496C0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APKenBurnsView;
+			target = A8FB87955852DBF543D0D4DE446FBD0E /* APKenBurnsView */;
+			targetProxy = 6157B1CC9FD191FBFE94E8030F9FABE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		30062EFDF6A7A204233A8E74B7C93FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EBFBCAC826154D32B1539CC77369683 /* APKenBurnsView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/APKenBurnsView/APKenBurnsView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/APKenBurnsView/APKenBurnsView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/APKenBurnsView/APKenBurnsView.modulemap";
+				PRODUCT_MODULE_NAME = APKenBurnsView;
+				PRODUCT_NAME = APKenBurnsView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		571FF5229DA493DBF87A7A43EDCE6325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A6470B3199DB9481F92418537B0664 /* APKenBurnsView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/APKenBurnsView/APKenBurnsView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/APKenBurnsView/APKenBurnsView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/APKenBurnsView/APKenBurnsView.modulemap";
+				PRODUCT_MODULE_NAME = APKenBurnsView;
+				PRODUCT_NAME = APKenBurnsView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DD30A6BF9AFF7589462FD7453354754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA70593BBAA6B869D57A43230271A83 /* Pods-TOA.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TOA/Pods-TOA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TOA/Pods-TOA.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C269482E1AD63AB0B2A62BCEF0203884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CDD52C82DFE3EA11BAA9B5C46A06D1E /* Pods-TOA.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TOA/Pods-TOA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TOA/Pods-TOA.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CDA0B063F516AB1350E29F3F3CBF0CA /* Build configuration list for PBXNativeTarget "APKenBurnsView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30062EFDF6A7A204233A8E74B7C93FE1 /* Debug */,
+				571FF5229DA493DBF87A7A43EDCE6325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF46617DBE9C8A80FA8BF19C2BC9677B /* Build configuration list for PBXNativeTarget "Pods-TOA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C269482E1AD63AB0B2A62BCEF0203884 /* Debug */,
+				6DD30A6BF9AFF7589462FD7453354754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

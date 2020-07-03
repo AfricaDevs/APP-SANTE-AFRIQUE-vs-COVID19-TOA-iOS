@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15CCFEB2689929CF82442C07 /* Pods_TOA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4AB7E7A84072D9EF285BDF /* Pods_TOA.framework */; };
 		2D0A293424A65AE300A36C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A293324A65AE300A36C56 /* AppDelegate.swift */; };
 		2D0A293624A65AE300A36C56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A293524A65AE300A36C56 /* SceneDelegate.swift */; };
 		2D0A293824A65AE300A36C56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A293724A65AE300A36C56 /* ContentView.swift */; };
@@ -25,7 +26,7 @@
 		2DB15BE724AE46DE003D2353 /* lottie_covid_hands.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BDE24AE46DD003D2353 /* lottie_covid_hands.json */; };
 		2DB15BE824AE46DE003D2353 /* covid_armor.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BDF24AE46DD003D2353 /* covid_armor.json */; };
 		2DB15BE924AE46DE003D2353 /* lottie_location.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BE024AE46DD003D2353 /* lottie_location.json */; };
-		2DB15BEC24AE4915003D2353 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2DB15BEB24AE4915003D2353 /* Lottie */; };
+		2DB15BEC24AE4915003D2353 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 2DB15BEB24AE4915003D2353 /* SwiftPackageProductDependency */; };
 		2DB15BF524AE6992003D2353 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BF424AE6992003D2353 /* LottieView.swift */; };
 		2DB15BFC24AF0D91003D2353 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BFE24AF0D91003D2353 /* Localizable.strings */; };
 		2DB15BFF24AF0D96003D2353 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15C0124AF0D96003D2353 /* Localizable.stringsdict */; };
@@ -57,6 +58,9 @@
 		2DB15C0024AF0D96003D2353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		2DB15C0224AF10DE003D2353 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		2DB15C0324AF10DE003D2353 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.release.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.release.xcconfig"; sourceTree = "<group>"; };
+		6D4AB7E7A84072D9EF285BDF /* Pods_TOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		936525A0F0F4C507C567B0AB /* Pods-TOA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.debug.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB15BEC24AE4915003D2353 /* Lottie in Frameworks */,
+				2DB15BEC24AE4915003D2353 /* BuildFile in Frameworks */,
+				15CCFEB2689929CF82442C07 /* Pods_TOA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,8 @@
 			children = (
 				2D0A293224A65AE300A36C56 /* TOA */,
 				2D0A293124A65AE300A36C56 /* Products */,
+				C969FB84436A55A49D883AAA /* Pods */,
+				3B65DA8FB8D7F114B361D431 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +163,24 @@
 			path = "Custom Views";
 			sourceTree = "<group>";
 		};
+		3B65DA8FB8D7F114B361D431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D4AB7E7A84072D9EF285BDF /* Pods_TOA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C969FB84436A55A49D883AAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				936525A0F0F4C507C567B0AB /* Pods-TOA.debug.xcconfig */,
+				4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D0A294424A65AE700A36C56 /* Build configuration list for PBXNativeTarget "TOA" */;
 			buildPhases = (
+				0A9CF581C9EBF2904D992914 /* [CP] Check Pods Manifest.lock */,
 				2D0A292C24A65AE300A36C56 /* Sources */,
 				2D0A292D24A65AE300A36C56 /* Frameworks */,
 				2D0A292E24A65AE300A36C56 /* Resources */,
+				93769C3D4A713F35777EBC0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,7 +200,7 @@
 			);
 			name = TOA;
 			packageProductDependencies = (
-				2DB15BEB24AE4915003D2353 /* Lottie */,
+				2DB15BEB24AE4915003D2353 /* SwiftPackageProductDependency */,
 			);
 			productName = TOA;
 			productReference = 2D0A293024A65AE300A36C56 /* TOA.app */;
@@ -205,7 +232,7 @@
 			);
 			mainGroup = 2D0A292724A65AE300A36C56;
 			packageReferences = (
-				2DB15BEA24AE4915003D2353 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				2DB15BEA24AE4915003D2353 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 2D0A293124A65AE300A36C56 /* Products */;
 			projectDirPath = "";
@@ -240,6 +267,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A9CF581C9EBF2904D992914 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TOA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93769C3D4A713F35777EBC0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TOA/Pods-TOA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TOA/Pods-TOA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TOA/Pods-TOA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D0A292C24A65AE300A36C56 /* Sources */ = {
@@ -405,6 +474,7 @@
 		};
 		2D0A294524A65AE700A36C56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 936525A0F0F4C507C567B0AB /* Pods-TOA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -426,6 +496,7 @@
 		};
 		2D0A294624A65AE700A36C56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -469,7 +540,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2DB15BEA24AE4915003D2353 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		2DB15BEA24AE4915003D2353 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -480,9 +551,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2DB15BEB24AE4915003D2353 /* Lottie */ = {
+		2DB15BEB24AE4915003D2353 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2DB15BEA24AE4915003D2353 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = 2DB15BEA24AE4915003D2353 /* RemoteSwiftPackageReference */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
