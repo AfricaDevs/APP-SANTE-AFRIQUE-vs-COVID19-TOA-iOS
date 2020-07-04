@@ -6,5 +6,6 @@ target 'TOA' do
   use_frameworks!
 
   # Pods for TOA
-    pod 'APKenBurnsView'
+  # pod 'APKenBurnsView'
+  pod "KenBurns"
 end

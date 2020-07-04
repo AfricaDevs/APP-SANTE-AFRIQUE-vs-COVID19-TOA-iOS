@@ -1,16 +1,26 @@
 PODS:
-  - APKenBurnsView (0.1.2)
+  - CalmParametricAnimations (1.0.1)
+  - KenBurns (0.4.0):
+    - CalmParametricAnimations (~> 1.0.1)
+    - Kingfisher (~> 5.0)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
 
 DEPENDENCIES:
-  - APKenBurnsView
+  - KenBurns
 
 SPEC REPOS:
   trunk:
-    - APKenBurnsView
+    - CalmParametricAnimations
+    - KenBurns
+    - Kingfisher
 
 SPEC CHECKSUMS:
-  APKenBurnsView: 42a85afb71e17c380b558cde8e1962d9853b7230
+  CalmParametricAnimations: 8747c67d71e07be5e5b3b9d524560d1fbe74be94
+  KenBurns: a5a1638197e7a4b8c8fd580f56d77aa7bf5f7fa1
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
 
-PODFILE CHECKSUM: 0f6e62f4d727a1e9f58504b87398c755280675dd
+PODFILE CHECKSUM: f2fe8dffbe68378edda49dfb2dd4cc931e16bcc3
 
 COCOAPODS: 1.9.3

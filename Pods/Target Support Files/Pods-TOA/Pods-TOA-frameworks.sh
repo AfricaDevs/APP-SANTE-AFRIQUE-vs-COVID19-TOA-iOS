@@ -197,10 +197,14 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/APKenBurnsView/APKenBurnsView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CalmParametricAnimations/CalmParametricAnimations.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KenBurns/KenBurns.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/APKenBurnsView/APKenBurnsView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CalmParametricAnimations/CalmParametricAnimations.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KenBurns/KenBurns.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

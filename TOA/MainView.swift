@@ -7,8 +7,14 @@
 //
 
 import SwiftUI
+import UIKit
+import KenBurns
+ 
 
 struct MainView: View {
+    //let ken = KenBurnsImageView()
+    
+    
     var body: some View {
         
         //localized textes
@@ -18,17 +24,31 @@ struct MainView: View {
                 
                 //
                 ZStack(alignment: .top){
-                    
+                     
+                    //This image in the back of the AnimatedView serves as a placeholder because the animage has an estimated 2 seconds delay to load
                     Image("covid_worms_bg")
                         .resizable()
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
+
                     
+                      AnimatedView(imageName: "covid_worms_bg")
+                          .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
+                    
+                    //This and the next element are key overlays to keeps the animated with in harmony with the safeArea informations (time, battery
+                    Color.black.opacity(0.5).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
+                    
+                    ZStack{ 
+                        Color.white.opacity(0.1)
+                    }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
+                    
+            
                     VStack(alignment: .center, spacing: 0){
                         
                         HStack{
                             
                             Spacer()
                             
+                            //App logo
                             Image("logo_round")
                                 .resizable().aspectRatio(contentMode: .fill)
                                 .frame(width: 120, height: 120)
@@ -55,7 +75,7 @@ struct MainView: View {
                         Spacer(minLength: 15)
                         
                         HStack{
-                            
+                            //Custom animated lottie JSON
                             LottieView(animationName: "covid_armor").aspectRatio(contentMode: ContentMode.fit)
                                 .frame(width: 120, height: 100)
                                 .padding(.all, 0).offset(x: -15, y: 0)
@@ -75,7 +95,9 @@ struct MainView: View {
                             .background(Color.white)
                             .cornerRadius(5)
                             .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
-                            .shadow(color: Color.gray, radius: 2, x: 0, y: 3)
+                            .shadow(color: Color.gray, radius: 2, x: 0, y: 3).onTapGesture {
+                                    
+                            } //The first button behavior
                         
                         
                         Spacer(minLength: 15)
@@ -106,15 +128,14 @@ struct MainView: View {
                             .shadow(color: Color.gray, radius: 2, x: 0, y: 3)
                             .onTapGesture {
                                 
-                        }
-                            .offset(x: 0, y: 0) //normal padding affects the two main views size. this trick is good to ruce the visual padding to 10
+                        } //The second button behavior
                         
                         Spacer(minLength: 2)
                         
                         Text("mainAnalysisComment")
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
-                            .offset(x: 0, y: 0) //no padding is needed bewteen the last button and this text. The purpose is make them look like one
+                            //no padding is needed bewteen the last button and this text. The purpose is make them look like one
                             .padding(.horizontal, 13)
                         
                         
