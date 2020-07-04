@@ -13,7 +13,7 @@ import KenBurns
 
 struct MainView: View {
     //let ken = KenBurnsImageView()
-    
+    let animatedViewHeight : CGFloat = 250
     
     var body: some View {
         
@@ -28,20 +28,20 @@ struct MainView: View {
                     //This image in the back of the AnimatedView serves as a placeholder because the animage has an estimated 2 seconds delay to load
                     Image("covid_worms_bg")
                         .resizable()
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.animatedViewHeight, alignment: .top)
 
                     
                       AnimatedView(imageName: "covid_worms_bg")
-                          .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
+                          .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.animatedViewHeight, alignment: .top)
                     
                     //This and the next element are key overlays to keeps the animated with in harmony with the safeArea informations (time, battery
-                    Color.black.opacity(0.5).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
+                    Color.black.opacity(0.5).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.animatedViewHeight, alignment: .top)
                     
                     ZStack{
                         LinearGradient(gradient: Gradient(colors:
                             [Color.white.opacity(0.2), Color.black.opacity(0.1), Color.black.opacity(0.2)]
                         ), startPoint: .top, endPoint: .bottom)
-                    }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
+                    }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.animatedViewHeight, alignment: .top)
                     
             
                     VStack(alignment: .center, spacing: 0){
