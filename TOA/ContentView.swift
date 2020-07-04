@@ -15,22 +15,20 @@ struct ContentView: View {
     var body: some View {
     VStack {
         Spacer(minLength: 0) 
-        // 2.
+         
         if self.isActive {
-            // 3.
+             
             MainView()
         } else {
-            // 4.
-            
-            //Text("splashhh")
+             
             SplashView()
         }
         }.background(Color("colorMainWhiteBg"))
-    // 5.
+
     .onAppear {
-        // 6.
+        
+        //Wait for 2 minutes before loading the MainView
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            // 7.
             withAnimation {
                 self.isActive = true
             }
