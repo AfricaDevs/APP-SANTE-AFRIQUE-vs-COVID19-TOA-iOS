@@ -42,7 +42,7 @@ struct SplashView: View {
                 Spacer()
             }
         
-        }.background(Color("colorSplashBlue"))
+        }.background(Color("colorSplashBlue").opacity(1.0)).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
         .edgesIgnoringSafeArea(.all)
         .onAppear {
             

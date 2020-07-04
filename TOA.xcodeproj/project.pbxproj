@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15CCFEB2689929CF82442C07 /* Pods_TOA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4AB7E7A84072D9EF285BDF /* Pods_TOA.framework */; };
 		2D0A293424A65AE300A36C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A293324A65AE300A36C56 /* AppDelegate.swift */; };
 		2D0A293624A65AE300A36C56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A293524A65AE300A36C56 /* SceneDelegate.swift */; };
 		2D0A293824A65AE300A36C56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A293724A65AE300A36C56 /* ContentView.swift */; };
 		2D0A293A24A65AE700A36C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293924A65AE700A36C56 /* Assets.xcassets */; };
 		2D0A293D24A65AE700A36C56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */; };
 		2D0A294024A65AE700A36C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */; };
+		2D3648E224B0F1DC0029196F /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */; };
+		2D3648E324B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */; };
 		2DB15BCF24AD6A49003D2353 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BCE24AD6A49003D2353 /* SplashView.swift */; };
 		2DB15BD324AD7039003D2353 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BD224AD7039003D2353 /* Colors.xcassets */; };
 		2DB15BD624AD8445003D2353 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BD524AD8445003D2353 /* MainView.swift */; };
@@ -27,9 +30,10 @@
 		2DB15BE924AE46DE003D2353 /* lottie_location.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BE024AE46DD003D2353 /* lottie_location.json */; };
 		2DB15BEC24AE4915003D2353 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2DB15BEB24AE4915003D2353 /* Lottie */; };
 		2DB15BF524AE6992003D2353 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BF424AE6992003D2353 /* LottieView.swift */; };
-		2DB15BF724AE6D5E003D2353 /* LottieCovidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BF624AE6D5E003D2353 /* LottieCovidView.swift */; };
 		2DB15BFC24AF0D91003D2353 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BFE24AF0D91003D2353 /* Localizable.strings */; };
 		2DB15BFF24AF0D96003D2353 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15C0124AF0D96003D2353 /* Localizable.stringsdict */; };
+		2DB15C0524AF4D74003D2353 /* AnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15C0424AF4D74003D2353 /* AnimatedView.swift */; };
+		2DB15C0924B05992003D2353 /* HTMLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15C0824B05991003D2353 /* HTMLView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,8 @@
 		2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D0A293F24A65AE700A36C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0A294124A65AE700A36C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollOffsetPreferenceKey.swift; sourceTree = "<group>"; };
 		2DB15BCE24AD6A49003D2353 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		2DB15BD224AD7039003D2353 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2DB15BD524AD8445003D2353 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -54,11 +60,15 @@
 		2DB15BDF24AE46DD003D2353 /* covid_armor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covid_armor.json; sourceTree = "<group>"; };
 		2DB15BE024AE46DD003D2353 /* lottie_location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_location.json; sourceTree = "<group>"; };
 		2DB15BF424AE6992003D2353 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		2DB15BF624AE6D5E003D2353 /* LottieCovidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCovidView.swift; sourceTree = "<group>"; };
 		2DB15BFD24AF0D91003D2353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2DB15C0024AF0D96003D2353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		2DB15C0224AF10DE003D2353 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		2DB15C0324AF10DE003D2353 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2DB15C0424AF4D74003D2353 /* AnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedView.swift; sourceTree = "<group>"; };
+		2DB15C0824B05991003D2353 /* HTMLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLView.swift; sourceTree = "<group>"; };
+		4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.release.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.release.xcconfig"; sourceTree = "<group>"; };
+		6D4AB7E7A84072D9EF285BDF /* Pods_TOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		936525A0F0F4C507C567B0AB /* Pods-TOA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.debug.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DB15BEC24AE4915003D2353 /* Lottie in Frameworks */,
+				15CCFEB2689929CF82442C07 /* Pods_TOA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,8 @@
 			children = (
 				2D0A293224A65AE300A36C56 /* TOA */,
 				2D0A293124A65AE300A36C56 /* Products */,
+				C969FB84436A55A49D883AAA /* Pods */,
+				3B65DA8FB8D7F114B361D431 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +105,7 @@
 		2D0A293224A65AE300A36C56 /* TOA */ = {
 			isa = PBXGroup;
 			children = (
+				2D3648DF24B0F1DC0029196F /* TrackableScrollView */,
 				2DB15BF124AE6664003D2353 /* Custom Views */,
 				2DB15BF024AE6506003D2353 /* Prevention */,
 				2DB15BEF24AE5362003D2353 /* Diagnosis */,
@@ -118,6 +132,15 @@
 				2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D3648DF24B0F1DC0029196F /* TrackableScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */,
+				2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */,
+			);
+			path = TrackableScrollView;
 			sourceTree = "<group>";
 		};
 		2DB15BD724AE46DD003D2353 /* Lottie */ = {
@@ -154,9 +177,27 @@
 			isa = PBXGroup;
 			children = (
 				2DB15BF424AE6992003D2353 /* LottieView.swift */,
-				2DB15BF624AE6D5E003D2353 /* LottieCovidView.swift */,
+				2DB15C0424AF4D74003D2353 /* AnimatedView.swift */,
+				2DB15C0824B05991003D2353 /* HTMLView.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		3B65DA8FB8D7F114B361D431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D4AB7E7A84072D9EF285BDF /* Pods_TOA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C969FB84436A55A49D883AAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				936525A0F0F4C507C567B0AB /* Pods-TOA.debug.xcconfig */,
+				4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D0A294424A65AE700A36C56 /* Build configuration list for PBXNativeTarget "TOA" */;
 			buildPhases = (
+				0A9CF581C9EBF2904D992914 /* [CP] Check Pods Manifest.lock */,
 				2D0A292C24A65AE300A36C56 /* Sources */,
 				2D0A292D24A65AE300A36C56 /* Frameworks */,
 				2D0A292E24A65AE300A36C56 /* Resources */,
+				207B05C7044F94926926AF43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,15 +287,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A9CF581C9EBF2904D992914 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TOA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		207B05C7044F94926926AF43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TOA/Pods-TOA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TOA/Pods-TOA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TOA/Pods-TOA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D0A292C24A65AE300A36C56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB15BF724AE6D5E003D2353 /* LottieCovidView.swift in Sources */,
+				2D3648E324B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift in Sources */,
+				2D3648E224B0F1DC0029196F /* TrackableScrollView.swift in Sources */,
 				2DB15BD624AD8445003D2353 /* MainView.swift in Sources */,
+				2DB15C0924B05992003D2353 /* HTMLView.swift in Sources */,
 				2D0A293424A65AE300A36C56 /* AppDelegate.swift in Sources */,
 				2DB15BCF24AD6A49003D2353 /* SplashView.swift in Sources */,
+				2DB15C0524AF4D74003D2353 /* AnimatedView.swift in Sources */,
 				2D0A293624A65AE300A36C56 /* SceneDelegate.swift in Sources */,
 				2D0A293824A65AE300A36C56 /* ContentView.swift in Sources */,
 				2DB15BF524AE6992003D2353 /* LottieView.swift in Sources */,
@@ -409,6 +497,7 @@
 		};
 		2D0A294524A65AE700A36C56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 936525A0F0F4C507C567B0AB /* Pods-TOA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -430,6 +519,7 @@
 		};
 		2D0A294624A65AE700A36C56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,26 @@
+PODS:
+  - CalmParametricAnimations (1.0.1)
+  - KenBurns (0.4.0):
+    - CalmParametricAnimations (~> 1.0.1)
+    - Kingfisher (~> 5.0)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
+
+DEPENDENCIES:
+  - KenBurns
+
+SPEC REPOS:
+  trunk:
+    - CalmParametricAnimations
+    - KenBurns
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  CalmParametricAnimations: 8747c67d71e07be5e5b3b9d524560d1fbe74be94
+  KenBurns: a5a1638197e7a4b8c8fd580f56d77aa7bf5f7fa1
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+
+PODFILE CHECKSUM: f2fe8dffbe68378edda49dfb2dd4cc931e16bcc3
+
+COCOAPODS: 1.9.3

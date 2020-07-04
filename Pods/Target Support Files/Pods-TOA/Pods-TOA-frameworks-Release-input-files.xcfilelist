@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-TOA/Pods-TOA-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CalmParametricAnimations/CalmParametricAnimations.framework
+${BUILT_PRODUCTS_DIR}/KenBurns/KenBurns.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework

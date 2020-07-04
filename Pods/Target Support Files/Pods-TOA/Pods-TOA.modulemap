@@ -1,0 +1,6 @@
+framework module Pods_TOA {
+  umbrella header "Pods-TOA-umbrella.h"
+
+  export *
+  module * { export * }
+}
