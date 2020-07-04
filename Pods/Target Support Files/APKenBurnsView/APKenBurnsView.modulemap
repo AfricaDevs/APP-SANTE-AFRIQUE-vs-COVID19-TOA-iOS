@@ -1,6 +1,0 @@
-framework module APKenBurnsView {
-  umbrella header "APKenBurnsView-umbrella.h"
-
-  export *
-  module * { export * }
-}
