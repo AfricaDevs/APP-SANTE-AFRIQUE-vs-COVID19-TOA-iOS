@@ -12,10 +12,10 @@ import KenBurns
 
 
 struct MainView: View {
-    //let ken = KenBurnsImageView()
+    
     let animatedViewHeight : CGFloat = 250
     @State private var scrollViewContentOffset = CGFloat(0)
-    
+    @State private var buttonOnTapAnimationStatus = false
     
     var body: some View {
         
@@ -44,10 +44,10 @@ struct MainView: View {
                         ZStack{
                             LinearGradient(gradient: Gradient(colors:
                                 [
-                                    Color.gray.opacity(0.3),
-                                    Color.black.opacity(0.1),
-                                    Color.black.opacity(0.15),
-                                    Color.black.opacity(0.2)
+                                    Color("colorLinearGradient1").opacity(0.3),//Color.gray.opacity(0.3),
+                                    Color("colorLinearGradient2").opacity(0.1),
+                                    Color("colorLinearGradient3").opacity(0.15),
+                                    Color("colorLinearGradient4").opacity(0.3)
                                 ]
                             ), startPoint: .top, endPoint: .bottom)
                             
@@ -69,10 +69,10 @@ struct MainView: View {
                         ZStack{
                             LinearGradient(gradient: Gradient(colors:
                                 [
-                                    Color.gray.opacity(0.3),
-                                    Color.black.opacity(0.1),
-                                    Color.black.opacity(0.15),
-                                    Color.black.opacity(0.2)
+                                    Color("colorLinearGradient1").opacity(0.3),//Color.gray.opacity(0.3),
+                                    Color("colorLinearGradient2").opacity(0.1),
+                                    Color("colorLinearGradient3").opacity(0.15),
+                                    Color("colorLinearGradient4").opacity(0.3)
                                 ]
                             ), startPoint: .top, endPoint: .bottom)
                             
@@ -80,20 +80,17 @@ struct MainView: View {
                             
                         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.animatedViewHeight, alignment: .top)
                         
-                         //The ternary here helps to avoid the animation from handling scroll-top Drag Events
+                        //The ternary here helps to avoid the animation from handling scroll-top Drag Events
                     }.offset(x:  self.scrollViewContentOffset > 0 ? 0 : -self.scrollViewContentOffset, y: 0)
                     
                 }
+                
                 VStack {
-                    GeometryReader { outsideProxy in
-                        TrackableScrollView(.vertical, contentOffset: self.$scrollViewContentOffset) {
-                    //ScrollView(.vertical, showsIndicators: false){
-                      
+                    TrackableScrollView(.vertical, contentOffset: self.$scrollViewContentOffset) {
+                        //ScrollView(.vertical, showsIndicators: false){
+                        
                         
                         VStack(alignment: .center, spacing: 0){
-                             
-                                // Send value to the parent
-                                
                             HStack{
                                 
                                 Spacer()
@@ -119,7 +116,6 @@ struct MainView: View {
                                 .background(Color("colorBookBackground"))
                                 .cornerRadius(6)
                                 .padding(.horizontal, 15.9)
-                            //.shadow(color: Color.gray, radius: 1, x: 0, y: 1)
                             
                             ZStack(alignment: .leading){
                                 
@@ -156,13 +152,13 @@ struct MainView: View {
                                         .background(Color("colorBtnGreen"))
                                     
                                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
-                                    .background(Color.white)
+                                    .background(Color("colorMainButtonsWhiteBackground"))
                                     .cornerRadius(5)
                                     .padding(EdgeInsets(top: 15, leading: 15, bottom: 0, trailing: 15))
                                     
-                                    .shadow(color: Color.gray, radius: 2, x: 0, y: 3).onTapGesture {
+                                    .shadow(color: Color("colorBtnMainShadow"), radius: 2, x: 0, y: 3).onTapGesture {
                                         
-                                } //The first button behavior
+                                } //The first button behavior ( Prevention)
                                 
                             } //ZStack (backgound Elipse & View)
                             
@@ -200,14 +196,18 @@ struct MainView: View {
                                     }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
                                         .background(Color("colorBtnBlue"))
                                     
-                                }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
-                                    .background(Color.white)
+                                }.frame(minWidth: 0, maxWidth: (.infinity - CGFloat(30)), minHeight: 0, maxHeight: .infinity, alignment: .leading)
+                                    .background(Color("colorMainButtonsWhiteBackground"))
                                     .cornerRadius(5)
                                     .padding(EdgeInsets(top: 15, leading: 15, bottom: 0, trailing: 15))
-                                    .shadow(color: Color.gray, radius: 2, x: 0, y: 3)
+                                    .shadow(color: Color("colorBtnMainShadow"), radius: 2, x: 0, y: 3)
                                     .onTapGesture {
-                                        
-                                } //The second button behavior
+                                        withAnimation{
+                                            //DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                                            self.buttonOnTapAnimationStatus = true
+                                            
+                                        }
+                                } //The second button behavior (symptom analysis)
                                 
                                 
                             } //ZStack (backgound Elipse & View)
@@ -215,14 +215,11 @@ struct MainView: View {
                             Text("mainAnalysisComment")
                                 .font(.subheadline)
                                 .multilineTextAlignment(.center)
-                                .padding(EdgeInsets(top: 2, leading: 13, bottom: 5, trailing: 13))
+                                .padding(EdgeInsets(top: 4, leading: 13, bottom: 5, trailing: 13))
                             //no padding is needed bewteen the last button and this text. The purpose is make them look like one
-                             
+                            
                         }//VStack
                     }//Schrollview
-                        
-                    }//GeometryReader
-                    
                     
                     
                     
@@ -231,15 +228,10 @@ struct MainView: View {
                         Text("credits")
                             .font(.footnote)
                         Spacer()
-                          
+                        
                         Text("btnPrivacyPolicies")
                             .font(.footnote)
                         Spacer()
-                        /*
-                         HTMLView(htmlString: NSLocalizedString("privacyPoliciesHint", comment: ""))
-                         .font(.footnote)
-                         .background(Color("colorAppMainBackground"))
-                         */
                     }
                     .padding(.all, 10)
                     
