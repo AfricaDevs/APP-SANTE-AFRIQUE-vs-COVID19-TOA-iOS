@@ -9,3 +9,8 @@
 "mainPreventionButtonTitle" = "COMMENT\nSE POTEGER\nTOUS LES JOURS?";
 "mainAnalysisButtonTitle" = "ANALYSEZ\nVOS SYMPTOMES";
 "mainAnalysisComment" = "et recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
+
+"credits" = "A Propos";
+"btnPrivacyPolicies" = "Politiques de Confidentialité";
+
+"privacyPoliciesHint" ="En utilisant cette application, vous acceptez les ";

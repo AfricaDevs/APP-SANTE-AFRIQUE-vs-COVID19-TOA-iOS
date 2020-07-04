@@ -14,6 +14,8 @@
 		2D0A293A24A65AE700A36C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293924A65AE700A36C56 /* Assets.xcassets */; };
 		2D0A293D24A65AE700A36C56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */; };
 		2D0A294024A65AE700A36C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */; };
+		2D3648E224B0F1DC0029196F /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */; };
+		2D3648E324B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */; };
 		2DB15BCF24AD6A49003D2353 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BCE24AD6A49003D2353 /* SplashView.swift */; };
 		2DB15BD324AD7039003D2353 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BD224AD7039003D2353 /* Colors.xcassets */; };
 		2DB15BD624AD8445003D2353 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15BD524AD8445003D2353 /* MainView.swift */; };
@@ -31,6 +33,7 @@
 		2DB15BFC24AF0D91003D2353 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15BFE24AF0D91003D2353 /* Localizable.strings */; };
 		2DB15BFF24AF0D96003D2353 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2DB15C0124AF0D96003D2353 /* Localizable.stringsdict */; };
 		2DB15C0524AF4D74003D2353 /* AnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15C0424AF4D74003D2353 /* AnimatedView.swift */; };
+		2DB15C0924B05992003D2353 /* HTMLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB15C0824B05991003D2353 /* HTMLView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,8 @@
 		2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D0A293F24A65AE700A36C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0A294124A65AE700A36C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollOffsetPreferenceKey.swift; sourceTree = "<group>"; };
 		2DB15BCE24AD6A49003D2353 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		2DB15BD224AD7039003D2353 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2DB15BD524AD8445003D2353 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 		2DB15C0224AF10DE003D2353 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		2DB15C0324AF10DE003D2353 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2DB15C0424AF4D74003D2353 /* AnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedView.swift; sourceTree = "<group>"; };
+		2DB15C0824B05991003D2353 /* HTMLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLView.swift; sourceTree = "<group>"; };
 		4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.release.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.release.xcconfig"; sourceTree = "<group>"; };
 		6D4AB7E7A84072D9EF285BDF /* Pods_TOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		936525A0F0F4C507C567B0AB /* Pods-TOA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.debug.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 		2D0A293224A65AE300A36C56 /* TOA */ = {
 			isa = PBXGroup;
 			children = (
+				2D3648DF24B0F1DC0029196F /* TrackableScrollView */,
 				2DB15BF124AE6664003D2353 /* Custom Views */,
 				2DB15BF024AE6506003D2353 /* Prevention */,
 				2DB15BEF24AE5362003D2353 /* Diagnosis */,
@@ -125,6 +132,15 @@
 				2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D3648DF24B0F1DC0029196F /* TrackableScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */,
+				2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */,
+			);
+			path = TrackableScrollView;
 			sourceTree = "<group>";
 		};
 		2DB15BD724AE46DD003D2353 /* Lottie */ = {
@@ -162,6 +178,7 @@
 			children = (
 				2DB15BF424AE6992003D2353 /* LottieView.swift */,
 				2DB15C0424AF4D74003D2353 /* AnimatedView.swift */,
+				2DB15C0824B05991003D2353 /* HTMLView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -317,7 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3648E324B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift in Sources */,
+				2D3648E224B0F1DC0029196F /* TrackableScrollView.swift in Sources */,
 				2DB15BD624AD8445003D2353 /* MainView.swift in Sources */,
+				2DB15C0924B05992003D2353 /* HTMLView.swift in Sources */,
 				2D0A293424A65AE300A36C56 /* AppDelegate.swift in Sources */,
 				2DB15BCF24AD6A49003D2353 /* SplashView.swift in Sources */,
 				2DB15C0524AF4D74003D2353 /* AnimatedView.swift in Sources */,
