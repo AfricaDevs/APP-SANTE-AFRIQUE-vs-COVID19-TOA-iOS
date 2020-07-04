@@ -37,8 +37,10 @@ struct MainView: View {
                     //This and the next element are key overlays to keeps the animated with in harmony with the safeArea informations (time, battery
                     Color.black.opacity(0.5).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
                     
-                    ZStack{ 
-                        Color.white.opacity(0.1)
+                    ZStack{
+                        LinearGradient(gradient: Gradient(colors:
+                            [Color.white.opacity(0.2), Color.black.opacity(0.1), Color.black.opacity(0.2)]
+                        ), startPoint: .top, endPoint: .bottom)
                     }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 242.5, alignment: .top)
                     
             
