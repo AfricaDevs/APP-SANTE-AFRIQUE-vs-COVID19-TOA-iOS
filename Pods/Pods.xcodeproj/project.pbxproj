@@ -148,7 +148,7 @@
 		3C999E60BA0DDD543D79F48811ACF0F1 /* Pods-TOA-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TOA-acknowledgements.plist"; sourceTree = "<group>"; };
 		3CDD52C82DFE3EA11BAA9B5C46A06D1E /* Pods-TOA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TOA.debug.xcconfig"; sourceTree = "<group>"; };
 		409555E829948D1A03E12CCE32D1D85C /* Pods-TOA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TOA.modulemap"; sourceTree = "<group>"; };
-		41873EDFD6D679268C3CDC71F6ADEBF9 /* KenBurns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KenBurns.framework; path = KenBurns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41873EDFD6D679268C3CDC71F6ADEBF9 /* KenBurns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KenBurns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C192CBFB656427D593EF9D358BEB23 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/General/Kingfisher.swift; sourceTree = "<group>"; };
 		43D898AA8C8297F2B94C2D67B51EFC39 /* KingfisherError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherError.swift; path = Sources/General/KingfisherError.swift; sourceTree = "<group>"; };
 		453614290394DF28E98861980F646760 /* Kingfisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.debug.xcconfig; sourceTree = "<group>"; };
@@ -182,11 +182,11 @@
 		90B79CDAF71E573941657B2C439328D7 /* Runtime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Runtime.swift; path = Sources/Utility/Runtime.swift; sourceTree = "<group>"; };
 		9207D0FF06977BA6D28D3A2D4F689175 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/General/Deprecated.swift; sourceTree = "<group>"; };
 		93904B34657234344E5BDA6B1C895820 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/Image/ImageTransition.swift; sourceTree = "<group>"; };
-		9452371964F9A6353F628238156AD725 /* CalmParametricAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CalmParametricAnimations.framework; path = CalmParametricAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9452371964F9A6353F628238156AD725 /* CalmParametricAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalmParametricAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		974100015D3137EB3473A106451697EB /* ImageDownloaderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloaderDelegate.swift; path = Sources/Networking/ImageDownloaderDelegate.swift; sourceTree = "<group>"; };
 		99798E97E5002E24C3600F950880D3CC /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Image/Placeholder.swift; sourceTree = "<group>"; };
 		997C116684CE1AAA211FFBABF9ED6296 /* CalmParametricAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CalmParametricAnimations.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2E241981AF4D5F1EFFCC07C7C9A4613 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
 		A35CA5BF71F4C75B826540862F58E993 /* CalmParametricAnimations.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CalmParametricAnimations.modulemap; sourceTree = "<group>"; };
 		A52678034D94D493F4D8229347A637C8 /* KenBurns-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KenBurns-Info.plist"; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		B77881FAFD1B4DC8ABA22EE3304C061E /* KenBurns-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KenBurns-umbrella.h"; sourceTree = "<group>"; };
 		B96AC208B6B66B7771B0793D6B721D15 /* Pods-TOA-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TOA-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C3D52E66C1168A3DE3089D50F86912A3 /* SessionDataTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDataTask.swift; path = Sources/Networking/SessionDataTask.swift; sourceTree = "<group>"; };
-		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AFFFE978695084619BD08E090CDF67 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/General/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
 		C6B72EDE17E01A4CC63B87992607AC2C /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = KenBurns/Classes/Helpers.swift; sourceTree = "<group>"; };
 		C925E7B1D5B2BA7C92EF0E518028A4E5 /* Kingfisher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kingfisher-Info.plist"; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 		EB0BA919C4E06DF8F79E1DEBF966275C /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/Cache/CacheSerializer.swift; sourceTree = "<group>"; };
 		EB480DAF9DA0AB90596334A8551CC302 /* Pods-TOA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TOA-dummy.m"; sourceTree = "<group>"; };
 		F50195DF9847764FAD97363FEC644B0B /* KenBurns-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KenBurns-dummy.m"; sourceTree = "<group>"; };
-		F5D2B63FF2FFCE16BE683DABEA505C35 /* Pods_TOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TOA.framework; path = "Pods-TOA.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D2B63FF2FFCE16BE683DABEA505C35 /* Pods_TOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EFF429675144277B139B9E5BAB1181 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Sources/Networking/SessionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -286,7 +286,6 @@
 				2956F8899BFA387341404E432A64E13A /* CalmParametricBlocks.m */,
 				4BD3EE459981AAFBD17BC2D79B27B214 /* Support Files */,
 			);
-			name = CalmParametricAnimations;
 			path = CalmParametricAnimations;
 			sourceTree = "<group>";
 		};
@@ -396,7 +395,6 @@
 				AB38DBA204C2A7FA4F5FC30E6342C2D3 /* RingBuffer.swift */,
 				D02BB2022635EE25734B9443D0600FE8 /* Support Files */,
 			);
-			name = KenBurns;
 			path = KenBurns;
 			sourceTree = "<group>";
 		};
@@ -414,7 +412,6 @@
 				252AEDB69C69291F27BFE758F228B993 /* Core */,
 				8FA37D3DCB5CC5D30BB557899898487B /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -937,7 +934,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KenBurns/KenBurns-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KenBurns/KenBurns-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -948,6 +945,7 @@
 				PRODUCT_NAME = KenBurns;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -973,7 +971,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KenBurns/KenBurns-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KenBurns/KenBurns-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -984,6 +982,7 @@
 				PRODUCT_NAME = KenBurns;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

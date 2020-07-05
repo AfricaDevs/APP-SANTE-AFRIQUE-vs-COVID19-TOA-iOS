@@ -31,7 +31,6 @@ struct AnimatedView: UIViewRepresentable {
         
         kenBurnsView.translatesAutoresizingMaskIntoConstraints = false
         
-        
         kenBurnsView.startAnimating()
         view.addSubview(kenBurnsView)
         
