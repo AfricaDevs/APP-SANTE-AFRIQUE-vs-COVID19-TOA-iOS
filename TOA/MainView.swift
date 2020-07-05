@@ -103,7 +103,7 @@ struct MainView: View {
                                 
                                 Spacer()
                             }
-                            .padding(EdgeInsets(top:  geometry.safeAreaInsets.top + 70, leading: .zero, bottom: 2, trailing: .zero))
+                            .padding(EdgeInsets(top:  /* status bar height*/  geometry.safeAreaInsets.top - 20  , leading: .zero, bottom: 2, trailing: .zero))
                             
                             
                             
@@ -117,6 +117,7 @@ struct MainView: View {
                                 .cornerRadius(6)
                                 .padding(.horizontal, 15.9)
                             
+                            
                             ZStack(alignment: .leading){
                                 
                                 Ellipse()
@@ -125,6 +126,8 @@ struct MainView: View {
                                     .rotationEffect(Angle.init(degrees: 343))
                                     .offset(x:-90,y:48)
                                 
+                                NavigationLink (destination: PreventionView()  ){
+                                    
                                 HStack{
                                     ZStack{
                                         Ellipse()
@@ -156,12 +159,10 @@ struct MainView: View {
                                     .cornerRadius(5)
                                     .padding(EdgeInsets(top: 15, leading: 15, bottom: 0, trailing: 15))
                                     
-                                    .shadow(color: Color("colorBtnMainShadow"), radius: 2, x: 0, y: 3).onTapGesture {
-                                        
-                                } //The first button behavior ( Prevention)
-                                
-                            } //ZStack (backgound Elipse & View)
-                            
+                                    .shadow(color: Color("colorBtnMainShadow"), radius: 2, x: 0, y: 3)
+                                } //NavigationLink
+                               
+                            } //ZStack - The first button behavior ( Prevention)  (merge Elipse & View)
                             
                             ZStack(alignment: .leading){
                                 
@@ -170,6 +171,9 @@ struct MainView: View {
                                     .frame(width: 120, height: 16)
                                     .rotationEffect(Angle.init(degrees: 343))
                                     .offset(x:-90,y:48)
+                                
+                                NavigationLink (destination: PreventionView()){
+                                    
                                 HStack{
                                     HStack{
                                         ZStack{
@@ -201,15 +205,17 @@ struct MainView: View {
                                     .cornerRadius(5)
                                     .padding(EdgeInsets(top: 15, leading: 15, bottom: 0, trailing: 15))
                                     .shadow(color: Color("colorBtnMainShadow"), radius: 2, x: 0, y: 3)
-                                    .onTapGesture {
+                                    /*.onTapGesture {
                                         withAnimation{
                                             //DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                                             self.buttonOnTapAnimationStatus = true
                                             
                                         }
-                                } //The second button behavior (symptom analysis)
+                                } */ //The second button behavior (symptom analysis)
                                 
                                 
+                                }
+                                //NavigationLink
                             } //ZStack (backgound Elipse & View)
                             
                             Text("mainAnalysisComment")
@@ -219,6 +225,7 @@ struct MainView: View {
                             //no padding is needed bewteen the last button and this text. The purpose is make them look like one
                             
                         }//VStack
+                        
                     }//Schrollview
                     
                     
@@ -237,9 +244,9 @@ struct MainView: View {
                     
                     
                 }//VStack
-            }.edgesIgnoringSafeArea(.top)
+            }
             
-        }
+        }.edgesIgnoringSafeArea(.top)
     }
 }
 

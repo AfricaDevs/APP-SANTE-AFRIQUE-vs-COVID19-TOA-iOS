@@ -7,12 +7,16 @@
 */
 
 "mainIntro" = "Researchers, doctors, scientists and designers have created this application just for TOÂ « you » in order to promote Best Practices for dealing with the Covid-19 pandemic in Africa.";
-"mainPreventionButtonTitle" = "COMMENT\nSE POTEGER\nTOUS LES JOURS?";
-"mainAnalysisButtonTitle" = "ANALYSEZ\nVOS SYMPTOMES";
-"mainAnalysisComment" = "et recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
+"mainPreventionButtonTitle" = "HOW\nTO PROTECT\nYOURSELF EVERYDAY?";
+"mainAnalysisButtonTitle" = "ANALYZE\nYOUR SYMPTOMS";
+"mainAnalysisComment" = "and immediately receive suitable information on what is best to do";
 
 "privacyPoliciesHint" ="By using this App, you agree to Collectif-TOÂ <b>Privacy Policies</b>";
 
 "credits" = "About";
 "btnPrivacyPolicies" = "Privacy Policies";
+
+/* PREVENTIONS resources*/
  
+"preventionToolbarTitle" = "HOW TO PROTECT YOURSELF EVERYDAY?";
+/* AND PREVENTION RESOURCES */
