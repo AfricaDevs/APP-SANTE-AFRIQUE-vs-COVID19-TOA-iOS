@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Prevention: Identifiable, Decodable{
 
-    var id = UUID()
+    let id = UUID()
     var title : String
     var lottieFileName: String
     
