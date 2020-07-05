@@ -32,7 +32,7 @@ struct SplashView: View {
                     .shadow(color: Color.white, radius: 5, x: 0, y: 2)
             Spacer()
             }
-            .padding(EdgeInsets(top:  self.animateLogo ? geometry.safeAreaInsets.top - 20 : .zero, leading: .zero, bottom: geometry.safeAreaInsets.bottom + 70, trailing: .zero))
+            .padding(EdgeInsets(top:  self.animateLogo ? geometry.safeAreaInsets.top + 70 : .zero, leading: .zero, bottom: geometry.safeAreaInsets.bottom + 70, trailing: .zero))
                  
                 //very important to use GeometryReader to access safe arean values
                
