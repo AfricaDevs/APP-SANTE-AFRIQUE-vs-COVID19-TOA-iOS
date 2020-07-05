@@ -39,6 +39,7 @@
 		2DB6AE8624B23E640092A91A /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6AE8824B23E640092A91A /* Localizable.stringsdict */; };
 		2DB6AE8924B23E6F0092A91A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6AE8B24B23E6F0092A91A /* Localizable.strings */; };
 		2DB6AE8F24B25C090092A91A /* PreventionDetailControlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6AE8E24B25C090092A91A /* PreventionDetailControlerView.swift */; };
+		2DB6AE9124B29D790092A91A /* Countries.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6AE9024B29D790092A91A /* Countries.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		2DB6AE8C24B23EA00092A91A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2DB6AE8D24B23EA00092A91A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		2DB6AE8E24B25C090092A91A /* PreventionDetailControlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionDetailControlerView.swift; sourceTree = "<group>"; };
+		2DB6AE9024B29D790092A91A /* Countries.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Countries.xcassets; sourceTree = "<group>"; };
 		4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.release.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.release.xcconfig"; sourceTree = "<group>"; };
 		6D4AB7E7A84072D9EF285BDF /* Pods_TOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		936525A0F0F4C507C567B0AB /* Pods-TOA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.debug.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */,
 				2D2C040C24B1DDC000D6473A /* Resources */,
 				2D0A293924A65AE700A36C56 /* Assets.xcassets */,
+				2DB6AE9024B29D790092A91A /* Countries.xcassets */,
 				2DB15BD224AD7039003D2353 /* Colors.xcassets */,
 				2DB6AE8B24B23E6F0092A91A /* Localizable.strings */,
 				2DB6AE8824B23E640092A91A /* Localizable.stringsdict */,
@@ -297,6 +300,7 @@
 				2DB15BE124AE46DE003D2353 /* lottie_water.json in Resources */,
 				2DB6AE8624B23E640092A91A /* Localizable.stringsdict in Resources */,
 				2DB15BE824AE46DE003D2353 /* covid_armor.json in Resources */,
+				2DB6AE9124B29D790092A91A /* Countries.xcassets in Resources */,
 				2DB15BE524AE46DE003D2353 /* lottie_social_distancing.json in Resources */,
 				2D2C041224B1FDF500D6473A /* preventionOptionsArray.json in Resources */,
 				2DB15BE224AE46DE003D2353 /* lottie_trash_clean.json in Resources */,
