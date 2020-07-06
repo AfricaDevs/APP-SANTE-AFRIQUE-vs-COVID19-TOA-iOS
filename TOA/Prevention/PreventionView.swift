@@ -10,7 +10,7 @@ import SwiftUI
 import CoreLocation
 
 struct PreventionView: View {
-    let data = DataLoader()
+    let data = DataLoader(jsonFileName: "preventionOptionsArray")
     
     var body: some View {
          

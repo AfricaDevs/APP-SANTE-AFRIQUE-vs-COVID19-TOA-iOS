@@ -23,17 +23,18 @@ struct AnimatedView: UIViewRepresentable {
         
 
         //kenBurnsView.zoomIntensity = 1.5
-        kenBurnsView.loops = true
-        kenBurnsView.setImageQueue(withImages: [myImage])
+        //kenBurnsView.loops = true
+        kenBurnsView.setImageQueue(withImages: [myImage, myImage])
         
         //kenBurnsView.setImage(UIImage(named: imageName)!)
-        //kenBurnsView.setDuration(min: 5, max: 13)
+        kenBurnsView.setDuration(min: 5, max: 13)
         
         kenBurnsView.translatesAutoresizingMaskIntoConstraints = false
         
         kenBurnsView.startAnimating()
         view.addSubview(kenBurnsView)
         
+         
         NSLayoutConstraint.activate([
         kenBurnsView.widthAnchor.constraint(equalTo: view.widthAnchor),
         kenBurnsView.heightAnchor.constraint(equalTo: view.heightAnchor)

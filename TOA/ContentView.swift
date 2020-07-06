@@ -16,9 +16,8 @@ struct ContentView: View {
             VStack {
                 Spacer(minLength: 0)
                 
-                if self.isActive {
-                    //SplashView()
-                    MainView()
+                if self.isActive { 
+                    MainView()// selectedCountry: @Binding Country(name: "Steve", iso2: "cg", iso3: "cg"))
                 } else {
                     
                     SplashView()
