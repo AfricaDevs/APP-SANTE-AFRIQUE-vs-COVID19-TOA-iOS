@@ -19,36 +19,32 @@ struct MainView: View {
     @State private var scrollViewContentOffset = CGFloat(0)
     
     @State private var buttonOnTapAnimationStatus = false
-     
+    
     let isNavigationBarHidden: Bool = true
     
     var data  = DataLoader(jsonFileName: "countries_list")
-      
-     //@State var array : Array<Int> = [0,1,2]
+    
+    //@State var array : Array<Int> = [0,1,2]
     @State var selection : Country = Country(id: 0, name: "Congo (Brazzaville)", iso2: "cg", iso3: "cg") //nit country to Congo
     
-    @State var mathdroApiCountryResult : CountryCases = CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0)){
-        didSet{
-            loadCovidData()
-        }
-    }
-     
+    @State var mathdroApiCountryResult : CountryCases = CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0))
+    
     var body: some View {
-
+        
         GeometryReader { geometry in //{ outsideProxy in
-
-
+            
+            
             NavigationView{
-
+                
                 //localized textes
-
+                
                 ZStack(alignment: .topLeading){
                     
                     //This image in the back of the AnimatedView serves as a placeholder because the animage has an estimated 2 seconds delay to load
                     Image("covid_worms_bg")
-                    .resizable()
+                        .resizable()
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight:   self.animatedViewHeight , alignment: .top)
-                     
+                    
                     
                     AnimatedView(imageName: "covid_worms_bg")
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.animatedViewHeight, alignment: .top)
@@ -76,7 +72,7 @@ struct MainView: View {
                             //The ternary here helps to avoid the animation from handling scroll-top Drag Events
                         }.offset(x:  self.scrollViewContentOffset > 0 ? 0 : self.scrollViewContentOffset, y: 0)
                         
-                       
+                        
                         
                         Spacer(minLength: 0)
                         
@@ -130,52 +126,56 @@ struct MainView: View {
                                             .offset(x: 0, y: self.scrollViewContentOffset < 0 ? self.scrollViewContentOffset: 0 )
                                             .animation(.easeOut)
                                         Spacer()
-                                         
+                                        
                                         Picker(selection: self.$selection, label: Text("")) {
                                             //ForEach( Array(self.data.countriesArray.enumerated()), id: \.1.id) {
                                             //ForEach( self.array, id : \.self ) { country in
                                             ForEach( self.data.countriesArray, id : \.self ) { country in
                                                 //self.selectedCountry = country
-                                                 
+                                                
                                                 Text(" \(country.name)").font(.subheadline).foregroundColor(Color.white).tag(country)
                                                 
                                             }
                                             
                                         }.frame(width: 120, height: 100)
-                                        .opacity(self.scrollViewContentOffset < -50 ? 0.0 : 1.0)
-                                         .animation(.easeInOut)
-                                        
+                                            .opacity(self.scrollViewContentOffset < -50 ? 0.0 : 1.0)
+                                            .animation(.easeInOut)
+                                            .onReceive([self.selection].publisher.first()){ (country) in
+                                                
+                                                //debugPrint(value)
+                                                self.loadCovidData()
+                                        }
                                         
                                     }//.background(Color("colorBookBackground"))
                                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
-                                        
-                                   
                                     
-                                HStack{
-                                    //App logo
-                                    Image("logo_round")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 100, height: 100)
-                                          
-                                        .shadow(color: Color.white, radius: 3, x: 0, y: 3)
+                                    
+                                    
+                                    HStack{
+                                        //App logo
+                                        Image("logo_round")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 100, height: 100)
+                                            
+                                            .shadow(color: Color.white, radius: 3, x: 0, y: 3)
                                         
-                                     
-                                }.padding(EdgeInsets(top:  /* status bar heigh - safeArea top padding defined in the parent view*/   80  , leading: .zero, bottom: 2, trailing: .zero))
-                                 
+                                        
+                                    }.padding(EdgeInsets(top:  /* status bar heigh - safeArea top padding defined in the parent view*/   80  , leading: .zero, bottom: 2, trailing: .zero))
+                                    
                                 } .padding(EdgeInsets(top: geometry.safeAreaInsets.top + 10, leading: 10, bottom: 10, trailing: 10))
-                                 
                                 
                                 
-                                   HStack{
-                                       Text("mainIntro")
-                                           .font(.subheadline)
-                                           .multilineTextAlignment(.leading)
-                                           .padding(.all, 8)
-                                   }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
-                                       .background(Color("colorBookBackground"))
-                                       .cornerRadius(6)
-                                       .padding(.horizontal, 15.9)
+                                
+                                HStack{
+                                    Text("mainIntro")
+                                        .font(.subheadline)
+                                        .multilineTextAlignment(.leading)
+                                        .padding(.all, 8)
+                                }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
+                                    .background(Color("colorBookBackground"))
+                                    .cornerRadius(6)
+                                    .padding(.horizontal, 15.9)
                                 
                                 
                                 PreventionButtonView() //ZStack - The first button (Prevention)
@@ -189,7 +189,7 @@ struct MainView: View {
                                     .padding(EdgeInsets(top: 4, leading: 13, bottom: 20, trailing: 13))
                                 //no padding is needed bewteen the last button and this text. The purpose is make them look like one
                                 
-                                     
+                                
                             }//VStack
                             
                         }//Schrollview
@@ -212,36 +212,36 @@ struct MainView: View {
                 }.navigationBarTitle("Nav").navigationBarHidden(self.isNavigationBarHidden).edgesIgnoringSafeArea( self.isNavigationBarHidden ? .top : .top)
                     .onAppear(perform: self.loadCovidData)
                 
-                        //self.isNavigationBarHidden = true
-                        //self.edgesIgnoringSafeArea(.top)
+                //self.isNavigationBarHidden = true
+                //self.edgesIgnoringSafeArea(.top)
             }//NavigationView
             //.navigationBarHidden(true)
         }
         
     }
     
-
-    func loadCovidData() {
+    
+    func loadCovidData( )   {
         let countryName = self.selection.name.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
         do {
             try  AF.request("https://covid19.mathdro.id/api/countries/\(countryName)").responseDecodable(of: CountryCases.self) { response in
-            
-            self.mathdroApiCountryResult = response.value ?? CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0))
-            
-            debugPrint("Response: \(response)")
-        }
+                
+                self.mathdroApiCountryResult = response.value ?? CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0))
+                
+                debugPrint("Response: \(response)")
+            }
         } catch {
             
         }
-         
+        
         //AF.request("URL").response { response in }
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-         
-         MainView( )
+        
+        MainView( )
     }
 }
 
