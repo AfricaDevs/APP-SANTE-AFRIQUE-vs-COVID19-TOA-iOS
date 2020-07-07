@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.2.1)
   - CalmParametricAnimations (1.0.1)
   - KenBurns (0.4.0):
     - CalmParametricAnimations (~> 1.0.1)
@@ -8,19 +9,22 @@ PODS:
   - Kingfisher/Core (5.14.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - KenBurns
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - CalmParametricAnimations
     - KenBurns
     - Kingfisher
 
 SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   CalmParametricAnimations: 8747c67d71e07be5e5b3b9d524560d1fbe74be94
   KenBurns: a5a1638197e7a4b8c8fd580f56d77aa7bf5f7fa1
   Kingfisher: 7b64389a43139c903ec434788344c288217c792d
 
-PODFILE CHECKSUM: f2fe8dffbe68378edda49dfb2dd4cc931e16bcc3
+PODFILE CHECKSUM: 533a0e1011c3efedd472e8ed12802b144bc49b1d
 
 COCOAPODS: 1.9.3
