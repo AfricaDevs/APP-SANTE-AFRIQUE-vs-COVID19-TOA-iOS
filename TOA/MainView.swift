@@ -14,20 +14,18 @@ import Alamofire
 
 struct MainView: View {
     
-    let animatedViewHeight : CGFloat = 280
+    @EnvironmentObject var settings: UserSettings
     
     @State private var scrollViewContentOffset = CGFloat(0)
-    
     @State private var buttonOnTapAnimationStatus = false
+    @State var selection : Country = Country(id: 0, name: "Congo (Brazzaville)", iso2: "cg", iso3: "cg") //initialized country to Congo
+    
+    @State var mathdroApiCountryResult : CountryCases = CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0)) //The default value of cases in a country are 0 util the API load remote data
     
     let isNavigationBarHidden: Bool = true
+    let animatedViewHeight : CGFloat = 280
     
     var data  = DataLoader(jsonFileName: "countries_list")
-    
-    //@State var array : Array<Int> = [0,1,2]
-    @State var selection : Country = Country(id: 0, name: "Congo (Brazzaville)", iso2: "cg", iso3: "cg") //nit country to Congo
-    
-    @State var mathdroApiCountryResult : CountryCases = CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0))
     
     var body: some View {
         
@@ -115,11 +113,11 @@ struct MainView: View {
                                             Image(self.selection.iso2.lowercased())
                                                 .aspectRatio(contentMode: ContentMode.fit)
                                             
-                                            VStack(alignment: .leading, spacing: 1){ Text("Confirmés"); Text("\(self.mathdroApiCountryResult.confirmed.value)").foregroundColor(Color.yellow) }
+                                            VStack(alignment: .leading, spacing: 1){ Text("mainConfirmedCases"); Text("\(self.mathdroApiCountryResult.confirmed.value)").foregroundColor(Color.yellow) }
                                             
-                                            VStack(alignment: .leading, spacing: 1){ Text("Guéris"); Text("\(self.mathdroApiCountryResult.recovered.value)").foregroundColor(Color.yellow) }
+                                            VStack(alignment: .leading, spacing: 1){ Text("mainRecoveredCases"); Text("\(self.mathdroApiCountryResult.recovered.value)").foregroundColor(Color.yellow) }
                                             
-                                            VStack(alignment: .leading, spacing: 1){ Text("Décès"); Text("\(self.mathdroApiCountryResult.deaths.value)").foregroundColor(Color.yellow) }
+                                            VStack(alignment: .leading, spacing: 1){ Text("mainDeceasedCases"); Text("\(self.mathdroApiCountryResult.deaths.value)").foregroundColor(Color.yellow) }
                                             
                                         }.foregroundColor(Color.white)
                                             .font(.subheadline)
@@ -169,9 +167,9 @@ struct MainView: View {
                                 
                                 HStack{
                                     Text("mainIntro")
-                                        .font(.subheadline)
-                                        .multilineTextAlignment(.leading)
-                                        .padding(.all, 8)
+                                        .font( self.settings.textSize ? .subheadline : .system(size: 17))
+                                        .multilineTextAlignment(.center)
+                                        .padding(.all, 8) 
                                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
                                     .background(Color("colorBookBackground"))
                                     .cornerRadius(6)
@@ -184,7 +182,7 @@ struct MainView: View {
                                 
                                 
                                 Text("mainAnalysisComment")
-                                    .font(.subheadline)
+                                    .font( self.settings.textSize ? .subheadline : .system(size: 16))
                                     .multilineTextAlignment(.center)
                                     .padding(EdgeInsets(top: 4, leading: 13, bottom: 20, trailing: 13))
                                 //no padding is needed bewteen the last button and this text. The purpose is make them look like one
@@ -219,11 +217,14 @@ struct MainView: View {
         
     }
     
-    
+    //load cases from covid19.mathdro.id using Alamofire
     func loadCovidData( )   {
         let countryName = self.selection.name.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
         do {
-            try  AF.request("https://covid19.mathdro.id/api/countries/\(countryName)").responseDecodable(of: CountryCases.self) { response in
+            
+              try
+                AF.request("https://covid19.mathdro.id/api/countries/\(countryName)")
+                     .responseDecodable(of: CountryCases.self) { response in
                 
                 self.mathdroApiCountryResult = response.value ?? CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0))
                 

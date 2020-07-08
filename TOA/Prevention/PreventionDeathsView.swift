@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PreventionDeathsView: View {
     var text: String = ""
-    @State var textSize = true
+    @EnvironmentObject var settings: UserSettings
     
     var body: some View {
         
@@ -19,7 +19,7 @@ struct PreventionDeathsView: View {
              
             HStack{
                 Text("preventionFuneralsTitle")
-                    .font( textSize ? .system(size: 20): .system(size: 22))
+                    .font(  self.settings.textSize ? .system(size: 20): .system(size: 22))
                     .fontWeight(.bold)
                 Spacer()
             }.padding(.bottom, 10)
@@ -60,7 +60,7 @@ struct PreventionDeathsView: View {
                 Spacer()
             }
              
-            }.font( textSize ? .body : .system(size: 20))
+            }.font(  self.settings.textSize ? .body : .system(size: 20))
             
             Spacer()
             
@@ -69,7 +69,9 @@ struct PreventionDeathsView: View {
             
         }.navigationBarTitle("preventionFuneralsToolbarTitle", displayMode: .inline)
             .navigationBarItems(trailing: ToolbarItem().onTapGesture {
-                self.textSize.toggle()
+                self.settings.textSize.toggle()
+
+                UserDefaults.standard.set(self.settings.textSize, forKey: "textSize")
             })
     }
 }

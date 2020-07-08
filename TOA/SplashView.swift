@@ -50,7 +50,8 @@ struct SplashView: View {
                     withAnimation {
                         self.animateLogo = true
                     }
-                    //}
+                    
+                    //
             }
                
         }

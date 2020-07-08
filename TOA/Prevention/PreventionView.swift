@@ -11,6 +11,7 @@ import CoreLocation
 
 struct PreventionView: View {
     let data = DataLoader(jsonFileName: "preventionOptionsArray")
+    @EnvironmentObject var settings: UserSettings
     
     var body: some View {
          
@@ -29,15 +30,19 @@ struct PreventionView: View {
                                 .frame(width: 80, height: 60)
                                 .padding(.all, 2)
                             
-                            Text(prevention.getTitle)
+                            Text(prevention.getTitle).font(self.settings.textSize ? .body :  .system(size: 19))
                             
                             }.padding(.all, 5)
                     
                     }
                 }
             }
-        }.navigationBarTitle("preventionToolbarTitle", displayMode: .inline)
-        .navigationBarItems(trailing: ToolbarItem())
+        }.navigationBarTitle("preventionToolbarTitleShort", displayMode: .inline)
+        .navigationBarItems(trailing: ToolbarItem().onTapGesture {
+            self.settings.textSize.toggle()
+            
+            UserDefaults.standard.set(self.settings.textSize, forKey: "textSize")
+        })
        
         
     }
