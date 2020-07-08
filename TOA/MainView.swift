@@ -167,10 +167,11 @@ struct MainView: View {
                                 
                                 HStack{
                                     Text("mainIntro")
-                                        .font( self.settings.textSize ? .subheadline : .system(size: 17))
-                                        .multilineTextAlignment(.center)
-                                        .padding(.all, 8) 
-                                }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
+                                        .multilineTextAlignment(.leading)
+                                        .font( .system(size: self.settings.textSize ? 14 : 17))
+                                        .padding(.all, 8)
+                                    
+                                }
                                     .background(Color("colorBookBackground"))
                                     .cornerRadius(6)
                                     .padding(.horizontal, 15.9)
@@ -201,6 +202,11 @@ struct MainView: View {
                             
                             Text("btnPrivacyPolicies")
                                 .font(.footnote)
+                            .foregroundColor(Color.blue)
+                                .onTapGesture {
+                                    let urlComponents = URLComponents (string: "https://africadevs.github.io/toa/policies.html") //Th website differs by language
+                                    UIApplication.shared.open ((urlComponents?.url!)!)
+                            }
                             Spacer()
                         }
                         .padding(.all, 10)

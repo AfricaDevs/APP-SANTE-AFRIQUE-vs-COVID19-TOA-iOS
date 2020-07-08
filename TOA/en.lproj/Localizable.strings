@@ -8,7 +8,6 @@
 
 "back" ="back";
 
-
 "mainConfirmedCases"="Confirmed";
 "mainRecoveredCases"="Recovered";
 "mainDeceasedCases"="Deaths";
@@ -18,8 +17,8 @@
 "mainAnalysisButtonTitle" = "ANALYZE\nYOUR SYMPTOMS";
 "mainAnalysisComment" = "and immediately receive suitable information on what is best to do";
 
-"privacyPoliciesHint" ="By using this App, you agree to Collectif-TOÂ <b>Privacy Policies</b>";
-
+"privacyPoliciesHint" = "By using this App, you agree to Collectif-TOÂ <b>Privacy Policies</b>";
+ 
 "credits" = "About";
 "btnPrivacyPolicies" = "Privacy Policies";
 
