@@ -33,7 +33,7 @@ Les mesures exceptionnelles visent à
 * protéger  les soignants, la famille, la communauté
 * éviter la propagation du virus
 
-Nécessité d’un dispositif respectant les spécificités des rituels ancestrales et les croyances pour la qualification d’un b “Enterrement  Digne et Sécurisé";
+Nécessité d’un dispositif respectant les spécificités des rituels ancestrales et les croyances pour la qualification d’un b \"Enterrement Digne et Sécurisé\"";
 
 "preventionFuneralsTitle2"="Dispositif au domicile ou au sein de la communauté";
 "preventionFuneralsBody2"="La Croix Rouge locale recommande des procédure basée sur des spécificités locales
@@ -48,6 +48,8 @@ Au cimetière :
 les tombes sont numérotées,
 un dispositif de géolocalisation est  mis en place afin d’associer le domicile du défunt à sa tombe. (?? en AF )
 Accompagnement de la famille et des proches endeuillés";
+
+"CICRWebsite"="https://www.icrc.org/fr";
      /* PREVENTIONS Funerals END --------- -----------  --------- -------- */
 
 /* END PREVENTION RESOURCES */

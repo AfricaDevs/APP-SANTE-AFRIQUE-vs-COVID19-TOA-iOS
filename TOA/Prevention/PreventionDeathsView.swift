@@ -16,8 +16,7 @@ struct PreventionDeathsView: View {
         
         ScrollView{
         VStack {
-            
-            
+             
             HStack{
                 Text("preventionFuneralsTitle")
                     .font( textSize ? .system(size: 20): .system(size: 22))
@@ -27,11 +26,12 @@ struct PreventionDeathsView: View {
             
             VStack{
             HStack{
-                Text("CICR")
+                Text("CICR").padding(.bottom, 2)
                 Text("preventionFuneralsCICRLink")
                     .foregroundColor(Color.blue)
                     .onTapGesture {
-                        
+                        let urlComponents = URLComponents (string: NSLocalizedString("CICRWebsite", comment: "")) //Th website differs by language
+                        UIApplication.shared.open ((urlComponents?.url!)!)
                 }
                 Spacer()
             }

@@ -33,8 +33,7 @@ struct PreventionDetailControlerView: View {
                 Text("Hello, TOÂ \(preventionItem.id)!")
                 Text("Image, TOÂ \(preventionItem.id)!")
             } else {
-                PreventionDeathsView()
-                    
+                PreventionDeathsView() 
             }
             
         }
