@@ -212,10 +212,9 @@ struct MainView: View {
                 }.navigationBarTitle("Nav").navigationBarHidden(self.isNavigationBarHidden).edgesIgnoringSafeArea( self.isNavigationBarHidden ? .top : .top)
                     .onAppear(perform: self.loadCovidData)
                 
-                //self.isNavigationBarHidden = true
-                //self.edgesIgnoringSafeArea(.top)
             }//NavigationView
-            //.navigationBarHidden(true)
+                
+                    
         }
         
     }
@@ -235,6 +234,17 @@ struct MainView: View {
         }
         
         //AF.request("URL").response { response in }
+    }
+}
+
+
+
+struct ToolbarItem: View {
+    
+    var body: some View {
+        HStack() {
+            Image(systemName: "textformat.size").font(.headline)
+        }
     }
 }
 

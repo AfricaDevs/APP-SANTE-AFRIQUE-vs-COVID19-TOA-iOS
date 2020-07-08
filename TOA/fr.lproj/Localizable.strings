@@ -6,6 +6,8 @@
   Copyright © 2020 Coolectif TOA. All rights reserved.
 */
 
+"back" ="";
+
 "mainIntro" = "Chercheurs, médecins et scientifiques ont créé cette application rien que pour TOÂ. Pour promouvoir les bonnes pratiques pour faire face à la pandémie de Covid-19 en Afrique.";
 "mainPreventionButtonTitle" = "COMMENT\nSE POTEGER\nTOUS LES JOURS?";
 "mainAnalysisButtonTitle" = "ANALYSEZ\nVOS SYMPTÔMES";
@@ -19,6 +21,33 @@
  
 
 /* PREVENTIONS resources*/
- 
 "preventionToolbarTitle" = "COMMENT SE POTEGER TOUS LES JOURS?";
-/* AND PREVENTION RESOURCES */
+
+     /* PREVENTIONS Funerals*/
+"preventionFuneralsTitle" = "Comment organiser les obsèques de patients décédés du Covid-19?";
+"preventionFuneralsToolbarTitle" = "Obsèques";
+"preventionFuneralsCICRLink" = "voir site";
+
+"preventionFuneralsBody1"="Plans de préparation et de gestion garantissant le respect de la dignité des défunts et de leurs familles.
+Les mesures exceptionnelles visent à
+* protéger  les soignants, la famille, la communauté
+* éviter la propagation du virus
+
+Nécessité d’un dispositif respectant les spécificités des rituels ancestrales et les croyances pour la qualification d’un b “Enterrement  Digne et Sécurisé";
+
+"preventionFuneralsTitle2"="Dispositif au domicile ou au sein de la communauté";
+"preventionFuneralsBody2"="La Croix Rouge locale recommande des procédure basée sur des spécificités locales
+* mesures de protection spécifiques aux soignants port de combinaisons + masque + gants
+* désinfection par pulvérisations du logement du défunt (chaulage)";
+
+"preventionFuneralsTitle3"="Combien de personnes peuvent assister aux obsèques?";
+"preventionFuneralsBody3"="En chambre funéraire : 2 maximum
+Lors de cérémonie religieuse: 20 maximum
+
+Au cimetière :
+les tombes sont numérotées,
+un dispositif de géolocalisation est  mis en place afin d’associer le domicile du défunt à sa tombe. (?? en AF )
+Accompagnement de la famille et des proches endeuillés";
+     /* PREVENTIONS Funerals END --------- -----------  --------- -------- */
+
+/* END PREVENTION RESOURCES */

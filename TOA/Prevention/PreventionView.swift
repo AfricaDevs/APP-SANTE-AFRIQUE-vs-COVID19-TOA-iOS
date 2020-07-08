@@ -21,26 +21,7 @@ struct PreventionView: View {
                 ForEach(data.preventionArray){ prevention in
                     
                     NavigationLink(destination:PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) /* Ambiguous Ternary to send the right Detail View */
-                        /*
-                      prevention.id == 1 ?
-                         :
-
-                        prevention.id == 2 ?
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
- 
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
-                     
-                        prevention.id == 4 ?
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
-                        
-                        prevention.id == 5 ?
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
-
-                        prevention.id == 6 ?
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
-                    
-                        //DEFAULT DESTINATION
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2)*/
+                          
                     ){
                         HStack{
                             LottieView(animationName: prevention.getLottieFileName)
@@ -50,12 +31,15 @@ struct PreventionView: View {
                             
                             Text(prevention.getTitle)
                             
-                        }.padding(.all, 5)
+                            }.padding(.all, 5)
                     
                     }
                 }
             }
         }.navigationBarTitle("preventionToolbarTitle", displayMode: .inline)
+        .navigationBarItems(trailing: ToolbarItem())
+       
+        
     }
 }
 
