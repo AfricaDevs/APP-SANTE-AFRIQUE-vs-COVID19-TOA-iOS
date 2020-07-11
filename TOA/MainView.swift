@@ -198,15 +198,17 @@ struct MainView: View {
                                     ZStack{
                                         
                                         self.chartView
+                                        .frame(width: 335, height: 330)
                                         
                                         VStack{
                                             Image(self.selection.iso2.lowercased())
                                                 .aspectRatio(contentMode: ContentMode.fit)
                                             Text(self.selection.name)
                                                 .font(.system(size: 9))
-                                        }.offset(x: -10, y: 0)
+                                        }.offset(x: -8, y: 0)
                                     }
-                                    .frame(width: 330, height: 330)
+                                    
+                                    
                                     Spacer()
                                 }
                             }//VStack
