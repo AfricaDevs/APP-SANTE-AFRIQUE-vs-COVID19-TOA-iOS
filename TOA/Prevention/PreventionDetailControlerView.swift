@@ -14,7 +14,7 @@ struct PreventionDetailControlerView: View {
     
     var body: some View {
         
-        VStack{
+        VStack(alignment: .leading, spacing:0){
             
             if preventionItem.id == 1 {
                 Text("Hello, TOÂ \(preventionItem.id)!")
@@ -33,10 +33,11 @@ struct PreventionDetailControlerView: View {
                 Text("Hello, TOÂ \(preventionItem.id)!")
                 Text("Image, TOÂ \(preventionItem.id)!")
             } else {
-                Text("Hello, TOÂ \(preventionItem.id)!")
+                PreventionDeathsView() 
             }
             
-        }.navigationBarTitle(preventionItem.getTitle)
+        }
+        
     }
 }
 

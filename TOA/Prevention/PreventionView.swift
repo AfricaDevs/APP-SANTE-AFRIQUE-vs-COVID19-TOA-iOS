@@ -11,6 +11,7 @@ import CoreLocation
 
 struct PreventionView: View {
     let data = DataLoader(jsonFileName: "preventionOptionsArray")
+    @EnvironmentObject var settings: UserSettings
     
     var body: some View {
          
@@ -21,26 +22,7 @@ struct PreventionView: View {
                 ForEach(data.preventionArray){ prevention in
                     
                     NavigationLink(destination:PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) /* Ambiguous Ternary to send the right Detail View */
-                        /*
-                      prevention.id == 1 ?
-                         :
-
-                        prevention.id == 2 ?
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
- 
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
-                     
-                        prevention.id == 4 ?
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
-                        
-                        prevention.id == 5 ?
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
-
-                        prevention.id == 6 ?
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) :
-                    
-                        //DEFAULT DESTINATION
-                          PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2)*/
+                          
                     ){
                         HStack{
                             LottieView(animationName: prevention.getLottieFileName)
@@ -48,14 +30,21 @@ struct PreventionView: View {
                                 .frame(width: 80, height: 60)
                                 .padding(.all, 2)
                             
-                            Text(prevention.getTitle)
+                            Text(prevention.getTitle).font(self.settings.textSize ? .body :  .system(size: 19))
                             
-                        }.padding(.all, 5)
+                            }.padding(.all, 5)
                     
                     }
                 }
             }
-        }.navigationBarTitle("preventionToolbarTitle", displayMode: .inline)
+        }.navigationBarTitle("preventionToolbarTitleShort", displayMode: .inline)
+        .navigationBarItems(trailing: ToolbarItem().onTapGesture {
+            self.settings.textSize.toggle()
+            
+            UserDefaults.standard.set(self.settings.textSize, forKey: "textSize")
+        })
+       
+        
     }
 }
 
