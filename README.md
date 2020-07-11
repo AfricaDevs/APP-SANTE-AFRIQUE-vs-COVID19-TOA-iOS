@@ -1,0 +1,23 @@
+**Chercheurs, médecins, scientifiques et designers ont créé cette application iOS rien que pour TOÂ « toi » pour promouvoir les bonnes pratiques pour faire face à la pandémie de Covid-19 en Afrique.**
+![TOÂ Android App](https://github.com/AfricaDevs/APP-SANTE-AFRIQUE-VS-COVID19-TOA-Android/raw/master/screenshots/francais-french/promo_1024_500.jpg)
+**Researchers, doctors, scientists and designers have created this application iOS just for TOÂ « you » in order to promote Best Practices for dealing with the Covid-19 pandemic in Africa.**
+
+## Contributeurs
+
+*:hospital: Professionnels de santé:*
+- ***Karima Brahimi***, Médecin, microbiologiste
+- ***Paul Tossa***, Médecin toxicologue et de santé publique
+- ***Armelle Hebert***, Expert en Santé Environnementale Renforcement des capacités Pays / Politiques publiques, Immunologiste
+- ***Manon Aminatou***, Dr en Pharmacologie, Toxicologue, Directrice VisaTox
+- ***Nyan  Frederick Goumou***, Médecin, chirurgien  oncologue pédiatre et consultant en PCI 
+- ***Sandrine Mansoutre***, Docteur en physique et ingénieur en chimie, Open innovation
+- ***Clémentine Langlois***, Directeur de programme Santé, épidémiologiste.
+
+*👨‍💻 Développeur(s):*
+- ***[Steve NDENDE](https://www.github.com/steve111MV)***, Chef de projet mobile, Développeur et Designer
+
+## Licence :
+**[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)**
+
+## Contacts:
+:email: [collectif.toa@gmail.com](mailto:collectif.toa@gmail.com)
