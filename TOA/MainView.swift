@@ -5,6 +5,9 @@
 //  Created by Steven on 7/2/20.
 //  Copyright © 2020 Coolectif TOA. All rights reserved.
 //
+
+
+import Charts
 import Foundation
 import SwiftUI
 import UIKit
@@ -24,6 +27,7 @@ struct MainView: View {
     
     let isNavigationBarHidden: Bool = true
     let animatedViewHeight : CGFloat = 280
+    let chartView =  PieChartSwiftUI()
     
     var data  = DataLoader(jsonFileName: "countries_list")
     
@@ -172,14 +176,14 @@ struct MainView: View {
                                         .padding(.all, 8)
                                     
                                 }
-                                    .background(Color("colorBookBackground"))
-                                    .cornerRadius(6)
-                                    .padding(.horizontal, 15.9)
+                                .background(Color("colorBookBackground"))
+                                .cornerRadius(6)
+                                .padding(.horizontal, 15.9)
                                 
                                 
-                                PreventionButtonView() //ZStack - The first button (Prevention)
+                                PreventionButtonView() //The first button (Prevention) - ZStack
                                 
-                                AnalysisButtonView() //ZStack The second button (Analysis)
+                                AnalysisButtonView() //The second button (Analysis) - ZStack
                                 
                                 
                                 Text("mainAnalysisComment")
@@ -189,6 +193,22 @@ struct MainView: View {
                                 //no padding is needed bewteen the last button and this text. The purpose is make them look like one
                                 
                                 
+                                HStack{
+                                    Spacer()
+                                    ZStack{
+                                        
+                                        self.chartView
+                                        
+                                        VStack{
+                                            Image(self.selection.iso2.lowercased())
+                                                .aspectRatio(contentMode: ContentMode.fit)
+                                            Text(self.selection.name)
+                                                .font(.system(size: 9))
+                                        }.offset(x: -10, y: 0)
+                                    }
+                                    .frame(width: 330, height: 330)
+                                    Spacer()
+                                }
                             }//VStack
                             
                         }//Schrollview
@@ -202,7 +222,7 @@ struct MainView: View {
                             
                             Text("btnPrivacyPolicies")
                                 .font(.footnote)
-                            .foregroundColor(Color.blue)
+                                .foregroundColor(Color.blue)
                                 .onTapGesture {
                                     let urlComponents = URLComponents (string: "https://africadevs.github.io/toa/policies.html") //Th website differs by language
                                     UIApplication.shared.open ((urlComponents?.url!)!)
@@ -214,11 +234,11 @@ struct MainView: View {
                         
                     }//VStack
                 }.navigationBarTitle("Nav").navigationBarHidden(self.isNavigationBarHidden).edgesIgnoringSafeArea( self.isNavigationBarHidden ? .top : .top)
-                    .onAppear(perform: self.loadCovidData)
+                // .onAppear(perform: self.loadCovidData)
                 
             }//NavigationView
-                
-                    
+            
+            
         }
         
     }
@@ -228,13 +248,14 @@ struct MainView: View {
         let countryName = self.selection.name.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
         do {
             
-              try
+            try
                 AF.request("https://covid19.mathdro.id/api/countries/\(countryName)")
-                     .responseDecodable(of: CountryCases.self) { response in
-                
-                self.mathdroApiCountryResult = response.value ?? CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0))
-                
-                debugPrint("Response: \(response)")
+                    .responseDecodable(of: CountryCases.self) { response in
+                        
+                        self.mathdroApiCountryResult  = response.value ?? CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0))
+                        
+                        self.chartView.refresh(countryCases: self.mathdroApiCountryResult)
+                        debugPrint("Response: \(response)")
             }
         } catch {
             
@@ -261,108 +282,5 @@ struct MainView_Previews: PreviewProvider {
         MainView( )
     }
 }
+ 
 
-struct AnalysisButtonView: View {
-    
-    var body: some View {
-        
-        ZStack(alignment: .leading){
-            
-            Ellipse()
-                .fill(Color("colorBtnBlue"))
-                .frame(width: 120, height: 16)
-                .rotationEffect(Angle.init(degrees: 343))
-                .offset(x:-90 ,y: 48)
-            
-            NavigationLink (destination: PreventionView()){
-                
-                HStack{
-                    HStack{
-                        ZStack{
-                            Ellipse()
-                                .fill(Color("colorBtnBlue"))
-                                .frame(width: 120, height: 16)
-                                .rotationEffect(Angle.init(degrees: 325))
-                                .offset(x:90,y:-45)
-                                .padding(.top, 0)
-                            
-                            LottieView(animationName: "covid_doctor").aspectRatio(contentMode: ContentMode.fit)
-                                .frame(width: 90, height: 65) //this lottie view has no padding, we force it with the two frames : one on the view and the other on its direct parent
-                        }
-                    }.frame(width: 120, height: 100) //This size is equivalent to the previous lottieView frame
-                    
-                    Spacer(minLength: 0)
-                    
-                    VStack{
-                        Spacer()
-                        Text("mainAnalysisButtonTitle")
-                            .multilineTextAlignment(.center)
-                            .font(.headline).foregroundColor(Color.white).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                        Spacer()
-                    }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .background(Color("colorBtnBlue"))
-                    
-                }.frame(minWidth: 0, maxWidth: (.infinity - CGFloat(30)), minHeight: 0, maxHeight: .infinity, alignment: .leading)
-                    .background(Color("colorMainButtonsWhiteBackground"))
-                    .cornerRadius(5)
-                    .padding(EdgeInsets(top: 15, leading: 15, bottom: 0, trailing: 15))
-                    .shadow(color: Color("colorBtnMainShadow"), radius: 2, x: 0, y: 3)
-                
-            }
-            //NavigationLink
-        }
-    }
-    
-    
-}
-
-struct PreventionButtonView: View {
-    var body: some View {
-        ZStack(alignment: .leading){
-            
-            Ellipse()
-                .fill(Color("colorBtnGreen"))
-                .frame(width: 120, height: 16)
-                .rotationEffect(Angle.init(degrees: 343))
-                .offset(x:-90,y:48)
-            
-            NavigationLink (destination: PreventionView()  ){
-                
-                HStack{
-                    ZStack{
-                        Ellipse()
-                            .fill(Color("colorBtnGreen"))
-                            .frame(width: 120, height: 16)
-                            .rotationEffect(Angle.init(degrees: 325))
-                            .offset(x:90,y:-45)
-                            .padding(.top, 0)
-                        
-                        //Custom animated lottie JSON
-                        LottieView(animationName: "covid_armor")
-                            .aspectRatio(contentMode: ContentMode.fit)
-                            .frame(width: 120, height: 100)
-                            .padding(.all, 0).offset(x: -15, y: 0)
-                    }
-                    Spacer(minLength: 0)
-                    
-                    VStack{
-                        
-                        Spacer()
-                        Text("mainPreventionButtonTitle")
-                            .multilineTextAlignment(.center)
-                            .font(.headline).foregroundColor(Color.white).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                        Spacer()
-                    }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .background(Color("colorBtnGreen"))
-                    
-                }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
-                    .background(Color("colorMainButtonsWhiteBackground"))
-                    .cornerRadius(5)
-                    .padding(EdgeInsets(top: 15, leading: 15, bottom: 0, trailing: 15))
-                    
-                    .shadow(color: Color("colorBtnMainShadow"), radius: 2, x: 0, y: 3)
-            } //NavigationLink
-            
-        }
-    }
-}

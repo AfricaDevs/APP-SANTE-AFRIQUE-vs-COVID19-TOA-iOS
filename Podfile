@@ -9,5 +9,7 @@ target 'TOA' do
   
   pod 'Alamofire', '~> 5.2'
   
+  pod 'Charts'
+  
   pod "KenBurns"
 end

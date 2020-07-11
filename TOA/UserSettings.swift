@@ -10,6 +10,7 @@ import Foundation
 class UserSettings: ObservableObject {
     //true for default , false for Bigger
     @Published var textSize : Bool =
-        UserDefaults.standard.bool(forKey: "textSize") 
+        UserDefaults.standard.bool(forKey: "textSize")
     
+     
 }

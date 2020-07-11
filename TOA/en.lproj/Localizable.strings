@@ -7,10 +7,12 @@
 */
 
 "back" ="back";
+"dateFormat" = "MM-dd-yyyy";
 
 "mainConfirmedCases"="Confirmed";
 "mainRecoveredCases"="Recovered";
 "mainDeceasedCases"="Deaths";
+"mainActiveCases"="Active";
 
 "mainIntro" = "Researchers, doctors, scientists and designers have created this application just for TOÂ « you » in order to promote Best Practices for dealing with the Covid-19 pandemic in Africa.";
 "mainPreventionButtonTitle" = "HOW\nTO PROTECT\nYOURSELF EVERYDAY?";

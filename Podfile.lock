@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (5.2.1)
   - CalmParametricAnimations (1.0.1)
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
   - KenBurns (0.4.0):
     - CalmParametricAnimations (~> 1.0.1)
     - Kingfisher (~> 5.0)
@@ -10,21 +13,24 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - Charts
   - KenBurns
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CalmParametricAnimations
+    - Charts
     - KenBurns
     - Kingfisher
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   CalmParametricAnimations: 8747c67d71e07be5e5b3b9d524560d1fbe74be94
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
   KenBurns: a5a1638197e7a4b8c8fd580f56d77aa7bf5f7fa1
   Kingfisher: 7b64389a43139c903ec434788344c288217c792d
 
-PODFILE CHECKSUM: 533a0e1011c3efedd472e8ed12802b144bc49b1d
+PODFILE CHECKSUM: 2b5faf327322bc89c304fc4e5574b5e42710354c
 
 COCOAPODS: 1.9.3
