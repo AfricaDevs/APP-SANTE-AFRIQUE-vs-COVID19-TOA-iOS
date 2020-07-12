@@ -16,7 +16,12 @@ struct PieChartSwiftUI: UIViewRepresentable {
     
     let countryCs: CountryCases = CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0))
      
-    let parties = [NSLocalizedString("mainConfirmedCases", comment: ""),NSLocalizedString("mainRecoveredCases", comment: ""), NSLocalizedString("mainDeceasedCases", comment: ""),NSLocalizedString("mainActiveCases", comment: "")]
+    let parties = [
+        NSLocalizedString("mainConfirmedCases", comment: ""),
+        NSLocalizedString("mainRecoveredCases", comment: ""),
+        NSLocalizedString("mainDeceasedCases", comment: ""),
+        NSLocalizedString("mainActiveCases", comment: "")
+    ]
     
     let pieChart = PieChartView()
     
@@ -35,30 +40,42 @@ struct PieChartSwiftUI: UIViewRepresentable {
         let entries = [
             PieChartDataEntry(value: 100,
             label: parties[0]), //Total cases
-            PieChartDataEntry(value:  countryCases.confirmed.value <= 0 ? 0 : Double(countryCases.recovered.value * 100 / countryCases.confirmed.value),
-            label: parties[1]), //Recovered
+            
+            
             PieChartDataEntry(value:  countryCases.confirmed.value <= 0 ? 0 : Double(countryCases.deaths.value * 100 / countryCases.confirmed.value),
             label: parties[2]), // Deaths
+            
+            
             PieChartDataEntry(value:  countryCases.confirmed.value <= 0 ? 100 :
                 100 - (
                     Double(countryCases.deaths.value * 100 / countryCases.confirmed.value)
                         +
                     Double(countryCases.recovered.value * 100 / countryCases.confirmed.value)
                 ), // Active cases = Total - (Recovered + Dead)
-            label: parties[3])
-            ]
+            label: parties[3]),
+            
+            PieChartDataEntry(value:  countryCases.confirmed.value <= 0 ? 0 : Double(countryCases.recovered.value * 100 / countryCases.confirmed.value),
+            label: parties[1]) //Recovered
+        ]
         
         let set = PieChartDataSet(entries: entries, label: formatDate(stringDate: countryCases.lastUpdate))
         set.drawIconsEnabled = true
-        set.sliceSpace = 3
+        set.sliceSpace = 1
          
         set.colors = [
         
         NSUIColor(red: 64/255.0, green: 89/255.0, blue: 128/255.0, alpha: 1.0),
-        NSUIColor(red: 100/255.0, green: 204/255.0, blue: 180/255.0, alpha: 1.0),//vert
         NSUIColor(red: 200/255.0, green: 100/255.0, blue: 120/255.0, alpha: 1.0),//rouge
-        NSUIColor(red: 52/255.0, green: 152/255.0, blue: 219/255.0, alpha: 1.0)
+        NSUIColor(red: 52/255.0, green: 152/255.0, blue: 219/255.0, alpha: 1.0),
+        NSUIColor(red: 100/255.0, green: 204/255.0, blue: 180/255.0, alpha: 1.0)//vert
         ]
+        
+        set.valueLinePart1OffsetPercentage = 0.6
+        set.valueLinePart1Length = 0.25
+        set.valueLinePart2Length = 0.4
+         
+         
+        set.yValuePosition = .insideSlice
         
         let data = PieChartData(dataSet: set)
         
@@ -66,18 +83,20 @@ struct PieChartSwiftUI: UIViewRepresentable {
         pFormatter.numberStyle = .percent
         pFormatter.maximumFractionDigits = 1
         pFormatter.multiplier = 1
-        pFormatter.percentSymbol = " %"
+        pFormatter.percentSymbol = "%"
         data.setValueFormatter(DefaultValueFormatter(formatter: pFormatter))
          
         data.setValueTextColor(.yellow)
         pieChart.data = data
         pieChart.highlightValues(nil)
+        
     }
     func makeUIView(context: UIViewRepresentableContext<PieChartSwiftUI>) -> UIView {
          
         refresh(countryCases: countryCs)
         
         pieChart.animate(xAxisDuration: 1.4, yAxisDuration: 1.4)
+         
         return pieChart
     }
 
