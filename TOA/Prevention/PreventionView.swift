@@ -11,6 +11,17 @@ import CoreLocation
 
 struct PreventionView: View {
     let data = DataLoader(jsonFileName: "preventionOptionsArray")
+    let preventionOptions =
+    [
+        Prevention(id: 1,title:"preventionOption1",lottieFileName:"lottie_covid_hands"),
+            Prevention(id:2,title:"preventionOption2",lottieFileName:"lottie_covid_mask"),
+           Prevention(id:3,title:"preventionOption3",lottieFileName:"lottie_social_distancing"),
+            Prevention(id:4,title:"preventionOption4",lottieFileName:"covid_doctor"),
+           Prevention(id:5,title:"preventionOption5",lottieFileName:"lottie_water"),
+           Prevention(id:6,title:"preventionOption6",lottieFileName:"lottie_trash_clean"),
+           Prevention(id:7,title:"preventionOption7",lottieFileName:"lottie_sad")
+    ]
+    
     @EnvironmentObject var settings: UserSettings
     
     var body: some View {
@@ -19,7 +30,7 @@ struct PreventionView: View {
           
             
             List{
-                ForEach(data.preventionArray){ prevention in
+                ForEach(preventionOptions){ prevention in
                     
                     NavigationLink(destination:PreventionDetailControlerView(preventionItem: prevention, preventionOptionIndex: 2) /* Ambiguous Ternary to send the right Detail View */
                           
@@ -30,7 +41,7 @@ struct PreventionView: View {
                                 .frame(width: 80, height: 60)
                                 .padding(.all, 2)
                             
-                            Text(prevention.getTitle).font(self.settings.textSize ? .body :  .system(size: 19))
+                            Text(NSLocalizedString(prevention.getTitle, comment: "")).font(self.settings.textSize ? .body :  .system(size: 19))
                             
                             }.padding(.all, 5)
                     

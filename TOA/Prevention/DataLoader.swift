@@ -10,7 +10,7 @@ import Foundation
 
 public class DataLoader : ObservableObject {
     
-@Published var preventionArray = [Prevention]()
+    @Published var preventionArray = [Prevention]()
     @Published var countriesArray : Array<Country> = [Country]()
     
            var jsonFileName : String

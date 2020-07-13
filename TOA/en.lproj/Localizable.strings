@@ -33,9 +33,19 @@
 /* PREVENTIONS resources*/
 "preventionToolbarTitle" = "HOW TO PROTECT YOURSELF EVERYDAY?";
 "preventionToolbarTitleShort" = "HOW TO PROTECT YOURSELF?";
+
+"preventionOption1"="Why, when and how to wash your hands?";
+"preventionOption2"="Why, when and how to make, wear and wash a mask?";
+"preventionOption3"="Why, when and how to get around?";
+"preventionOption4"="What can I eat to help my body fight?";
+"preventionOption5"="How do I manage the water?";
+"preventionOption6"="How do I manage household waste?";
+"preventionOption7"="How do I manage a person's funeral?";
+
 "lWhy"="Why ?";
 "lHow"="How ?";
 "lWhen"="When ?";
+
 
      /* PREVENTIONS Funerals*/
 "preventionFuneralsTitle" = "How to organize the funeral of deceased Covid-19 patients?";
