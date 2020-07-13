@@ -20,16 +20,25 @@
 "mainAnalysisComment" = "et recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
 
 "credits" = "A Propos";
+"appMore" = "Plus";
 "btnPrivacyPolicies" = "Politiques de Confidentialité";
 
 "privacyPoliciesHint" ="En utilisant cette application, vous acceptez les ";
 
-
+/* APP ABOUT*/
+"aboutAddress" = "Collectif TOÂ\n17 rue Duguay-Trouin\n75006 Paris";
+"aboutContacts"="Tel: +33 0613411835\ncollectif.toa@gmail.com";
+/* END APP ABOUT*/
 
 
 /* PREVENTIONS resources*/
 "preventionToolbarTitle" = "COMMENT SE POTEGER TOUS LES JOURS?";
 "preventionToolbarTitleShort" = "COMMENT SE POTEGER?";
+
+"lWhy"="Pourquoi ?";
+"lHow"="Comment ?";
+"lWhen"="Qand ?";
+
      /* PREVENTIONS Funerals*/
 "preventionFuneralsTitle" = "Comment organiser les obsèques de patients décédés du Covid-19?";
 "preventionFuneralsToolbarTitle" = "Obsèques";
@@ -56,7 +65,46 @@ les tombes sont numérotées,
 un dispositif de géolocalisation est  mis en place afin d’associer le domicile du défunt à sa tombe. (?? en AF )
 Accompagnement de la famille et des proches endeuillés";
 
+
 "CICRWebsite"="https://www.icrc.org/fr";
      /* PREVENTIONS Funerals END --------- -----------  --------- -------- */
+
+
+/* PREVENTION HANDS */
+"preventionHandsToolbarTitle"="Lavage des mains";
+"handsWhy" = "Le lavage des mains\n\nLes virus respiratoires tels que la maladie à coronavirus (COVID-19) se propagent lorsque du mucus ou des gouttelettes contenant le virus pénètrent dans votre corps par l\’intermédiaire de votre bouche, votre nez et vos yeux.
+
+Le plus souvent, ce contact a lieu par les mains. \n\nLes mains sont également l\’une des manières les plus courantes de transmettre le virus d\’une personne à une autre.
+
+Durant une pandémie, le fait de se laver fréquemment les mains avec de l\’eau et du savon fait partie des mesures les plus économiques, les plus faciles et les plus importantes pour prévenir la propagation d\’un virus.";
+ 
+/* HOW SCREEN */
+"preventionHow1"="Paume contre paume";
+"preventionHow2"="Le dos des mains";
+"preventionHow3"="Entre les doigts";
+"preventionHow4"="Le dos des doigts";
+"preventionHow5"="Les pouces";
+"preventionHow6"="Le bout des doigts et les angles";
+
+/* WHEN SCREEN */
+"preventionWhen1"="Avant de toucher vos yeux, votre nez ou votre bouche, car c'est par là que les germes
+pénètrent dans notre corps.";
+"preventionWhen2"="Avant, pendant et après la préparation des aliments";
+"preventionWhen3"="Avant de manger";
+"preventionWhen4"="Avant et après la prise en charge d'une personne à domicile souffrant de vomissements
+ou de diarrhée";
+"preventionWhen5"="Avant et après le traitement d'une coupure ou d'une plaie";
+"preventionWhen6"="Après avoir utilisé les toilettes";
+"preventionWhen7"="Après avoir changé des couches ou nettoyé un enfant qui a utilisé les toilettes";
+"preventionWhen8"="Après s'être mouché, avoir toussé ou éternué";
+"preventionWhen9"="Après avoir touché un animal, des aliments pour animaux ou des déchets d'animaux";
+"preventionWhen10"="Après avoir touché des ordures";
+"preventionWhen11"="Après avoir été dans un lieu public et avoir touché un objet ou une surface qui peut
+être fréquemment touché par d'autres personnes, comme les poignées de porte, les
+tables, les pompes à essence";
+
+/* PREVENTION HANDS END  --------- -----------  --------- -------- */
+
+
 
 /* END PREVENTION RESOURCES */

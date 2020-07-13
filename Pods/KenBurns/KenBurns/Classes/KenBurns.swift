@@ -300,9 +300,8 @@ func ==(lhs: KenBurnsAnimation, rhs: KenBurnsAnimation) -> Bool {
     }
 
     func didFinishAnimation(_ animation: KenBurnsAnimation) {
-        
-        //animations.remove(animation)
-        //queueNextImage()
+        animations.remove(animation)
+        queueNextImage()
     }
     
     func nextImage() {
@@ -316,7 +315,6 @@ func ==(lhs: KenBurnsAnimation, rhs: KenBurnsAnimation) -> Bool {
     
     func queueNextImage() {
         if remoteQueue  {
-            
             if imagePlaceholders == nil {
                 nextImageView.kf.setImage(with: imageURLs!.read()!, placeholder: nil, options: [.transition(.fade(0.2))])
                 nextImageView.kf.indicatorType = .activity
@@ -325,10 +323,8 @@ func ==(lhs: KenBurnsAnimation, rhs: KenBurnsAnimation) -> Bool {
                 nextImageView.kf.setImage(with: imageURLs!.read()!, placeholder: nil, options: [.transition(.fade(0.2))])
                 nextImageView.kf.indicatorType = .activity
             }
-            
         } else {
-            
-            nextImageView.image = currentImageView.image// imageQueue!.read()
+            nextImageView.image = imageQueue!.read()
         }
 
     }
