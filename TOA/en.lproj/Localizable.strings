@@ -21,13 +21,21 @@
 
 "privacyPoliciesHint" = "By using this App, you agree to Collectif-TOÂ <b>Privacy Policies</b>";
  
-"credits" = "About";
+ "credits" = "About";
+ "appMore" = "More";
 "btnPrivacyPolicies" = "Privacy Policies";
 
+/* APP ABOUT*/
+"aboutAddress" = "Collectif TOÂ\n17 rue Duguay-Trouin\n75006 Paris";
+"aboutContacts"="Tel: +33 0613411835\ncollectif.toa@gmail.com"; 
+/* END APP ABOUT*/
 
 /* PREVENTIONS resources*/
 "preventionToolbarTitle" = "HOW TO PROTECT YOURSELF EVERYDAY?";
 "preventionToolbarTitleShort" = "HOW TO PROTECT YOURSELF?";
+"lWhy"="Why ?";
+"lHow"="How ?";
+"lWhen"="When ?";
 
      /* PREVENTIONS Funerals*/
 "preventionFuneralsTitle" = "How to organize the funeral of deceased Covid-19 patients?";
@@ -56,5 +64,36 @@ Accompagnement de la famille et des proches endeuillés";
 
 "CICRWebsite"="https://www.icrc.org";
      /* PREVENTIONS Funerals END --------- -----------  --------- -------- */
+
+/* PREVENTION HANDS */
+"preventionHandsToolbarTitle"="Lavage des mains";
+"handsWhy" = "Hand washing\n\nRespiratory viruses such as coronavirus disease (COVID-19) spread when mucus or droplets containing the virus enter your body through your mouth, nose, and eyes.
+
+Most often, this contact takes place by the hands.\n\nHands are also one of the most common ways of spreading the virus from one person to another.
+
+Washing a hand frequently with soap and water during a pandemic is one of the most economical, easiest and most important measures to prevent the spread of a virus.";
+
+/* HOW SCREEN */
+"preventionHow1"="Palm against palm";
+"preventionHow2"="Back of hands";
+"preventionHow3"="Between the fingers";
+"preventionHow4"="Back of fingers";
+"preventionHow5"="Thumbs";
+"preventionHow6"="Fingertips and angles";
+
+/* WHEN SCREEN */
+"preventionWhen1"="Before touching your eyes, nose or mouth, because this is where germs enter our body.";
+"preventionWhen2"="Before, during and after food cooking";
+"preventionWhen3"="Before eating";
+"preventionWhen4"="Before and after taking care of a person at home suffering from vomiting or diarrhea";
+"preventionWhen5"="Before and after treatment of a cut or wound";
+"preventionWhen6"="After using the toilet";
+"preventionWhen7"="After changing diapers or cleaning a child who has used the toilet";
+"preventionWhen8"="After blowing your nose, coughing or sneezing";
+"preventionWhen9"="After touching an animal, animal feed, or animal waste";
+"preventionWhen10"="After touching garbage";
+"preventionWhen11"="After being in a public place and touching an object or a surface that can be frequently touched by other people, such as doorknobs, tables, gas pumps";
+/* PREVENTION HANDS END */
+
 
 /* AND PREVENTION RESOURCES */
