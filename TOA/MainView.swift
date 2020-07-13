@@ -21,6 +21,7 @@ struct MainView: View {
     
     @State private var scrollViewContentOffset = CGFloat(0)
     @State private var buttonOnTapAnimationStatus = false
+    @State private var showingMore = false
     @State var selection : Country = Country(id: 0, name: "Congo (Brazzaville)", iso2: "cg", iso3: "cg") //initialized country to Congo
     
     @State var mathdroApiCountryResult : CountryCases = CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0)) //The default value of cases in a country are 0 util the API load remote data
@@ -166,8 +167,7 @@ struct MainView: View {
                                     }.padding(EdgeInsets(top:  /* status bar heigh - safeArea top padding defined in the parent view*/   80  , leading: .zero, bottom: 2, trailing: .zero))
                                     
                                 } .padding(EdgeInsets(top: geometry.safeAreaInsets.top + 10, leading: 10, bottom: 10, trailing: 10))
-                                
-                                
+                                 
                                 
                                 HStack{
                                     Text("mainIntro")
@@ -189,28 +189,35 @@ struct MainView: View {
                                 Text("mainAnalysisComment")
                                     .font( self.settings.textSize ? .subheadline : .system(size: 16))
                                     .multilineTextAlignment(.center)
-                                    .padding(EdgeInsets(top: 4, leading: 13, bottom: 20, trailing: 13))
-                                //no padding is needed bewteen the last button and this text. The purpose is make them look like one
+                                    .background(Color.white)
                                 
+                                    .padding(EdgeInsets(top: 7, leading: 9, bottom: 0, trailing: 9))
+                                .offset(x: 0, y: 3)
+                                    .cornerRadius(3)
+                                    
+                                //no padding is needed bewteen the last button and this text. The purpose is make them look like one
                                 
                                 HStack{
                                     Spacer()
                                     ZStack{
                                         
                                         self.chartView
-                                        .frame(width: 335, height: 330)
+                                            .frame(width: 335, height: 330)
+                                            .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+                                         
                                         
                                         VStack{
                                             Image(self.selection.iso2.lowercased())
                                                 .aspectRatio(contentMode: ContentMode.fit)
                                             Text(self.selection.name)
                                                 .font(.system(size: 9))
-                                        }.offset(x: -8, y: 0)
+                                        }.offset(x: -8, y: 6)
                                     }
-                                    
-                                    
+                                     
                                     Spacer()
-                                }
+                                }.background(Color.white)
+                                
+                                
                             }//VStack
                             
                         }//Schrollview
@@ -218,8 +225,13 @@ struct MainView: View {
                         
                         HStack{
                             Spacer()
-                            Text("credits")
+                            Text("appMore")
                                 .font(.footnote)
+                                .onTapGesture {
+                                    self.showingMore.toggle()
+                            }/*.sheet(isPresented: self.$showingMore) {
+                                 AboutView()
+                            }*/
                             Spacer()
                             
                             Text("btnPrivacyPolicies")
@@ -235,6 +247,7 @@ struct MainView: View {
                         
                         
                     }//VStack
+                    
                 }.navigationBarTitle("Nav").navigationBarHidden(self.isNavigationBarHidden).edgesIgnoringSafeArea( self.isNavigationBarHidden ? .top : .top)
                 // .onAppear(perform: self.loadCovidData)
                 
@@ -285,4 +298,6 @@ struct MainView_Previews: PreviewProvider {
     }
 }
  
-
+extension Color {
+    static let offWhite = Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
+}

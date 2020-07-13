@@ -17,7 +17,7 @@ struct PreventionDetailControlerView: View {
         VStack(alignment: .leading, spacing:0){
             
             if preventionItem.id == 1 {
-                Text("Hello, TOÂ \(preventionItem.id)!")
+                PreventionHandsView()
             } else if preventionItem.id == 2   {
                 Text("Hello,TOÂ \(preventionItem.id)!")
             } else if preventionItem.id == 3 {
