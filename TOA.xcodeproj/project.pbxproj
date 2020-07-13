@@ -26,8 +26,8 @@
 		2D7A801424BBC5870011AE16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A801324BBC5870011AE16 /* AboutView.swift */; };
 		2D7A801624BBCD880011AE16 /* PreventionHandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A801524BBCD880011AE16 /* PreventionHandsView.swift */; };
 		2D7A803C24BBE0750011AE16 /* BottomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A803824BBE0740011AE16 /* BottomBarItem.swift */; };
-		2D7A803E24BBE0750011AE16 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A803A24BBE0750011AE16 /* BottomBar.swift */; };
 		2D7E5DA124BCF63200011328 /* PreventionHandsWhenItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5DA024BCF63200011328 /* PreventionHandsWhenItemModel.swift */; };
+		2D7E5DA324BD06AF00011328 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5DA224BD06AE00011328 /* BottomBar.swift */; };
 		2D82FCB824B4F8F500196A3F /* PreventionDeathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D82FCB724B4F8F500196A3F /* PreventionDeathsView.swift */; };
 		2D82FCBA24B5CA6D00196A3F /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D82FCB924B5CA6D00196A3F /* UserSettings.swift */; };
 		2D95EC2224B681090034199E /* CustomPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95EC2124B681090034199E /* CustomPieChartView.swift */; };
@@ -78,8 +78,8 @@
 		2D7A801324BBC5870011AE16 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		2D7A801524BBCD880011AE16 /* PreventionHandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionHandsView.swift; sourceTree = "<group>"; };
 		2D7A803824BBE0740011AE16 /* BottomBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarItem.swift; sourceTree = "<group>"; };
-		2D7A803A24BBE0750011AE16 /* BottomBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		2D7E5DA024BCF63200011328 /* PreventionHandsWhenItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionHandsWhenItemModel.swift; sourceTree = "<group>"; };
+		2D7E5DA224BD06AE00011328 /* BottomBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		2D82FCB724B4F8F500196A3F /* PreventionDeathsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionDeathsView.swift; sourceTree = "<group>"; };
 		2D82FCB924B5CA6D00196A3F /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		2D95EC2124B681090034199E /* CustomPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPieChartView.swift; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 		2D7A803724BBDFDB0011AE16 /* BottomBar */ = {
 			isa = PBXGroup;
 			children = (
-				2D7A803A24BBE0750011AE16 /* BottomBar.swift */,
+				2D7E5DA224BD06AE00011328 /* BottomBar.swift */,
 				2D7A803824BBE0740011AE16 /* BottomBarItem.swift */,
 			);
 			path = BottomBar;
@@ -428,6 +428,7 @@
 				2D3648E324B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift in Sources */,
 				2D2C041424B1FEB900D6473A /* DataLoader.swift in Sources */,
 				2D82FCB824B4F8F500196A3F /* PreventionDeathsView.swift in Sources */,
+				2D7E5DA324BD06AF00011328 /* BottomBar.swift in Sources */,
 				2D3648E224B0F1DC0029196F /* TrackableScrollView.swift in Sources */,
 				2DB15BD624AD8445003D2353 /* MainView.swift in Sources */,
 				2D5D845924B9D88500A92532 /* AnalysisButtonView.swift in Sources */,
@@ -445,7 +446,6 @@
 				2D2C040524B1D79600D6473A /* PreventionView.swift in Sources */,
 				2DC5054224BC908300C9416B /* PreventionHandsHowItemModel.swift in Sources */,
 				2DB6AE9824B2BB3F0092A91A /* CustomImage.swift in Sources */,
-				2D7A803E24BBE0750011AE16 /* BottomBar.swift in Sources */,
 				2DB15C0524AF4D74003D2353 /* AnimatedView.swift in Sources */,
 				2D0A293624A65AE300A36C56 /* SceneDelegate.swift in Sources */,
 				2D0A293824A65AE300A36C56 /* ContentView.swift in Sources */,
