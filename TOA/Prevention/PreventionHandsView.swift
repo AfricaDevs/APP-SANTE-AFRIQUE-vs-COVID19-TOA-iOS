@@ -13,9 +13,9 @@ struct PreventionHandsView: View {
     
     @EnvironmentObject var settings: UserSettings
     @State private var selectedIndex = 0
-    let bottomItems = [BottomBarItem(icon: "hand.raised", title: NSLocalizedString("lWhy", comment: ""), color: .green),
-                       BottomBarItem(icon: "hand.raised", title: NSLocalizedString("lHow", comment: ""), color: .blue),
-                       BottomBarItem(icon: "hand.raised", title: NSLocalizedString("lWhen", comment: ""), color: .purple)]
+    let bottomItems = [BottomBarItem(icon: "questionmark.square.dashed", title: NSLocalizedString("lWhy", comment: ""), color: .green),
+                       BottomBarItem(icon: "a.book.closed", title: NSLocalizedString("lHow", comment: ""), color: .blue),
+                       BottomBarItem(icon: "timer.square", title: NSLocalizedString("lWhen", comment: ""), color: .purple)]
     
     var body: some View {
         

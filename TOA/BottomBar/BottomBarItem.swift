@@ -16,7 +16,7 @@ public struct BottomBarItem {
      public init(icon: String,
                  title: String,
                  color: Color) {
-         self = BottomBarItem(icon: Image(systemName: icon),
+         self = BottomBarItem(icon: Image(icon),
                               title: title,
                               color: color)
      }
