@@ -9,8 +9,7 @@
 import SwiftUI
 import CoreLocation
 
-struct PreventionView: View {
-    let data = DataLoader(jsonFileName: "preventionOptionsArray")
+struct PreventionView: View { 
     let preventionOptions =
     [
         Prevention(id: 1,title:"preventionOption1",lottieFileName:"lottie_covid_hands"),

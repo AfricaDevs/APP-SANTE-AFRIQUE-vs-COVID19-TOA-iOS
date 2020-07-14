@@ -19,31 +19,11 @@ public class DataLoader : ObservableObject {
         
         self.jsonFileName = jsonFileName
         
-        if jsonFileName == "preventionOptionsArray" {
-             loadPrevention()
-        } else {
-            loadCountries()
-        }
+        if jsonFileName == "countries_list" {
+             loadCountries()
+        }  
     }
-    
-    func loadPrevention() {
-        
-        
-        if let fileLocation = Bundle.main.url(forResource: "preventionOptionsArray", withExtension: "json")
-        {
-            do {
-                let data = try Data(contentsOf: fileLocation)
-                let jsonDecoder = JSONDecoder()
-                preventionArray = try jsonDecoder.decode([Prevention].self, from: data)
-                //preventionArray = try jsonDecoder.decode([Prevention].self, from: data)
-            } catch {
-                fatalError("impossible de charger preventionOptionsArray du Bundle principal:\n \(error)")
-            }
-        } else {
-            fatalError("impossible de trouver le fichier preventionOptionsArray dans le Bundle principal.\n")
-        }
-        
-    }
+     
     
     func loadCountries() {
         
