@@ -70,14 +70,14 @@ struct MaskWhyView: View {
     }
 }
 
-    
-    
+
+
 struct MaskWhenView: View {
-        
+    
     @EnvironmentObject var settings: UserSettings
     
     var body: some View{
-         
+        
         
         ScrollView{
             VStack {
@@ -87,31 +87,31 @@ struct MaskWhenView: View {
                         .font(  self.settings.textSize ?   .system(size: 20): .system(size: 23))
                     Spacer()
                 }.padding(.bottom, 10)
-                 
+                
                 HStack{
                     Image("mask_when_1")
-
+                    
                     Image("mask_when_2")
                 }
                 
                 Image("mask_when_3")
-            
+                
                 Spacer()
             }.padding()
             
         }
-            
+        
         
     }
 }
 
 struct MaskHowView: View {
-
-     @EnvironmentObject var settings: UserSettings
+    
+    @EnvironmentObject var settings: UserSettings
     
     var body: some View{
-
-
+        
+        
         ScrollView{
             VStack {
                 
@@ -122,23 +122,23 @@ struct MaskHowView: View {
                 }.padding(.bottom, 10)
                 
                 
-
+                
                 HStack{
                     LottieView(animationName: "lottie_covid_hands").frame(width: 150, height: 150)
                     
                     LottieView(animationName: "lottie_covid_mask").frame(width: 150, height: 150)
                 }
-
-               HStack{
-                   Text("preventionMaskHow2")
-                       .font(  self.settings.textSize ?   .system(size: 20) : .system(size: 23))
-                   Spacer()
-               }.padding(.bottom, 10)
+                
+                HStack{
+                    Text("preventionMaskHow2")
+                        .font(  self.settings.textSize ?   .system(size: 20) : .system(size: 23))
+                    Spacer()
+                }.padding(.bottom, 10)
                 
                 Spacer()
             }.padding()
             
         }
-            
+        
     }
 }

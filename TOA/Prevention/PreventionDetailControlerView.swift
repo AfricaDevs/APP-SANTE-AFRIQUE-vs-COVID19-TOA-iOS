@@ -30,8 +30,7 @@ struct PreventionDetailControlerView: View {
                 Text("Hello, TOÂ \(preventionItem.id)!")
                 Text("Image, TOÂ \(preventionItem.id)!")
             } else if preventionItem.id == 6 {
-                Text("Hello, TOÂ \(preventionItem.id)!")
-                Text("Image, TOÂ \(preventionItem.id)!")
+                PreventionGarbageView()
             } else {
                 PreventionDeathsView() 
             }

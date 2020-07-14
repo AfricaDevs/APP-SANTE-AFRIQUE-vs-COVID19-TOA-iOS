@@ -16,7 +16,7 @@ struct PreventionHandsView: View {
     let bottomItems = [BottomBarItem(icon: "questionmark.square.dashed", title: NSLocalizedString("lWhy", comment: ""), color: .green),
                        
                        BottomBarItem(icon: "timer.square", title: NSLocalizedString("lWhen", comment: ""), color: .purple),
-    BottomBarItem(icon: "a.book.closed", title: NSLocalizedString("lHow", comment: ""), color: .blue)
+                       BottomBarItem(icon: "a.book.closed", title: NSLocalizedString("lHow", comment: ""), color: .blue)
     ]
     
     var body: some View {
@@ -69,7 +69,7 @@ struct HandsWhyView: View {
 
 
 struct HandsWhenView: View {
-        
+    
     @EnvironmentObject var settings: UserSettings
     
     let preventionHandsWhenItems    = [
@@ -81,20 +81,20 @@ struct HandsWhenView: View {
     ]
     
     var body: some View{
-         
-            List{
-                ForEach(self.preventionHandsWhenItems){ prevention in
-                    HStack{
-                        Image(systemName: "arrow.turn.down.right")
-                        Text(NSLocalizedString(prevention.title, comment:""))
-                            .font(  self.settings.textSize ?   .body : .system(size: 20))
-                        Spacer()
-                    }
+        
+        List{
+            ForEach(self.preventionHandsWhenItems){ prevention in
+                HStack{
+                    Image(systemName: "arrow.turn.down.right")
+                    Text(NSLocalizedString(prevention.title, comment:""))
+                        .font(  self.settings.textSize ?   .body : .system(size: 20))
+                    Spacer()
                 }
-                
-                
             }
             
+            
+        }
+        
         
     }
 }
@@ -112,24 +112,24 @@ struct HandsHowView: View {
          PreventionHandsHowItemModel(title: "preventionHow6", imageName: "hands_how6")]
     
     var body: some View{
-         
-            List{
-                ForEach(self.preventionHandsHowItems){ prevention in
-                    HStack{
-                         Spacer()
+        
+        List{
+            ForEach(self.preventionHandsHowItems){ prevention in
+                HStack{
+                    Spacer()
                     VStack (alignment: .center, spacing: 0){
                         Image(prevention.imageName)
                         Text(NSLocalizedString(prevention.title, comment:""))
                             .font(  self.settings.textSize ?   .body : .system(size: 20))
-                         
+                        
                     }
-                        Spacer()
-                    }
+                    Spacer()
                 }
-                
-            }.padding()
+            }
             
+        }.padding()
+        
         
     }
 }
-    
+
