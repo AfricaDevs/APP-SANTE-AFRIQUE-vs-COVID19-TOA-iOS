@@ -14,6 +14,7 @@
 		2D0A293A24A65AE700A36C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293924A65AE700A36C56 /* Assets.xcassets */; };
 		2D0A293D24A65AE700A36C56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */; };
 		2D0A294024A65AE700A36C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */; };
+		2D22A62B24BDA38F008CA204 /* PreventionMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D22A62A24BDA38F008CA204 /* PreventionMaskView.swift */; };
 		2D2C040524B1D79600D6473A /* PreventionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C040424B1D79600D6473A /* PreventionView.swift */; };
 		2D2C040E24B1E66B00D6473A /* Prevention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C040D24B1E66B00D6473A /* Prevention.swift */; };
 		2D2C041424B1FEB900D6473A /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C041324B1FEB900D6473A /* DataLoader.swift */; };
@@ -65,6 +66,7 @@
 		2D0A293C24A65AE700A36C56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D0A293F24A65AE700A36C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0A294124A65AE700A36C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D22A62A24BDA38F008CA204 /* PreventionMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionMaskView.swift; sourceTree = "<group>"; };
 		2D2C040424B1D79600D6473A /* PreventionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionView.swift; sourceTree = "<group>"; };
 		2D2C040D24B1E66B00D6473A /* Prevention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevention.swift; sourceTree = "<group>"; };
 		2D2C041324B1FEB900D6473A /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				2D82FCB724B4F8F500196A3F /* PreventionDeathsView.swift */,
 				2D5D845A24B9D89800A92532 /* PreventionButtonView.swift */,
 				2D7A801524BBCD880011AE16 /* PreventionHandsView.swift */,
+				2D22A62A24BDA38F008CA204 /* PreventionMaskView.swift */,
 			);
 			path = Prevention;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				2DC5054224BC908300C9416B /* PreventionHandsHowItemModel.swift in Sources */,
 				2DB6AE9824B2BB3F0092A91A /* CustomImage.swift in Sources */,
 				2DB15C0524AF4D74003D2353 /* AnimatedView.swift in Sources */,
+				2D22A62B24BDA38F008CA204 /* PreventionMaskView.swift in Sources */,
 				2D0A293624A65AE300A36C56 /* SceneDelegate.swift in Sources */,
 				2D0A293824A65AE300A36C56 /* ContentView.swift in Sources */,
 				2DB15BF524AE6992003D2353 /* LottieView.swift in Sources */,

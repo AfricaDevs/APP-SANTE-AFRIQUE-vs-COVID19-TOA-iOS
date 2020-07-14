@@ -113,6 +113,28 @@ tables, les pompes à essence";
 
 /* PREVENTION HANDS END  --------- -----------  --------- -------- */
 
+/* PREVENTION MASK */
+
+"preventionMaskToolbarTitle"="Porter un masque";
+/* WHY SCREEN */
+"preventionMaskWhy" ="Pour ralentir la propagation du virus protéger les personnes fragiles (vos proches, personnes âgées et malades autour de vous)";
+
+/* HOW SCREEN */
+"preventionMaskWhen" ="Dans les lieux publics où toutes autres mesures de distanciation sociale sont difficiles à maintenir partout à l’extérieur, dans les épiceries, les pharmacies, les marchés dans les zones de transmission communautaire importante";
+
+/* WHEN SCREEN */
+"preventionMaskHow1"="Avant tout, se laver les mains avant de porter le masque";
+"preventionMaskHow2"="Le masque doit:
+* s'adapter parfaitement mais confortablement sur le côté du visage
+* être attaché avec des élastiques/cordons autour des oreilles
+* permettre de respirer sans restriction (etc…) => mettre la suite sur page suivante…";
+/* PREVENTION MASK END --------- -----------  --------- -------- */
 
 
+/* PREVENTION GARBAGE */
+"preventionGarbage1"="Jeter ses mouchoirs, gants et masques à usage unique dans un sac dans une poubelle avec couvercle.
+Fermer soigneusement le sac poubelle et conserver 24 heures avant d'être jeté dans le container d'ordures ménagères ou mettre dans un second sac poubelle et fermer celui-ci.
+Se laver les mains soigneusement à l'eau savonneuse ou au gel hydroalcoolique après cette opération.";
+"preventionGarbage2"="Encore plus que jamais, veiller à ne surtout pas jeter ses mouchoirs et masques par terre.";
+/* PREVENTION MASK END --------- -----------  --------- -------- */
 /* END PREVENTION RESOURCES */

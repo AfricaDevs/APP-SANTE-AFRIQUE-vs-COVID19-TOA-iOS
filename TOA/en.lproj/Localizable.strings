@@ -77,6 +77,8 @@ Accompagnement de la famille et des proches endeuillés";
 
 /* PREVENTION HANDS */
 "preventionHandsToolbarTitle"="Lavage des mains";
+
+/* WHY SCREEN */
 "handsWhy" = "Hand washing\n\nRespiratory viruses such as coronavirus disease (COVID-19) spread when mucus or droplets containing the virus enter your body through your mouth, nose, and eyes.
 
 Most often, this contact takes place by the hands.\n\nHands are also one of the most common ways of spreading the virus from one person to another.
@@ -92,7 +94,7 @@ Washing a hand frequently with soap and water during a pandemic is one of the mo
 "preventionHow6"="Fingertips and angles";
 
 /* WHEN SCREEN */
-"preventionWhen1"="Before touching your eyes, nose or mouth, because this is where germs enter our body.";
+"preventionWhen1"="Before touching your eyes, nose or mouth, because this is where germs enter our body";
 "preventionWhen2"="Before, during and after food cooking";
 "preventionWhen3"="Before eating";
 "preventionWhen4"="Before and after taking care of a person at home suffering from vomiting or diarrhea";
@@ -103,7 +105,31 @@ Washing a hand frequently with soap and water during a pandemic is one of the mo
 "preventionWhen9"="After touching an animal, animal feed, or animal waste";
 "preventionWhen10"="After touching garbage";
 "preventionWhen11"="After being in a public place and touching an object or a surface that can be frequently touched by other people, such as doorknobs, tables, gas pumps";
-/* PREVENTION HANDS END */
+/* PREVENTION HANDS END --------- -----------  --------- -------- */
 
+
+/* PREVENTION MASK */
+"preventionMaskToolbarTitle"="Wear a mask";
+/* WHY SCREEN */
+"preventionMaskWhy" ="Pour ralentir la propagation du virus protéger les personnes fragiles (vos proches, personnes âgées et malades autour de vous)";
+
+/* HOW SCREEN */
+"preventionMaskWhen" ="Dans les lieux publics où toutes autres mesures de distanciation sociale sont difficiles à maintenir partout à l’extérieur, dans les épiceries, les pharmacies, les marchés dans les zones de transmission communautaire importante";
+
+/* WHEN SCREEN */
+"preventionMaskHow1"="Avant tout, se laver les mains avant de porter le masque";
+"preventionMaskHow2"="Le masque doit:
+* s'adapter parfaitement mais confortablement sur le côté du visage
+* être attaché avec des élastiques/cordons autour des oreilles
+* permettre de respirer sans restriction (etc…) => mettre la suite sur page suivante…";
+/* PREVENTION MASK END --------- -----------  --------- -------- */
+
+
+/* PREVENTION GARBAGE */
+"preventionGarbage1"="Throw away disposable handkerchiefs, gloves and masks in a bag in a bin with lid.
+Close the garbage bag carefully and keep 24 hours before being thrown into the household waste container or put in a second garbage bag and close it.
+Wash your hands thoroughly with soapy water or hydroalcoholic gel after this operation.";
+"preventionGarbage2"="Even more than ever, take care not to throw your handkerchiefs and masks on the ground.";
+/* PREVENTION MASK END --------- -----------  --------- -------- */
 
 /* AND PREVENTION RESOURCES */

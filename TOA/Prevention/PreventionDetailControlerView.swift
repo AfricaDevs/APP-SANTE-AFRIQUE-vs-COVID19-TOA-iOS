@@ -19,7 +19,7 @@ struct PreventionDetailControlerView: View {
             if preventionItem.id == 1 {
                 PreventionHandsView()
             } else if preventionItem.id == 2   {
-                Text("Hello,TOÂ \(preventionItem.id)!")
+                PreventionMaskView()
             } else if preventionItem.id == 3 {
                 Text("Hello,TOÂ \(preventionItem.id)!")
                 Text("Image, TOÂ \(preventionItem.id)!")
