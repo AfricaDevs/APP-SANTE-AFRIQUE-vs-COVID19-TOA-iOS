@@ -16,7 +16,6 @@
 		2D0A294024A65AE700A36C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */; };
 		2D2C040524B1D79600D6473A /* PreventionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C040424B1D79600D6473A /* PreventionView.swift */; };
 		2D2C040E24B1E66B00D6473A /* Prevention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C040D24B1E66B00D6473A /* Prevention.swift */; };
-		2D2C041224B1FDF500D6473A /* preventionOptionsArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D2C041124B1FDF500D6473A /* preventionOptionsArray.json */; };
 		2D2C041424B1FEB900D6473A /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C041324B1FEB900D6473A /* DataLoader.swift */; };
 		2D3648E224B0F1DC0029196F /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */; };
 		2D3648E324B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */; };
@@ -68,7 +67,6 @@
 		2D0A294124A65AE700A36C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D2C040424B1D79600D6473A /* PreventionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionView.swift; sourceTree = "<group>"; };
 		2D2C040D24B1E66B00D6473A /* Prevention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevention.swift; sourceTree = "<group>"; };
-		2D2C041124B1FDF500D6473A /* preventionOptionsArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = preventionOptionsArray.json; sourceTree = "<group>"; };
 		2D2C041324B1FEB900D6473A /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollOffsetPreferenceKey.swift; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				2DB6AE9224B2A65E0092A91A /* countries_list.json */,
-				2D2C041124B1FDF500D6473A /* preventionOptionsArray.json */,
 				2DB15BD724AE46DD003D2353 /* Lottie */,
 			);
 			path = Resources;
@@ -363,7 +360,6 @@
 				2DB15BE824AE46DE003D2353 /* covid_armor.json in Resources */,
 				2DB6AE9124B29D790092A91A /* Countries.xcassets in Resources */,
 				2DB15BE524AE46DE003D2353 /* lottie_social_distancing.json in Resources */,
-				2D2C041224B1FDF500D6473A /* preventionOptionsArray.json in Resources */,
 				2DB15BE224AE46DE003D2353 /* lottie_trash_clean.json in Resources */,
 				2DB15BE924AE46DE003D2353 /* lottie_location.json in Resources */,
 				2DB6AE8924B23E6F0092A91A /* Localizable.strings in Resources */,

@@ -35,6 +35,14 @@
 "preventionToolbarTitle" = "COMMENT SE POTEGER TOUS LES JOURS?";
 "preventionToolbarTitleShort" = "COMMENT SE POTEGER?";
 
+"preventionOption1"="Pourquoi, quand et comment se laver les mains?";
+"preventionOption2"="Pourquoi, quand et comment fabriquer, porter et laver un masque?";
+"preventionOption3"="Pourquoi, quand et comment se déplacer?";
+"preventionOption4"="Que puis-je manger pour aider mon organisme à lutter?";
+"preventionOption5"="Comment je gère l’eau?";
+"preventionOption6"="Comment je gère les déchets ménagers?";
+"preventionOption7"="Comment je gère les obsèques d’une personne?";
+
 "lWhy"="Pourquoi ?";
 "lHow"="Comment ?";
 "lWhen"="Qand ?";
