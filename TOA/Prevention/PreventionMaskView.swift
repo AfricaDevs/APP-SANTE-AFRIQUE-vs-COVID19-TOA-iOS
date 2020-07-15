@@ -85,7 +85,7 @@ struct MaskWhenView: View {
                 HStack{
                     Text("preventionMaskWhen")
                         .font(  self.settings.textSize ?   .system(size: 20): .system(size: 23))
-                    Spacer()
+                     
                 }.padding(.bottom, 10)
                 
                 HStack{
@@ -118,7 +118,7 @@ struct MaskHowView: View {
                 HStack{
                     Text("preventionMaskHow1")
                         .font(  self.settings.textSize ?   .body : .system(size: 20))
-                    Spacer()
+                    
                 }.padding(.bottom, 10)
                 
                 
@@ -132,7 +132,7 @@ struct MaskHowView: View {
                 HStack{
                     Text("preventionMaskHow2")
                         .font(  self.settings.textSize ?   .system(size: 20) : .system(size: 23))
-                    Spacer()
+                    
                 }.padding(.bottom, 10)
                 
                 Spacer()

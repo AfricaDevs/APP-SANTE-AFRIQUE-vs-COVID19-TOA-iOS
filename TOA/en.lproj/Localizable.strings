@@ -47,34 +47,6 @@
 "lWhen"="When ?";
 
 
-     /* PREVENTIONS Funerals*/
-"preventionFuneralsTitle" = "How to organize the funeral of deceased Covid-19 patients?";
-"preventionFuneralsToolbarTitle" = "Funeral";
-"preventionFuneralsCICRLink" = "visit website";
-
-"preventionFuneralsBody1"="Plans de préparation et de gestion garantissant le respect de la dignité des défunts et de leurs familles.
-Les mesures exceptionnelles visent à
-* protéger  les soignants, la famille, la communauté
-* éviter la propagation du virus
-Nécessité d’un dispositif respectant les spécificités des rituels ancestrales et les croyances pour la qualification d’un “Enterrement  Digne et Sécurisé ";
-
-"preventionFuneralsTitle2"="Dispositif au domicile ou au sein de la communauté";
-"preventionFuneralsBody2"="La Croix Rouge locale recommande des procédure basée sur des spécificités locales
-* mesures de protection spécifiques aux soignants port de combinaisons + masque + gants
-* désinfection par pulvérisations du logement du défunt (chaulage)";
-
-"preventionFuneralsTitle3"="Combien de personnes peuvent assister aux obsèques?";
-"preventionFuneralsBody3"="En chambre funéraire : 2 maximum
-Lors de cérémonie religieuse: 20 maximum
-
-Au cimetière :
-les tombes sont numérotées,
-un dispositif de géolocalisation est  mis en place afin d’associer le domicile du défunt à sa tombe. (?? en AF )
-Accompagnement de la famille et des proches endeuillés";
-
-"CICRWebsite"="https://www.icrc.org";
-     /* PREVENTIONS Funerals END --------- -----------  --------- -------- */
-
 /* PREVENTION HANDS */
 "preventionHandsToolbarTitle"="Lavage des mains";
 
@@ -125,14 +97,59 @@ Washing a hand frequently with soap and water during a pandemic is one of the mo
 /* PREVENTION MASK END --------- -----------  --------- -------- */
 
 
-/* PREVENTION GARBAGE */
-"preventionGarbageToolbarTitle"="Garbage management";
+/* PREVENTION MOVEMENT */
 
-"preventionGarbage1"="Throw away disposable handkerchiefs, gloves and masks in a bag in a bin with lid.
-Close the garbage bag carefully and keep 24 hours before being thrown into the household waste container or put in a second garbage bag and close it.
-Wash your hands thoroughly with soapy water or hydroalcoholic gel after this operation.";
-"preventionGarbage2"="Even more than ever, take care not to throw your handkerchiefs and masks on the ground.";
-/* PREVENTION MASK END --------- -----------  --------- -------- */
+"preventionMovementToolbarTitle"="Gestion des déplacements";
+
+"preventionMovementTitleWhy"="Pourquoi réduire ses déplacements?";
+"preventionMovementTitleWhen"="Quand se déplacer?";
+"preventionMovementTitleHow"="Comment se déplacer?";
+
+"preventionMovementWhy"="Evitez les foules, Pratiquez la distanciation sociale.
+S\'abstenir de toute sortie non indispensable dans un lieu public. Ne participer à aucun regroupement, qu'il soit de nature professionnelle, sociale ou familiale.
+
+Eviter tout contact avec des personnes vulnérables (personnes âgées…). Eviter de fréquenter de lieux où se trouvent des personnes fragiles (hôpitaux, maternités, structures d'hébergement pour personnes âgées...)";
+
+"preventionMovementWhen1"="Evitez tout contact raproché, y compris les salutations et les accolades avec les autres";
+"preventionMovementWhen2"="Maintenez une distance d'au moins 1m avec les autres personnes";
+"Maintenez une distance d'au moins 1m avec les autres personnes";
+"preventionMovementWhen3"="Evitez les attroupements, les lieux et les transports publics";
+
+"preventionMovementHow"="Nommer une personne plus jeune et en bonne santé de faire les courses pendant toute la période de pandémie.";
+/* PREVENTION MOVEMENT END --------- -----------  --------- -------- */
+
+
+/* PREVENTION FOOD */
+"preventionFoodDrinkToolbarTitle"="Alimentation";
+
+"tabFood"="aliments à privilégier?";
+"tabDrinks"="boissons récommandées";
+
+"preventionDrinkTitle"="Quelles sont les boissons froides et chaudes que je peux consommer?";
+
+"preventionFoodTitle"="Quels sont les aliments à privilégier?";
+"preventionFood"="Les aliments à privilégier sont ceux qui contiennent:
+Vitamine C
+-> 2-4 grammes/jour
+-> pendant 10 jours
+
+Vitamine D
+
+1500-2000 UI/J
+
+Vitamine A
+
+Vitamine E
+
+Zinc
+-> 30 mg par jour
+-> pendant 10 jours
+-> à jeun à distance des repas.
+
+Aliments riches en Vitamines et Zinc recommandés pour lutter contre le Covid19";
+"preventionDrinkTitle"="Quelles sont les boissons froides et chaudes que je peux consommer?";
+/* PREVENTION FOOD END --------- -----------  --------- -------- */
+
 
 /* PREVENTION WATER */
 "preventionConsumptionWater1"="On 4 15th 2020
@@ -161,48 +178,41 @@ Use active lime to disinfect excrement (liming)";
 /* PREVENTION WATER END --------- -----------  --------- -------- */
 
 
-/* PREVENTION MOVEMENT */
-"preventionMovementTitleWhy"="Pourquoi réduire ses déplacements?";
-"preventionMovementTitleWhen"="Quand se déplacer?";
-"preventionMovementTitleHow"="Comment se déplacer?";
+/* PREVENTION GARBAGE */
+"preventionGarbageToolbarTitle"="Garbage management";
 
-"preventionMovementWhy"="Evitez les foules, Pratiquez la distanciation sociale.
-S\'abstenir de toute sortie non indispensable dans un lieu public. Ne participer à aucun regroupement, qu'il soit de nature professionnelle, sociale ou familiale.
+"preventionGarbage1"="Throw away disposable handkerchiefs, gloves and masks in a bag in a bin with lid.
+Close the garbage bag carefully and keep 24 hours before being thrown into the household waste container or put in a second garbage bag and close it.
+Wash your hands thoroughly with soapy water or hydroalcoholic gel after this operation.";
+"preventionGarbage2"="Even more than ever, take care not to throw your handkerchiefs and masks on the ground.";
+/* PREVENTION GARBAGE END --------- -----------  --------- -------- */
 
-Eviter tout contact avec des personnes vulnérables (personnes âgées…). Eviter de fréquenter de lieux où se trouvent des personnes fragiles (hôpitaux, maternités, structures d'hébergement pour personnes âgées...)";
 
-"preventionMovementWhen1"="Evitez tout contact raproché, y compris les salutations et les accolades avec les autres";
-"preventionMovementWhen2"="Maintenez une distance d\'au moins 1m avec les autres personnes";
-"Maintenez une distance d\'au moins 1m avec les autres personnes";
-"preventionMovementWhen3"="Evitez les attroupements, les lieux et les transports publics";
+/* PREVENTIONS Funerals*/
+"preventionFuneralsTitle" = "How to organize the funeral of deceased Covid-19 patients?";
+"preventionFuneralsToolbarTitle" = "Funeral";
+"preventionFuneralsCICRLink" = "visit website";
 
-"preventionMovementHow"="Nommer une personne plus jeune et en bonne santé de faire les courses pendant toute la période de pandémie.";
-/* PREVENTION MOVEMENT END --------- -----------  --------- -------- */
+"preventionFuneralsBody1"="Plans de préparation et de gestion garantissant le respect de la dignité des défunts et de leurs familles.
+Les mesures exceptionnelles visent à
+* protéger  les soignants, la famille, la communauté
+* éviter la propagation du virus
+Nécessité d’un dispositif respectant les spécificités des rituels ancestrales et les croyances pour la qualification d’un “Enterrement  Digne et Sécurisé ";
 
-/* PREVENTION FOOD */
-"tabFood"="aliments à privilégier?";
-"tabDrinks"="boissons récommandées";
+"preventionFuneralsTitle2"="Dispositif au domicile ou au sein de la communauté";
+"preventionFuneralsBody2"="La Croix Rouge locale recommande des procédure basée sur des spécificités locales
+* mesures de protection spécifiques aux soignants port de combinaisons + masque + gants
+* désinfection par pulvérisations du logement du défunt (chaulage)";
 
-"preventionFoodTitle"="Quels sont les aliments à privilégier?";
-"preventionFoodTitle"="Les aliments à privilégier sont ceux qui contiennent:
-Vitamine C
--> 2-4 grammes/jour
--> pendant 10 jours
+"preventionFuneralsTitle3"="Combien de personnes peuvent assister aux obsèques?";
+"preventionFuneralsBody3"="En chambre funéraire : 2 maximum
+Lors de cérémonie religieuse: 20 maximum
 
-Vitamine D
+Au cimetière :
+les tombes sont numérotées,
+un dispositif de géolocalisation est  mis en place afin d’associer le domicile du défunt à sa tombe. (?? en AF )
+Accompagnement de la famille et des proches endeuillés";
 
-1500-2000 UI/J
-
-Vitamine A
-
-Vitamine E
-
-Zinc
--> 30 mg par jour
--> pendant 10 jours
--> à jeun à distance des repas.
-
-Aliments riches en Vitamines et Zinc recommandés pour lutter contre le Covid19";
-"preventionDrinkTitle"="Quelles sont les boissons froides et chaudes que je peux consommer?";
-/* PREVENTION MOVEMENT END --------- -----------  --------- -------- */
+"CICRWebsite"="https://www.icrc.org";
+     /* PREVENTIONS Funerals END --------- -----------  --------- -------- */
 /* AND PREVENTION RESOURCES */

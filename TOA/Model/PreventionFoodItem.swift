@@ -31,16 +31,14 @@ PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "food_10"), pre
 PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "food_12"), preventionFoodItem2: PreventionFoodItem(image: "food_13"))
 ]
 
-let preventionDrinkImages = [
-PreventionFoodItem(image: "drink_0"),
-PreventionFoodItem(image: "drink_1"),
-PreventionFoodItem(image: "drink_2"),
-PreventionFoodItem(image: "drink_3"),
-PreventionFoodItem(image: "drink_4"),
-PreventionFoodItem(image: "drink_5"),
-PreventionFoodItem(image: "drink_6"),
-PreventionFoodItem(image: "drink_7"),
-PreventionFoodItem(image: "drink_8"),
-PreventionFoodItem(image: "drink_9"),
-PreventionFoodItem(image: "drink_10")
+let preventionDrinkImages: [PreventionFoodCell]  = [
+    //The empty image String value at preventionFoodItem2 property is to force a 2 columns rendering in a row
+    PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "drink_0"), preventionFoodItem2: PreventionFoodItem(image: "")),
+    PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "drink_1"), preventionFoodItem2: PreventionFoodItem(image: "")),
+    PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "drink_2"), preventionFoodItem2: PreventionFoodItem(image: "drink_3")),
+    PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "drink_4"), preventionFoodItem2: PreventionFoodItem(image: "")),
+    PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "drink_5"), preventionFoodItem2: PreventionFoodItem(image: "drink_6")),
+    PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "drink_7"), preventionFoodItem2: PreventionFoodItem(image: "")),
+    PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "drink_8"), preventionFoodItem2: PreventionFoodItem(image: "drink_9")),
+    PreventionFoodCell(preventionFoodItem: PreventionFoodItem(image: "drink_10"), preventionFoodItem2: PreventionFoodItem(image: ""))
 ]
