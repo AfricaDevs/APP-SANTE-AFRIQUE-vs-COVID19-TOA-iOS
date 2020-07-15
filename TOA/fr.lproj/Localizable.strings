@@ -127,7 +127,7 @@ tables, les pompes à essence";
 "preventionMaskHow2"="Le masque doit:
 * s'adapter parfaitement mais confortablement sur le côté du visage
 * être attaché avec des élastiques/cordons autour des oreilles
-* permettre de respirer sans restriction (etc…) => mettre la suite sur page suivante…";
+* permettre de respirer sans restriction (etc…)";
 /* PREVENTION MASK END --------- -----------  --------- -------- */
 
 
@@ -137,4 +137,48 @@ Fermer soigneusement le sac poubelle et conserver 24 heures avant d'être jeté 
 Se laver les mains soigneusement à l'eau savonneuse ou au gel hydroalcoolique après cette opération.";
 "preventionGarbage2"="Encore plus que jamais, veiller à ne surtout pas jeter ses mouchoirs et masques par terre.";
 /* PREVENTION MASK END --------- -----------  --------- -------- */
+
+
+/* PREVENTION MOVEMENT */
+"preventionMovementTitleWhy"="Pourquoi réduire ses déplacements?";
+"preventionMovementTitleWhen"="Quand se déplacer?";
+"preventionMovementTitleHow"="Comment se déplacer?";
+
+"preventionMovementWhy"="Evitez les foules, Pratiquez la distanciation sociale.
+S\'abstenir de toute sortie non indispensable dans un lieu public. Ne participer à aucun regroupement, qu'il soit de nature professionnelle, sociale ou familiale.
+
+Eviter tout contact avec des personnes vulnérables (personnes âgées…). Eviter de fréquenter de lieux où se trouvent des personnes fragiles (hôpitaux, maternités, structures d'hébergement pour personnes âgées...)";
+
+"preventionMovementWhen1"="Evitez tout contact raproché, y compris les salutations et les accolades avec les autres";
+"preventionMovementWhen2"="Maintenez une distance d\'au moins 1m avec les autres personnes";
+"Maintenez une distance d\'au moins 1m avec les autres personnes";
+"preventionMovementWhen3"="Evitez les attroupements, les lieux et les transports publics";
+
+"preventionMovementHow"="Nommer une personne plus jeune et en bonne santé de faire les courses pendant toute la période de pandémie.";
+/* PREVENTION MOVEMENT END --------- -----------  --------- -------- */
+
+/* PREVENTION FOOD */
+"preventionFoodTitle"="Quels sont les aliments à privilégier?";
+"preventionFoodTitle"="Les aliments à privilégier sont ceux qui contiennent:
+Vitamine C
+-> 2-4 grammes/jour
+-> pendant 10 jours
+
+Vitamine D
+
+1500-2000 UI/J
+
+Vitamine A
+
+Vitamine E
+
+Zinc
+-> 30 mg par jour
+-> pendant 10 jours
+-> à jeun à distance des repas.
+
+Aliments riches en Vitamines et Zinc recommandés pour lutter contre le Covid19";
+"preventionDrinkTitle"="Quelles sont les boissons froides et chaudes que je peux consommer?";
+/* PREVENTION MOVEMENT END --------- -----------  --------- -------- */
+
 /* END PREVENTION RESOURCES */

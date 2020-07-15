@@ -111,17 +111,17 @@ Washing a hand frequently with soap and water during a pandemic is one of the mo
 /* PREVENTION MASK */
 "preventionMaskToolbarTitle"="Wear a mask";
 /* WHY SCREEN */
-"preventionMaskWhy" ="Pour ralentir la propagation du virus protéger les personnes fragiles (vos proches, personnes âgées et malades autour de vous)";
+"preventionMaskWhy"="To slow the spread of the virus, protect fragile people (your loved ones, the elderly and the sick around you)";
 
 /* HOW SCREEN */
-"preventionMaskWhen" ="Dans les lieux publics où toutes autres mesures de distanciation sociale sont difficiles à maintenir partout à l’extérieur, dans les épiceries, les pharmacies, les marchés dans les zones de transmission communautaire importante";
+"preventionMaskWhen"="In public places where all other measures of social distancing are difficult to maintain everywhere outside, in grocery stores, pharmacies, markets, in areas of significant community transmission";
 
 /* WHEN SCREEN */
-"preventionMaskHow1"="Avant tout, se laver les mains avant de porter le masque";
-"preventionMaskHow2"="Le masque doit:
-* s'adapter parfaitement mais confortablement sur le côté du visage
-* être attaché avec des élastiques/cordons autour des oreilles
-* permettre de respirer sans restriction (etc…) => mettre la suite sur page suivante…";
+"preventionMaskHow1"="First of all, wash your hands before wearing the mask";
+"preventionMaskHow2"="The mask must:
+* fit perfectly but comfortably on the side of the face
+* be tied with elastic / cords around the ears
+* permettre de respirer sans restriction (etc…)";
 /* PREVENTION MASK END --------- -----------  --------- -------- */
 
 
@@ -134,4 +134,75 @@ Wash your hands thoroughly with soapy water or hydroalcoholic gel after this ope
 "preventionGarbage2"="Even more than ever, take care not to throw your handkerchiefs and masks on the ground.";
 /* PREVENTION MASK END --------- -----------  --------- -------- */
 
+/* PREVENTION WATER */
+"preventionConsumptionWater1"="On 4 15th 2020
+WHO has confirmed that there is no known scientific evidence from epidemiology of any contamination related to drinking water.
+
+Conventional disinfection procedures in place at drinking water plants (chlorine, UV, ozone) thus eliminate the COVID-19 virus, just like other viruses.
+
+In Africa, access to clean water is one of the essential conditions for barrier actions, hand washing";
+
+"preventionConsumptionWater"="The presence of the virus in untreated water is possible.
+
+To destroy the virus in water, it is recommended:
+* boil water for 10 minutes
+* to use chlorine to disinfect water intended for human consumption, Chlorine (in tablets or SURE WATER)
+* to maintain a residual chlorine level of 0.5 mg per liter of water
+
+Attention, remain vigilant on chlorine dosages which can be in the form of lozenge, bleach, DCNA, or SURE-EAU.";
+
+"preventionUsedWater"="Coronavirus can be found in feces/urine, therefore wastewater must be treated properly
+
+Domestic wastewater:
+When possible, provide trenches to drain wastewater so that it does not run off near living areas
+
+Latrines:
+Use active lime to disinfect excrement (liming)";
+/* PREVENTION WATER END --------- -----------  --------- -------- */
+
+
+/* PREVENTION MOVEMENT */
+"preventionMovementTitleWhy"="Pourquoi réduire ses déplacements?";
+"preventionMovementTitleWhen"="Quand se déplacer?";
+"preventionMovementTitleHow"="Comment se déplacer?";
+
+"preventionMovementWhy"="Evitez les foules, Pratiquez la distanciation sociale.
+S\'abstenir de toute sortie non indispensable dans un lieu public. Ne participer à aucun regroupement, qu'il soit de nature professionnelle, sociale ou familiale.
+
+Eviter tout contact avec des personnes vulnérables (personnes âgées…). Eviter de fréquenter de lieux où se trouvent des personnes fragiles (hôpitaux, maternités, structures d'hébergement pour personnes âgées...)";
+
+"preventionMovementWhen1"="Evitez tout contact raproché, y compris les salutations et les accolades avec les autres";
+"preventionMovementWhen2"="Maintenez une distance d\'au moins 1m avec les autres personnes";
+"Maintenez une distance d\'au moins 1m avec les autres personnes";
+"preventionMovementWhen3"="Evitez les attroupements, les lieux et les transports publics";
+
+"preventionMovementHow"="Nommer une personne plus jeune et en bonne santé de faire les courses pendant toute la période de pandémie.";
+/* PREVENTION MOVEMENT END --------- -----------  --------- -------- */
+
+/* PREVENTION FOOD */
+"tabFood"="aliments à privilégier?";
+"tabDrinks"="boissons récommandées";
+
+"preventionFoodTitle"="Quels sont les aliments à privilégier?";
+"preventionFoodTitle"="Les aliments à privilégier sont ceux qui contiennent:
+Vitamine C
+-> 2-4 grammes/jour
+-> pendant 10 jours
+
+Vitamine D
+
+1500-2000 UI/J
+
+Vitamine A
+
+Vitamine E
+
+Zinc
+-> 30 mg par jour
+-> pendant 10 jours
+-> à jeun à distance des repas.
+
+Aliments riches en Vitamines et Zinc recommandés pour lutter contre le Covid19";
+"preventionDrinkTitle"="Quelles sont les boissons froides et chaudes que je peux consommer?";
+/* PREVENTION MOVEMENT END --------- -----------  --------- -------- */
 /* AND PREVENTION RESOURCES */
