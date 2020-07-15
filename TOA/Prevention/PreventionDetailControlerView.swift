@@ -21,8 +21,7 @@ struct PreventionDetailControlerView: View {
             } else if preventionItem.id == 2   {
                 PreventionMaskView()
             } else if preventionItem.id == 3 {
-                Text("Hello,TOÂ \(preventionItem.id)!")
-                Text("Image, TOÂ \(preventionItem.id)!")
+                PreventionMovementView()
             } else if preventionItem.id == 4 {
                 Text("Hello, TOÂ \(preventionItem.id)!")
                 Text("Image,TOÂ \(preventionItem.id)!")
