@@ -48,10 +48,10 @@
 
 
 /* PREVENTION HANDS */
-"preventionHandsToolbarTitle"="Lavage des mains";
+"preventionHandsToolbarTitle"="Hand washing";
 
 /* WHY SCREEN */
-"handsWhy" = "Hand washing\n\nRespiratory viruses such as coronavirus disease (COVID-19) spread when mucus or droplets containing the virus enter your body through your mouth, nose, and eyes.
+"handsWhy" = "Respiratory viruses such as coronavirus disease (COVID-19) spread when mucus or droplets containing the virus enter your body through your mouth, nose, and eyes.
 
 Most often, this contact takes place by the hands.\n\nHands are also one of the most common ways of spreading the virus from one person to another.
 
@@ -99,55 +99,55 @@ Washing a hand frequently with soap and water during a pandemic is one of the mo
 
 /* PREVENTION MOVEMENT */
 
-"preventionMovementToolbarTitle"="Gestion des déplacements";
+"preventionMovementToolbarTitle"="Movement management";
 
-"preventionMovementTitleWhy"="Pourquoi réduire ses déplacements?";
-"preventionMovementTitleWhen"="Quand se déplacer?";
-"preventionMovementTitleHow"="Comment se déplacer?";
+"preventionMovementTitleWhy"="Why reduce movements?";
+"preventionMovementTitleWhen"="When to get around?";
+"preventionMovementTitleHow"="How to get around?";
 
-"preventionMovementWhy"="Evitez les foules, Pratiquez la distanciation sociale.
-S\'abstenir de toute sortie non indispensable dans un lieu public. Ne participer à aucun regroupement, qu'il soit de nature professionnelle, sociale ou familiale.
+"preventionMovementWhy"="Avoid the crowds, Practice social distancing.
+Refrain from any non-essential outing in a public place. Do not participate in any grouping, whether of a professional, social or family nature.
 
-Eviter tout contact avec des personnes vulnérables (personnes âgées…). Eviter de fréquenter de lieux où se trouvent des personnes fragiles (hôpitaux, maternités, structures d'hébergement pour personnes âgées...)";
+Avoid contact with vulnerable people (the elderly, etc.). Avoid frequenting places where there are fragile people (hospitals, maternity hospitals, accommodation structures for the elderly, etc.)";
 
-"preventionMovementWhen1"="Evitez tout contact raproché, y compris les salutations et les accolades avec les autres";
-"preventionMovementWhen2"="Maintenez une distance d'au moins 1m avec les autres personnes";
-"Maintenez une distance d'au moins 1m avec les autres personnes";
-"preventionMovementWhen3"="Evitez les attroupements, les lieux et les transports publics";
 
-"preventionMovementHow"="Nommer une personne plus jeune et en bonne santé de faire les courses pendant toute la période de pandémie.";
+"preventionMovementWhen1"="Avoid close contact, including greetings and hugs with others";
+"preventionMovementWhen2"="Maintain a distance of at least 1 meter with other people";
+"preventionMovementWhen3"="Avoid crowds, places and public transportation";
+
+"preventionMovementHow"="Appoint a younger, healthy person to shop throughout the pandemic period.";
 /* PREVENTION MOVEMENT END --------- -----------  --------- -------- */
 
 
 /* PREVENTION FOOD */
 "preventionFoodDrinkToolbarTitle"="Alimentation";
 
-"tabFood"="aliments à privilégier?";
-"tabDrinks"="boissons récommandées";
+"tabFood"="preferred foods";
+"tabDrinks"="recommended drinks";
 
-"preventionDrinkTitle"="Quelles sont les boissons froides et chaudes que je peux consommer?";
+"preventionDrinkTitle"="What are the cold and hot drinks I can drink?";
 
-"preventionFoodTitle"="Quels sont les aliments à privilégier?";
-"preventionFood"="Les aliments à privilégier sont ceux qui contiennent:
-Vitamine C
+"preventionFoodTitle"="What are the foods to favor?";
+"preventionFood"="Foods to favor are those which contain:
+Vitamin C
 -> 2-4 grammes/jour
 -> pendant 10 jours
 
-Vitamine D
+Vitamin D
 
 1500-2000 UI/J
 
-Vitamine A
+Vitamin A
 
-Vitamine E
+Vitamin E
 
 Zinc
--> 30 mg par jour
--> pendant 10 jours
--> à jeun à distance des repas.
+-> 30 mg daily
+-> during 10 days
+-> fasting away from meals.
 
-Aliments riches en Vitamines et Zinc recommandés pour lutter contre le Covid19";
-"preventionDrinkTitle"="Quelles sont les boissons froides et chaudes que je peux consommer?";
+Foods rich in Vitamins and Zinc recommended to fight against Covid19";
+"preventionDrinkTitle"="What are the cold and hot drinks I can drink?";
 /* PREVENTION FOOD END --------- -----------  --------- -------- */
 
 
@@ -193,25 +193,25 @@ Wash your hands thoroughly with soapy water or hydroalcoholic gel after this ope
 "preventionFuneralsToolbarTitle" = "Funeral";
 "preventionFuneralsCICRLink" = "visit website";
 
-"preventionFuneralsBody1"="Plans de préparation et de gestion garantissant le respect de la dignité des défunts et de leurs familles.
-Les mesures exceptionnelles visent à
-* protéger  les soignants, la famille, la communauté
-* éviter la propagation du virus
-Nécessité d’un dispositif respectant les spécificités des rituels ancestrales et les croyances pour la qualification d’un “Enterrement  Digne et Sécurisé ";
+"preventionFuneralsBody1"="Preparation and management plans guaranteeing respect for the dignity of the deceased and their families.
+The exceptional measures aim to
+* protect caregivers, family, community
+* prevent the spread of the virus
+Need for a device respecting the specificities of ancestral rituals and beliefs for the qualification of a “Dignified and Secure Burial";
 
-"preventionFuneralsTitle2"="Dispositif au domicile ou au sein de la communauté";
-"preventionFuneralsBody2"="La Croix Rouge locale recommande des procédure basée sur des spécificités locales
-* mesures de protection spécifiques aux soignants port de combinaisons + masque + gants
-* désinfection par pulvérisations du logement du défunt (chaulage)";
+"preventionFuneralsTitle2"="Device at home or in the community";
+"preventionFuneralsBody2"="The local Red Cross recommends procedures based on local specificities
+* protective measures specific to caregivers wearing coveralls + mask + gloves
+* spray disinfection of the deceased's home (liming)";
 
-"preventionFuneralsTitle3"="Combien de personnes peuvent assister aux obsèques?";
-"preventionFuneralsBody3"="En chambre funéraire : 2 maximum
-Lors de cérémonie religieuse: 20 maximum
+"preventionFuneralsTitle3"="How many people can attend the funeral?";
+"preventionFuneralsBody3"="In burial chamber: 2 maximum
+During religious ceremony: 20 maximum
 
-Au cimetière :
-les tombes sont numérotées,
-un dispositif de géolocalisation est  mis en place afin d’associer le domicile du défunt à sa tombe. (?? en AF )
-Accompagnement de la famille et des proches endeuillés";
+At the cemetery :
+the graves are numbered,
+a geolocation device is put in place in order to associate the domicile of the deceased with his grave. (?? in AF )
+Support for bereaved family and loved ones";
 
 "CICRWebsite"="https://www.icrc.org";
      /* PREVENTIONS Funerals END --------- -----------  --------- -------- */
