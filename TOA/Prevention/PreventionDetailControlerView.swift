@@ -21,14 +21,12 @@ struct PreventionDetailControlerView: View {
             } else if preventionItem.id == 2   {
                 PreventionMaskView()
             } else if preventionItem.id == 3 {
-                Text("Hello,TOÂ \(preventionItem.id)!")
-                Text("Image, TOÂ \(preventionItem.id)!")
+                PreventionMovementView()
             } else if preventionItem.id == 4 {
                 Text("Hello, TOÂ \(preventionItem.id)!")
                 Text("Image,TOÂ \(preventionItem.id)!")
             } else if preventionItem.id == 5 {
-                Text("Hello, TOÂ \(preventionItem.id)!")
-                Text("Image, TOÂ \(preventionItem.id)!")
+                PreventionWaterView()
             } else if preventionItem.id == 6 {
                 PreventionGarbageView()
             } else {

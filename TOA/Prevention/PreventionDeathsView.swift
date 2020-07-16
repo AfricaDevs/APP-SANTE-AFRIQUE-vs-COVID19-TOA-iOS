@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct PreventionDeathsView: View {
-    var text: String = ""
     @EnvironmentObject var settings: UserSettings
     
     var body: some View {

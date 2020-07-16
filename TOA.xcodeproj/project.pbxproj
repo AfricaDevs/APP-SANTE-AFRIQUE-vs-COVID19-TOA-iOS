@@ -28,6 +28,9 @@
 		2D7A803C24BBE0750011AE16 /* BottomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A803824BBE0740011AE16 /* BottomBarItem.swift */; };
 		2D7E5DA124BCF63200011328 /* PreventionHandsWhenItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5DA024BCF63200011328 /* PreventionHandsWhenItemModel.swift */; };
 		2D7E5DA324BD06AF00011328 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5DA224BD06AE00011328 /* BottomBar.swift */; };
+		2D7ED41224BEEDD500A16AF5 /* PreventionMovementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ED41124BEEDD500A16AF5 /* PreventionMovementView.swift */; };
+		2D7ED41424BEF1FD00A16AF5 /* PreventionFoodDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ED41324BEF1FD00A16AF5 /* PreventionFoodDrinkView.swift */; };
+		2D7ED41624BF1FC600A16AF5 /* PreventionFoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ED41524BF1FC600A16AF5 /* PreventionFoodItem.swift */; };
 		2D82FCB824B4F8F500196A3F /* PreventionDeathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D82FCB724B4F8F500196A3F /* PreventionDeathsView.swift */; };
 		2D82FCBA24B5CA6D00196A3F /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D82FCB924B5CA6D00196A3F /* UserSettings.swift */; };
 		2D95EC2224B681090034199E /* CustomPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95EC2124B681090034199E /* CustomPieChartView.swift */; };
@@ -56,6 +59,7 @@
 		2DB6AE9824B2BB3F0092A91A /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6AE9724B2BB3F0092A91A /* CustomImage.swift */; };
 		2DC5054224BC908300C9416B /* PreventionHandsHowItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5054124BC908300C9416B /* PreventionHandsHowItemModel.swift */; };
 		2DFF654224BE17C200887E47 /* PreventionGarbageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF654124BE17C200887E47 /* PreventionGarbageView.swift */; };
+		2DFF654424BE57CF00887E47 /* PreventionWaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF654324BE57CF00887E47 /* PreventionWaterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +85,9 @@
 		2D7A803824BBE0740011AE16 /* BottomBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarItem.swift; sourceTree = "<group>"; };
 		2D7E5DA024BCF63200011328 /* PreventionHandsWhenItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionHandsWhenItemModel.swift; sourceTree = "<group>"; };
 		2D7E5DA224BD06AE00011328 /* BottomBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		2D7ED41124BEEDD500A16AF5 /* PreventionMovementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionMovementView.swift; sourceTree = "<group>"; };
+		2D7ED41324BEF1FD00A16AF5 /* PreventionFoodDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionFoodDrinkView.swift; sourceTree = "<group>"; };
+		2D7ED41524BF1FC600A16AF5 /* PreventionFoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionFoodItem.swift; sourceTree = "<group>"; };
 		2D82FCB724B4F8F500196A3F /* PreventionDeathsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionDeathsView.swift; sourceTree = "<group>"; };
 		2D82FCB924B5CA6D00196A3F /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		2D95EC2124B681090034199E /* CustomPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPieChartView.swift; sourceTree = "<group>"; };
@@ -110,6 +117,7 @@
 		2DB6AE9724B2BB3F0092A91A /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		2DC5054124BC908300C9416B /* PreventionHandsHowItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionHandsHowItemModel.swift; sourceTree = "<group>"; };
 		2DFF654124BE17C200887E47 /* PreventionGarbageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionGarbageView.swift; sourceTree = "<group>"; };
+		2DFF654324BE57CF00887E47 /* PreventionWaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionWaterView.swift; sourceTree = "<group>"; };
 		4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.release.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.release.xcconfig"; sourceTree = "<group>"; };
 		6D4AB7E7A84072D9EF285BDF /* Pods_TOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		936525A0F0F4C507C567B0AB /* Pods-TOA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.debug.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.debug.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +254,9 @@
 				2D7A801524BBCD880011AE16 /* PreventionHandsView.swift */,
 				2D22A62A24BDA38F008CA204 /* PreventionMaskView.swift */,
 				2DFF654124BE17C200887E47 /* PreventionGarbageView.swift */,
+				2DFF654324BE57CF00887E47 /* PreventionWaterView.swift */,
+				2D7ED41124BEEDD500A16AF5 /* PreventionMovementView.swift */,
+				2D7ED41324BEF1FD00A16AF5 /* PreventionFoodDrinkView.swift */,
 			);
 			path = Prevention;
 			sourceTree = "<group>";
@@ -269,6 +280,7 @@
 				2D4907F524B3C5C200D21CAA /* CountryCases.swift */,
 				2DC5054124BC908300C9416B /* PreventionHandsHowItemModel.swift */,
 				2D7E5DA024BCF63200011328 /* PreventionHandsWhenItemModel.swift */,
+				2D7ED41524BF1FC600A16AF5 /* PreventionFoodItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -431,11 +443,13 @@
 				2D2C041424B1FEB900D6473A /* DataLoader.swift in Sources */,
 				2D82FCB824B4F8F500196A3F /* PreventionDeathsView.swift in Sources */,
 				2D7E5DA324BD06AF00011328 /* BottomBar.swift in Sources */,
+				2DFF654424BE57CF00887E47 /* PreventionWaterView.swift in Sources */,
 				2D3648E224B0F1DC0029196F /* TrackableScrollView.swift in Sources */,
 				2DB15BD624AD8445003D2353 /* MainView.swift in Sources */,
 				2D5D845924B9D88500A92532 /* AnalysisButtonView.swift in Sources */,
 				2DFF654224BE17C200887E47 /* PreventionGarbageView.swift in Sources */,
 				2DB15C0924B05992003D2353 /* HTMLView.swift in Sources */,
+				2D7ED41424BEF1FD00A16AF5 /* PreventionFoodDrinkView.swift in Sources */,
 				2D7A803C24BBE0750011AE16 /* BottomBarItem.swift in Sources */,
 				2DB6AE8F24B25C090092A91A /* PreventionDetailControlerView.swift in Sources */,
 				2D5D845B24B9D89800A92532 /* PreventionButtonView.swift in Sources */,
@@ -446,11 +460,13 @@
 				2D7A801424BBC5870011AE16 /* AboutView.swift in Sources */,
 				2D0A293424A65AE300A36C56 /* AppDelegate.swift in Sources */,
 				2DB15BCF24AD6A49003D2353 /* SplashView.swift in Sources */,
+				2D7ED41224BEEDD500A16AF5 /* PreventionMovementView.swift in Sources */,
 				2D2C040524B1D79600D6473A /* PreventionView.swift in Sources */,
 				2DC5054224BC908300C9416B /* PreventionHandsHowItemModel.swift in Sources */,
 				2DB6AE9824B2BB3F0092A91A /* CustomImage.swift in Sources */,
 				2DB15C0524AF4D74003D2353 /* AnimatedView.swift in Sources */,
 				2D22A62B24BDA38F008CA204 /* PreventionMaskView.swift in Sources */,
+				2D7ED41624BF1FC600A16AF5 /* PreventionFoodItem.swift in Sources */,
 				2D0A293624A65AE300A36C56 /* SceneDelegate.swift in Sources */,
 				2D0A293824A65AE300A36C56 /* ContentView.swift in Sources */,
 				2DB15BF524AE6992003D2353 /* LottieView.swift in Sources */,
