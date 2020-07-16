@@ -249,14 +249,14 @@
 				2D2C040424B1D79600D6473A /* PreventionView.swift */,
 				2D2C040D24B1E66B00D6473A /* Prevention.swift */,
 				2DB6AE8E24B25C090092A91A /* PreventionDetailControlerView.swift */,
-				2D82FCB724B4F8F500196A3F /* PreventionDeathsView.swift */,
 				2D5D845A24B9D89800A92532 /* PreventionButtonView.swift */,
 				2D7A801524BBCD880011AE16 /* PreventionHandsView.swift */,
 				2D22A62A24BDA38F008CA204 /* PreventionMaskView.swift */,
-				2DFF654124BE17C200887E47 /* PreventionGarbageView.swift */,
-				2DFF654324BE57CF00887E47 /* PreventionWaterView.swift */,
 				2D7ED41124BEEDD500A16AF5 /* PreventionMovementView.swift */,
 				2D7ED41324BEF1FD00A16AF5 /* PreventionFoodDrinkView.swift */,
+				2DFF654324BE57CF00887E47 /* PreventionWaterView.swift */,
+				2DFF654124BE17C200887E47 /* PreventionGarbageView.swift */,
+				2D82FCB724B4F8F500196A3F /* PreventionDeathsView.swift */,
 			);
 			path = Prevention;
 			sourceTree = "<group>";

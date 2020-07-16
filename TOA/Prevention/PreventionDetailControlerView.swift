@@ -18,13 +18,12 @@ struct PreventionDetailControlerView: View {
             
             if preventionItem.id == 1 {
                 PreventionHandsView()
-            } else if preventionItem.id == 2   {
+            } else if preventionItem.id == 2 {
                 PreventionMaskView()
             } else if preventionItem.id == 3 {
                 PreventionMovementView()
             } else if preventionItem.id == 4 {
-                Text("Hello, TOÂ \(preventionItem.id)!")
-                Text("Image,TOÂ \(preventionItem.id)!")
+                PreventionFoodDrinkView()
             } else if preventionItem.id == 5 {
                 PreventionWaterView()
             } else if preventionItem.id == 6 {
