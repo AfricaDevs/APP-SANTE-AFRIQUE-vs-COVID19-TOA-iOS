@@ -24,6 +24,7 @@
 		2D4FE37C24C0D98700505266 /* DiagnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FE37B24C0D98700505266 /* DiagnosisView.swift */; };
 		2D4FE37E24C177E300505266 /* DiagnosisDeceaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FE37D24C177E300505266 /* DiagnosisDeceaseView.swift */; };
 		2D4FE38024C17AE600505266 /* DiagnosisDeceaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FE37F24C17AE600505266 /* DiagnosisDeceaseDetailView.swift */; };
+		2D4FE38424C2230C00505266 /* DiagnosisMalariaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FE38324C2230C00505266 /* DiagnosisMalariaView.swift */; };
 		2D5D845924B9D88500A92532 /* AnalysisButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D845824B9D88500A92532 /* AnalysisButtonView.swift */; };
 		2D5D845B24B9D89800A92532 /* PreventionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D845A24B9D89800A92532 /* PreventionButtonView.swift */; };
 		2D7A801424BBC5870011AE16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A801324BBC5870011AE16 /* AboutView.swift */; };
@@ -84,6 +85,7 @@
 		2D4FE37B24C0D98700505266 /* DiagnosisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisView.swift; sourceTree = "<group>"; };
 		2D4FE37D24C177E300505266 /* DiagnosisDeceaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisDeceaseView.swift; sourceTree = "<group>"; };
 		2D4FE37F24C17AE600505266 /* DiagnosisDeceaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisDeceaseDetailView.swift; sourceTree = "<group>"; };
+		2D4FE38324C2230C00505266 /* DiagnosisMalariaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisMalariaView.swift; sourceTree = "<group>"; };
 		2D5D845824B9D88500A92532 /* AnalysisButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisButtonView.swift; sourceTree = "<group>"; };
 		2D5D845A24B9D89800A92532 /* PreventionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionButtonView.swift; sourceTree = "<group>"; };
 		2D7A801324BBC5870011AE16 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				2D4FE37B24C0D98700505266 /* DiagnosisView.swift */,
 				2D4FE37D24C177E300505266 /* DiagnosisDeceaseView.swift */,
 				2D4FE37F24C17AE600505266 /* DiagnosisDeceaseDetailView.swift */,
+				2D4FE38324C2230C00505266 /* DiagnosisMalariaView.swift */,
 			);
 			path = Diagnosis;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				2D7A801424BBC5870011AE16 /* AboutView.swift in Sources */,
 				2D0A293424A65AE300A36C56 /* AppDelegate.swift in Sources */,
 				2DB15BCF24AD6A49003D2353 /* SplashView.swift in Sources */,
+				2D4FE38424C2230C00505266 /* DiagnosisMalariaView.swift in Sources */,
 				2D7ED41224BEEDD500A16AF5 /* PreventionMovementView.swift in Sources */,
 				2D2C040524B1D79600D6473A /* PreventionView.swift in Sources */,
 				2DC5054224BC908300C9416B /* PreventionHandsHowItemModel.swift in Sources */,

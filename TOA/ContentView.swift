@@ -22,7 +22,7 @@ struct ContentView: View {
                     
                     SplashView()
                 }
-            }.background(Color("colorMainWhiteBg"))
+            }.background(Color("colorWhiteBg"))
                 
                 .onAppear {
                     
