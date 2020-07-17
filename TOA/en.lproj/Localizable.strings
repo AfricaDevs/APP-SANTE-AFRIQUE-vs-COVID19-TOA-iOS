@@ -51,7 +51,7 @@
 "preventionHandsToolbarTitle"="Hand washing";
 
 /* WHY SCREEN */
-"handsWhy" = "Respiratory viruses such as coronavirus disease (COVID-19) spread when mucus or droplets containing the virus enter your body through your mouth, nose, and eyes.
+"handsWhy" = "Respiratory viruses such as coronavirus disease (Covid-19) spread when mucus or droplets containing the virus enter your body through your mouth, nose, and eyes.
 
 Most often, this contact takes place by the hands.\n\nHands are also one of the most common ways of spreading the virus from one person to another.
 
@@ -146,7 +146,7 @@ Zinc
 -> during 10 days
 -> fasting away from meals.
 
-Foods rich in Vitamins and Zinc recommended to fight against Covid19";
+Foods rich in Vitamins and Zinc recommended to fight against Covid-19";
 "preventionDrinkTitle"="What are the cold and hot drinks I can drink?";
 /* PREVENTION FOOD END --------- -----------  --------- -------- */
 
@@ -155,7 +155,7 @@ Foods rich in Vitamins and Zinc recommended to fight against Covid19";
 "preventionConsumptionWater1"="On 4 15th 2020
 WHO has confirmed that there is no known scientific evidence from epidemiology of any contamination related to drinking water.
 
-Conventional disinfection procedures in place at drinking water plants (chlorine, UV, ozone) thus eliminate the COVID-19 virus, just like other viruses.
+Conventional disinfection procedures in place at drinking water plants (chlorine, UV, ozone) thus eliminate the Covid-19 virus, just like other viruses.
 
 In Africa, access to clean water is one of the essential conditions for barrier actions, hand washing";
 
@@ -248,7 +248,7 @@ Support for bereaved family and loved ones";
 "diagnosisDeceasesQuestionMore"="Indiquez et recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
 "btnDiagnosisDeceaseNone"="Non, Aucune";
 
-"diagnosisTestActionSheet"="Vous avez effectué un test de COVID-19 et il est positif?";
+"diagnosisTestActionSheet"="Vous avez effectué un test de Covid-19 et il est positif?";
 "chooseOption"="Choisissez une Option";
 "testOptionYes"="Oui, j’ai eu un test positif au Covid-19";
 "testOptionNo"="Non, je n’ai pas eu de test positif au Covid-19";
