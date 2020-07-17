@@ -19,7 +19,7 @@ struct PreventionDeathsView: View {
                 HStack{
                     Text("preventionFuneralsTitle")
                         .font(  self.settings.textSize ? .system(size: 20): .system(size: 22))
-                        .fontWeight(.bold)
+                        .fontWeight(.semibold)
                     Spacer()
                 }.padding(.bottom, 10)
                 
