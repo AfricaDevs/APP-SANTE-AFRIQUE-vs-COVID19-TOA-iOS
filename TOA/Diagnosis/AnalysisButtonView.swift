@@ -19,7 +19,7 @@ struct AnalysisButtonView: View {
                 .rotationEffect(Angle.init(degrees: 343))
                 .offset(x:-90 ,y: 48)
             
-            NavigationLink (destination: PreventionView()){
+            NavigationLink (destination: DiagnosisView()){
                 
                 HStack{
                     HStack{

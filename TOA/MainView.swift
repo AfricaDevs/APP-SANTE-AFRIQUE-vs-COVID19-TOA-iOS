@@ -172,7 +172,7 @@ struct MainView: View {
                                 HStack{
                                     Text("mainIntro")
                                         .multilineTextAlignment(.leading)
-                                        .font( .system(size: self.settings.textSize ? 14 : 17))
+                                        .font( .system(size: self.settings.textSize ? 15 : 17))
                                         .padding(.all, 8)
                                     
                                 }
@@ -189,7 +189,7 @@ struct MainView: View {
                                 Text("mainAnalysisComment")
                                     .font( self.settings.textSize ? .subheadline : .system(size: 16))
                                     .multilineTextAlignment(.center)
-                                    .background(Color.white)
+                                    .background(Color("colorMainWhiteBg"))
                                 
                                     .padding(EdgeInsets(top: 7, leading: 9, bottom: 0, trailing: 9))
                                 .offset(x: 0, y: 3)
@@ -215,7 +215,7 @@ struct MainView: View {
                                     }
                                      
                                     Spacer()
-                                }.background(Color.white)
+                                }.background(Color("colorWhiteBg"))
                                 
                                 
                             }//VStack
@@ -242,7 +242,7 @@ struct MainView: View {
                                     UIApplication.shared.open ((urlComponents?.url!)!)
                             }
                             Spacer()
-                        }
+                        }.background(Color("colorWhiteBg"))
                         .padding(.all, 10)
                         
                         
@@ -252,18 +252,13 @@ struct MainView: View {
                 // .onAppear(perform: self.loadCovidData)
                 
             }//NavigationView
-            
-            
         }
-        
     }
     
     //load cases from covid19.mathdro.id using Alamofire
     func loadCovidData( )   {
         let countryName = self.selection.name.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
-        do {
-            
-            try
+         
                 AF.request("https://covid19.mathdro.id/api/countries/\(countryName)")
                     .responseDecodable(of: CountryCases.self) { response in
                         
@@ -272,9 +267,7 @@ struct MainView: View {
                         self.chartView.refresh(countryCases: self.mathdroApiCountryResult)
                         debugPrint("Response: \(response)")
             }
-        } catch {
-            
-        }
+        
         
         //AF.request("URL").response { response in }
     }

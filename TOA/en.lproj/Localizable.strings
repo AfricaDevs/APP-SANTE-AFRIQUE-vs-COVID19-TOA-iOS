@@ -32,7 +32,7 @@
 
 /* PREVENTIONS resources*/
 "preventionToolbarTitle" = "HOW TO PROTECT YOURSELF EVERYDAY?";
-"preventionToolbarTitleShort" = "HOW TO PROTECT YOURSELF?";
+"preventionToolbarTitleShort" = "How to protect yourself?";
 
 "preventionOption1"="Why, when and how to wash your hands?";
 "preventionOption2"="Why, when and how to make, wear and wash a mask?";
@@ -215,4 +215,44 @@ Support for bereaved family and loved ones";
 
 "CICRWebsite"="https://www.icrc.org";
      /* PREVENTIONS Funerals END --------- -----------  --------- -------- */
-/* AND PREVENTION RESOURCES */
+/* END PREVENTION RESOURCES */
+
+
+
+
+/* DIAGNOSIS RESOURCES */
+
+/*MAIN VIEW */
+"diagnosisTitle"="Analysez vos symptômes";
+
+"btnNextSpaced"=" S U I V A N T ";
+"btnNoSymptom"="AUCUN SYMPTÔME";
+"diagnosisWarningCheck"="veuillez cocher une case pour continuer";
+
+"diagnosisIntro"="Avez-vous un ou plusieurs des symptômes suivants ? (cocher la ou les cases).";
+"diagnosisIntro2"="Recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
+
+"diagnosisSymptom1"="Des maux de tête";
+"diagnosisSymptom2"="Une forte fatigue";
+"diagnosisSymptom3"="Une toux";
+"diagnosisSymptom4"="Des nausées";
+"diagnosisSymptom5"="Des vomissements";
+"diagnosisSymptom6"="De la diarrhée";
+"diagnosisSymptom7"="Fièvre élevée et accompagnée de frissons, de sudations, de douleurs dans les muscles et les articulations";
+
+/*MAIN VIEW  END --------- -----------  --------- -------- */
+
+
+/* DECEASES VIEW */
+"diagnosisDeceasesQuestion"="Souffrez-vous d’une des maladies reconnues suivantes?";
+"diagnosisDeceasesQuestionMore"="Indiquez et recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
+"btnDiagnosisDeceaseNone"="Non, Aucune";
+
+"diagnosisTestActionSheet"="Vous avez effectué un test de COVID-19 et il est positif?";
+"chooseOption"="Choisissez une Option";
+"testOptionYes"="Oui, j’ai eu un test positif au Covid-19";
+"testOptionNo"="Non, je n’ai pas eu de test positif au Covid-19";
+"anuller"="Anuller";
+/* DECEASES VIEW END --------- -----------  --------- -------- */
+
+/* END DIAGNOSIS RESOURCES */

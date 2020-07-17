@@ -33,7 +33,7 @@
 
 /* PREVENTIONS resources*/
 "preventionToolbarTitle" = "COMMENT SE POTEGER TOUS LES JOURS?";
-"preventionToolbarTitleShort" = "COMMENT SE POTEGER?";
+"preventionToolbarTitleShort" = "Comment se proteger?";
 
 "preventionOption1"="Pourquoi, quand et comment se laver les mains?";
 "preventionOption2"="Pourquoi, quand et comment fabriquer, porter et laver un masque?";
