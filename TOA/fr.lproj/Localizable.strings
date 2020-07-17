@@ -33,7 +33,7 @@
 
 /* PREVENTIONS resources*/
 "preventionToolbarTitle" = "COMMENT SE POTEGER TOUS LES JOURS?";
-"preventionToolbarTitleShort" = "COMMENT SE POTEGER?";
+"preventionToolbarTitleShort" = "Comment se proteger?";
 
 "preventionOption1"="Pourquoi, quand et comment se laver les mains?";
 "preventionOption2"="Pourquoi, quand et comment fabriquer, porter et laver un masque?";
@@ -80,7 +80,7 @@ Accompagnement de la famille et des proches endeuillés";
 
 /* PREVENTION HANDS */
 "preventionHandsToolbarTitle"="Lavage des mains";
-"handsWhy" = "Le lavage des mains\n\nLes virus respiratoires tels que la maladie à coronavirus (COVID-19) se propagent lorsque du mucus ou des gouttelettes contenant le virus pénètrent dans votre corps par l\’intermédiaire de votre bouche, votre nez et vos yeux.
+"handsWhy" = "Le lavage des mains\n\nLes virus respiratoires tels que la maladie à coronavirus (Covid-19) se propagent lorsque du mucus ou des gouttelettes contenant le virus pénètrent dans votre corps par l\’intermédiaire de votre bouche, votre nez et vos yeux.
 
 Le plus souvent, ce contact a lieu par les mains. \n\nLes mains sont également l\’une des manières les plus courantes de transmettre le virus d\’une personne à une autre.
 
