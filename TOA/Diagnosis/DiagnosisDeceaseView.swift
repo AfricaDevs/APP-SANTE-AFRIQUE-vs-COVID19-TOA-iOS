@@ -18,13 +18,13 @@ struct DiagnosisDeceaseView: View {
         
     }
     
-    let deceases = [
-        Decease(id: 1, decease: "Drépanocytose"),
-        Decease(id: 2, decease: "Hypertension Artérielle"),
-        Decease(id: 3, decease: "Maladies respiratoires chroniques"),
-        Decease(id: 4, decease: "Thalassémie"),
-        Decease(id: 5, decease: "Diabète"),
-        Decease(id: 6, decease: "Obésité")
+    let diseases = [
+        Decease(id: 1, disease: "Drépanocytose"),
+        Decease(id: 2, disease: "Hypertension Artérielle"),
+        Decease(id: 3, disease: "Maladies respiratoires chroniques"),
+        Decease(id: 4, disease: "Thalassémie"),
+        Decease(id: 5, disease: "Diabète"),
+        Decease(id: 6, disease: "Obésité")
     ]
     
     var actionSheet: ActionSheet {
@@ -56,11 +56,11 @@ struct DiagnosisDeceaseView: View {
             
             Spacer()
             List{
-                ForEach(self.deceases){ decease in
-                    NavigationLink( destination: DiagnosisDeceaseDetailView(decease: decease)){
+                ForEach(self.diseases){ disease in
+                    NavigationLink( destination: DiagnosisDeceaseDetailView(disease: disease)){
                         
                         HStack{
-                            Text(decease.decease).padding(.vertical)
+                            Text(disease.disease).padding(.vertical)
                             Spacer()
                         }
                         
@@ -73,22 +73,26 @@ struct DiagnosisDeceaseView: View {
             Button(
                 action: {
                self.showCovidTestActionSheet.toggle()
-            }){
+            }){ 
+                
                 HStack {
+                    Spacer()
                     Text("btnDiagnosisDeceaseNone")
-                        
                         .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
                         .font(.system(size: 18))
                         .padding(.all, 10)
-                        .background(Color("colorBtnGreen"))
-                        .cornerRadius(30)
-                        .foregroundColor(.white)
-                        .padding(5)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 30)
-                                .stroke(Color("colorBtnGreen"), lineWidth: 5)
-                    )
-                }.padding(.vertical, 10)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                    
+                    Spacer()
+                }.background(Color("colorBtnGreen"))
+                    .cornerRadius(30)
+                    .foregroundColor(.white)
+                    .padding(5)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 30)
+                            .stroke(Color("colorBtnGreen"), lineWidth: 5)
+                ) .padding(5)
             }
             
         }.navigationBarTitle("diagnosisTitle", displayMode: .inline)
@@ -115,5 +119,5 @@ struct DiagnosisDeceaseView_Previews: PreviewProvider {
 
 struct Decease: Identifiable {
     var id : Int
-    var decease : String
+    var disease : String
 }

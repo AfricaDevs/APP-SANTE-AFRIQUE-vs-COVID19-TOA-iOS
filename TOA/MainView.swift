@@ -189,7 +189,7 @@ struct MainView: View {
                                 Text("mainAnalysisComment")
                                     .font( self.settings.textSize ? .subheadline : .system(size: 16))
                                     .multilineTextAlignment(.center)
-                                    .background(Color("colorMainWhiteBg"))
+                                    .background(Color("colorWhiteBg"))
                                 
                                     .padding(EdgeInsets(top: 7, leading: 9, bottom: 0, trailing: 9))
                                 .offset(x: 0, y: 3)
@@ -210,7 +210,7 @@ struct MainView: View {
                                             Image(self.selection.iso2.lowercased())
                                                 .aspectRatio(contentMode: ContentMode.fit)
                                             Text(self.selection.name)
-                                                .font(.system(size: 9))
+                                                .font(.system(size: 9)).foregroundColor(Color.black)
                                         }.offset(x: -8, y: 6)
                                     }
                                      

@@ -12,6 +12,9 @@ struct DiagnosisView: View {
     
     @EnvironmentObject var settings: UserSettings
     
+    //NavigationLink dependency to DiagnosisMalariaView
+    @State private var showingMalaria = false
+    
     //Checkboxes values
     @State var isChecked:Bool = false
     @State var isChecked2:Bool = false
@@ -137,8 +140,15 @@ struct DiagnosisView: View {
                 .padding(.bottom, 5)
                 .opacity(showWarning ? 1 : 0)
             
+            //Navigation to MalariaView bound to self.$showingMalaria
+            NavigationLink(destination: DiagnosisMalariaView(isShowing: self.$showingMalaria), isActive: self.$showingMalaria){
+                EmptyView()
+            }
+            
             Button(action: {
                 if self.isChecked || self.isChecked2 || self.isChecked3 || self.isChecked4 || self.isChecked5 || self.isChecked6  || self.isChecked7{
+                    
+                    self.showingMalaria = true
                     
                 } else{
                     withAnimation{
@@ -146,48 +156,56 @@ struct DiagnosisView: View {
                     }
                 }
             }) {
+                
+                
                 HStack {
+                    Spacer()
                     Text("btnNextSpaced")
-                        
                         .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
                         .font(.system(size: 18))
                         .padding(.all, 10)
-                        .background(Color("colorBtnBlue"))
-                        .cornerRadius(30)
-                        .foregroundColor(.white)
-                        .padding(5)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 30)
-                                .stroke(Color("colorBtnBlue"), lineWidth: 5)
-                    )
-                }
-            }.padding(.bottom, 10)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                    
+                    Spacer()
+                }.background(Color("colorBtnBlue"))
+                    .cornerRadius(30)
+                    .foregroundColor(.white)
+                    .padding(5)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 30)
+                            .stroke(Color("colorBtnBlue"), lineWidth: 5)
+                ) .padding(5)
+            }.padding(.bottom, 5)
             
             NavigationLink(destination: DiagnosisDeceaseView()){
                 
                 HStack {
+                    Spacer()
                     Text("btnNoSymptom")
-                        
                         .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
                         .font(.system(size: 18))
                         .padding(.all, 10)
-                        .background(Color("colorBtnGreen"))
-                        .cornerRadius(30)
-                        .foregroundColor(.white)
-                        .padding(5)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 30)
-                                .stroke(Color("colorBtnGreen"), lineWidth: 5)
-                    )
-                }.padding(.bottom, 10)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                    
+                    Spacer()
+                }.background(Color("colorBtnGreen"))
+                    .cornerRadius(30)
+                    .foregroundColor(.white)
+                    .padding(5)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 30)
+                            .stroke(Color("colorBtnGreen"), lineWidth: 5)
+                ) .padding(5)
             }
             
         }.navigationBarTitle("diagnosisTitle", displayMode: .inline)
-             .navigationBarItems(trailing: ToolbarItem().onTapGesture {
-             self.settings.textSize.toggle()
-             
-             UserDefaults.standard.set(self.settings.textSize, forKey: "textSize")
-             }).padding(.all, 10)
+            .navigationBarItems(trailing: ToolbarItem().onTapGesture {
+                self.settings.textSize.toggle()
+                
+                UserDefaults.standard.set(self.settings.textSize, forKey: "textSize")
+            }).padding(.all, 10)
             .overlay(
                 RoundedRectangle(cornerRadius: 6)
                     .stroke(Color("colorBtnBlue"), lineWidth: 2)

@@ -255,4 +255,51 @@ Support for bereaved family and loved ones";
 "anuller"="Anuller";
 /* DECEASES VIEW END --------- -----------  --------- -------- */
 
+
+/* DiagnosisDeceaseDetailView content */
+"diseaseDrepanocytoseTitle"="Je souffre de Drépanocytose";
+"diseaseDrepanocytose"="Continuer à prendre vos traitements comme d’habitude
+(hydrea/siklos, exjade, desferal…).
+* Le rythme et le protocole des transfusions doit être conservé.
+* Eviter les anti-inflammatoires susceptibles d’aggraver une infection à Covid-19.
+* Cependant, si les anti-inflammatoires constituent votre traitement journalier, il
+est nécessaire de continuer.
+* En cas de doute, n’hésitez pas à poser la question à votre pharmacien/médecin.";
+
+"diseaseHypertensionTitle"="Je souffre d’Hypertension Artérielle";
+"diseaseHypertension"="Je vais consulter mon médecin pour adapter si nécessaire mon traitement pendant la pandémie.
+Si vous prenez des médicaments contre l'hypertension de la famille des bêtabloquants connus pour leur capacité à entrainer un étouffement (bronchospasme) chez les personnes déjà sensibles sur le plan respiratoire.
+
+La prudence recommande d'en discuter avec votre médecin pour une alternative thérapeutique. Continuez votre traitement s'il n'existe pas d'alternative efficace pour contrôler votre tension. Surtout,n'interrompez pas votre traitement sans en parler votre votre médecin";
+
+"diseaseRespirationTitle"="Je souffre de maladies respiratoires chroniques";
+"diseaseRespiration"="Les Bêta-bloquants peuvent provoquer un bronchospasme chez les sujets ayant des déjà des pathologies bronchiques (bronchite chronique, Asthme, BPCO...).
+
+Si vous souffrez d'une affection bronchique chronique et que vous êtes sous bêta-bloquants pour d'autres affections, consulter votre médecin pour étudier une alternative thérapeutique. N'interrompez pas votre traitement sans en parler votre votre médecin.";
+
+"diseaseThalasemieTitle"="Je souffre de Thalassémie";
+"diseaseThalasemie"="Si vous avez une thalassémie majeure, vous êtes régulièrement transfusé. Ces transfusions sont nécessaires pour corriger l’anémie mais également pour prévenir d’autres complications. Elles doivent se poursuivre selon le rythme habituel.
+
+Si vous avez une thalassémie intermédiaire et que vous recevez des transfusions régulières, le médecin spécialiste décidera de maintenir ou non les transfusions régulières en fonction de votre situation médicale personnelle et des complications potentielles.
+Ne pas prendre d’anti-inflammatoires non stéroïdiens (ex. Ibuprofène) ni de vitamine C à forte dose (plus de 250 mg/j).";
+
+"diseaseDiabeteTitle"="Je souffre de Diabète";
+"diseaseDiabete"="Je suis susceptible de développer des formes graves de Covid-19 en cas de diabète non équilibré ou de complications. Je respecte strictement les mesures barrières et la distanciation physique. Si je ne sais pas encore le faire, je dois apprendre à reconnaître les signes d'aggravation du diabète et des complications.
+
+J'en parle avec mon médecin si je ne sais le faire. Je dois veiller à maintenir un bon équilibre glycémique. Je maintiens une alimentation adaptée pour prévenir le risque d'hypoglycémie et je limite la consommation d'aliments riches en acides gras saturés afin de contrôler la prise de poids. Une activité physique régulière minimale est vivement conseillée.";
+
+"diseaseObesiteTitle"="Je souffre d'Obésité";
+"diseaseObesite"="Je suis concerné si j'ai un IMC supérieur ou égal à 30 kg/m2 et je respecte strictement les mesures barrières et la distanciation physique. Si de plus, mon IMC est supérieur ou égal à 40 kg/m2, j'étudie sérieusement la possibilité de travailler à distance dans la période de l’épidémie en limitant au maximum possible les contacts.
+
+Je continue tous mes traitements en cours. Je maintiens une alimentation adaptée et je limite la consommation d’aliments riches en acides gras saturés afin de contrôler la prise de poids. Une activité physique régulière minimale est vivement conseillée.";
+
+"btnContinueAnalysis"="Continuer le diagnostic";
+"btnHowToProtect"="Comment se proteger?";
+/* DiagnosisDeceaseDetailView content END */
+
+/* MALARIA VIEW */
+"diagnosisMalaria"="Vous avez un ou plusieurs symptômes du paludisme, il est nécessaire que vous consultiez un médecin qui pourra vous faire un test et vous donner les médicaments adéquats.
+
+Si vous avez déjà consulté et effectué ce test du paludisme et qu’il s’est révélé négatif alors cliquez sur le bouton ci-dessous.";
+/* MALARIA VIEW END */
 /* END DIAGNOSIS RESOURCES */

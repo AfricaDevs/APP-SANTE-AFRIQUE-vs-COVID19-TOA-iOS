@@ -57,7 +57,7 @@ struct MovementWhyView: View{
                 HStack{
                     Text("preventionMovementTitleWhy")
                         .font(  self.settings.textSize ? .system(size: 20): .system(size: 22))
-                        .fontWeight(.bold)
+                        .fontWeight(.semibold)
                 }
                 
                 
@@ -85,7 +85,7 @@ struct MovementWhenView: View{
                 
                 Text("preventionMovementTitleWhen")
                     .font(  self.settings.textSize ? .system(size: 20): .system(size: 22))
-                    .fontWeight(.bold)
+                    .fontWeight(.semibold)
                 
                 HStack{
                     Spacer()
@@ -136,7 +136,7 @@ struct MovementHowView: View{
                 HStack{
                     Text("preventionMovementTitleHow")
                         .font(  self.settings.textSize ? .system(size: 20): .system(size: 22))
-                        .fontWeight(.bold)
+                        .fontWeight(.semibold)
                     Spacer()
                 }
                 

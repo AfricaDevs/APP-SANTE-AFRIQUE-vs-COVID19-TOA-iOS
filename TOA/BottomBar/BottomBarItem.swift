@@ -39,7 +39,7 @@ public struct BottomBarItemView: View {
                 Text(item.title)
                     .foregroundColor(item.color)
                     .font(.caption)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .fontWeight(.bold)
             }
         }
         .padding()

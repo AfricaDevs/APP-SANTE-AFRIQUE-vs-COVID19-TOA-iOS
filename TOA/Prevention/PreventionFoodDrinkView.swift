@@ -52,7 +52,7 @@ struct PreventionFoodView: View {
             
             Text("preventionFoodTitle")
             .font(  self.settings.textSize ?  .body: .system(size: 20))
-            .fontWeight(.bold)
+            .fontWeight(.semibold)
             
             List{
                 ForEach(preventionFoodImages){ cell in
@@ -95,7 +95,7 @@ struct PreventionDrinkView: View {
             HStack{
             Text("preventionDrinkTitle")
             .font(  self.settings.textSize ?  .body: .system(size: 20))
-            .fontWeight(.bold).padding()
+            .fontWeight(.semibold).padding()
                 Spacer()
             }
             List{
