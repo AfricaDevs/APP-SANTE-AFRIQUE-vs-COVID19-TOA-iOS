@@ -21,6 +21,9 @@
 		2D3648E224B0F1DC0029196F /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */; };
 		2D3648E324B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */; };
 		2D4907F624B3C5C200D21CAA /* CountryCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4907F524B3C5C200D21CAA /* CountryCases.swift */; };
+		2D4FE37C24C0D98700505266 /* DiagnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FE37B24C0D98700505266 /* DiagnosisView.swift */; };
+		2D4FE37E24C177E300505266 /* DiagnosisDeceaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FE37D24C177E300505266 /* DiagnosisDeceaseView.swift */; };
+		2D4FE38024C17AE600505266 /* DiagnosisDeceaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FE37F24C17AE600505266 /* DiagnosisDeceaseDetailView.swift */; };
 		2D5D845924B9D88500A92532 /* AnalysisButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D845824B9D88500A92532 /* AnalysisButtonView.swift */; };
 		2D5D845B24B9D89800A92532 /* PreventionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D845A24B9D89800A92532 /* PreventionButtonView.swift */; };
 		2D7A801424BBC5870011AE16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A801324BBC5870011AE16 /* AboutView.swift */; };
@@ -78,6 +81,9 @@
 		2D3648E024B0F1DC0029196F /* TrackableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		2D3648E124B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollOffsetPreferenceKey.swift; sourceTree = "<group>"; };
 		2D4907F524B3C5C200D21CAA /* CountryCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCases.swift; sourceTree = "<group>"; };
+		2D4FE37B24C0D98700505266 /* DiagnosisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisView.swift; sourceTree = "<group>"; };
+		2D4FE37D24C177E300505266 /* DiagnosisDeceaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisDeceaseView.swift; sourceTree = "<group>"; };
+		2D4FE37F24C17AE600505266 /* DiagnosisDeceaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisDeceaseDetailView.swift; sourceTree = "<group>"; };
 		2D5D845824B9D88500A92532 /* AnalysisButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisButtonView.swift; sourceTree = "<group>"; };
 		2D5D845A24B9D89800A92532 /* PreventionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionButtonView.swift; sourceTree = "<group>"; };
 		2D7A801324BBC5870011AE16 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -238,6 +244,9 @@
 			isa = PBXGroup;
 			children = (
 				2D5D845824B9D88500A92532 /* AnalysisButtonView.swift */,
+				2D4FE37B24C0D98700505266 /* DiagnosisView.swift */,
+				2D4FE37D24C177E300505266 /* DiagnosisDeceaseView.swift */,
+				2D4FE37F24C17AE600505266 /* DiagnosisDeceaseDetailView.swift */,
 			);
 			path = Diagnosis;
 			sourceTree = "<group>";
@@ -441,6 +450,7 @@
 				2D2C040E24B1E66B00D6473A /* Prevention.swift in Sources */,
 				2D3648E324B0F1DC0029196F /* ScrollOffsetPreferenceKey.swift in Sources */,
 				2D2C041424B1FEB900D6473A /* DataLoader.swift in Sources */,
+				2D4FE37C24C0D98700505266 /* DiagnosisView.swift in Sources */,
 				2D82FCB824B4F8F500196A3F /* PreventionDeathsView.swift in Sources */,
 				2D7E5DA324BD06AF00011328 /* BottomBar.swift in Sources */,
 				2DFF654424BE57CF00887E47 /* PreventionWaterView.swift in Sources */,
@@ -455,6 +465,7 @@
 				2D5D845B24B9D89800A92532 /* PreventionButtonView.swift in Sources */,
 				2D4907F624B3C5C200D21CAA /* CountryCases.swift in Sources */,
 				2D82FCBA24B5CA6D00196A3F /* UserSettings.swift in Sources */,
+				2D4FE38024C17AE600505266 /* DiagnosisDeceaseDetailView.swift in Sources */,
 				2D95EC2224B681090034199E /* CustomPieChartView.swift in Sources */,
 				2D7E5DA124BCF63200011328 /* PreventionHandsWhenItemModel.swift in Sources */,
 				2D7A801424BBC5870011AE16 /* AboutView.swift in Sources */,
@@ -472,6 +483,7 @@
 				2DB15BF524AE6992003D2353 /* LottieView.swift in Sources */,
 				2DB6AE9624B2A6A50092A91A /* CountryModel.swift in Sources */,
 				2D7A801624BBCD880011AE16 /* PreventionHandsView.swift in Sources */,
+				2D4FE37E24C177E300505266 /* DiagnosisDeceaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
