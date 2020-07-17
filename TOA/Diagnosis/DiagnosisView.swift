@@ -163,7 +163,7 @@ struct DiagnosisView: View {
                 }
             }.padding(.bottom, 10)
             
-            NavigationLink(destination: DiagnosisView()){
+            NavigationLink(destination: DiagnosisDeceaseView()){
                 
                 HStack {
                     Text("btnNoSymptom")
