@@ -12,15 +12,17 @@ struct DiagnosisMalariaView: View {
     
     @EnvironmentObject var settings: UserSettings
     
-    @Binding var isShowing: Bool
+    @Binding var isShowing: Int
     
     var body: some View {
         VStack {
             HStack{
-                Text("diagnosisDeceasesQuestion")
+                Spacer()
+                Text("diagnosisMalariaTitle")
                     .multilineTextAlignment(.center)
                     .font( self.settings.textSize ? .system(size: 19) : .system(size: 21))
                     .padding(.all, 8)
+                    .padding(.vertical, 15)
                 Spacer()
             }
             .background(Color("colorBookBackground"))
@@ -33,46 +35,39 @@ struct DiagnosisMalariaView: View {
             
             Spacer()
             
-            NavigationLink(destination: DiagnosisDeceaseView()){
-                
-                HStack {
-                    Spacer()
-                    Text("btnContinueAnalysis")
-                        .fontWeight(.semibold)
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 18))
-                        .padding(.all, 10)
-                        .frame(minWidth: 0, maxWidth: .infinity)
+            Button(action: {
+                withAnimation{
+                    self.isShowing = 3 //
+                }}){
                     
-                    Spacer()
-                }.background(Color("colorBtnBlue"))
-                    .cornerRadius(30)
-                    .foregroundColor(.white)
-                    .padding(5)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 30)
-                            .stroke(Color("colorBtnBlue"), lineWidth: 5)
-                ) .padding(5)
+                    HStack {
+                        Spacer()
+                        Text("btnContinueAnalysis")
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                            .font(.system(size: 18))
+                            .padding(.all, 10)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                        
+                        Spacer()
+                    }.background(Color("colorBtnBlue"))
+                        .cornerRadius(30)
+                        .foregroundColor(.white)
+                        .padding(5)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 30)
+                                .stroke(Color("colorBtnBlue"), lineWidth: 5)
+                    ) .padding(5)
             }
             
-        }.navigationBarTitle("diagnosisTitle", displayMode: .inline)
-            .navigationBarItems(trailing: ToolbarItem().onTapGesture {
-                self.settings.textSize.toggle()
-                
-                UserDefaults.standard.set(self.settings.textSize, forKey: "textSize")
-            }).padding(.all, 10)
-            .overlay(
-                RoundedRectangle(cornerRadius: 6)
-                    .stroke(Color("colorBtnBlue"), lineWidth: 2)
-                
-        ).padding(.all, 10).onDisappear() { self.isShowing = false }
-        
+        }
     }
 }
 
 struct DiagnosisMalariaView_Previews: PreviewProvider {
+    
+    @State static var isShowing = 2;
     static var previews: some View {
-        Text("")
-        //DiagnosisMalariaView(isShowing: true)
+        DiagnosisMalariaView(isShowing: self.$isShowing)
     }
 }

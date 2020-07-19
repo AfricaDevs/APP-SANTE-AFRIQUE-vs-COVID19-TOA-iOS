@@ -10,31 +10,19 @@ import SwiftUI
 
 struct DiagnosisDeceaseView: View {
     
+    @Binding var isShowing: Int
+    @Binding var selectedDisease: Disease
+    @Binding var showCovidTestActionSheet: Bool
     @EnvironmentObject var settings: UserSettings
     
-    @State var showCovidTestActionSheet: Bool = false
-    
-    func testNo()-> Void{
-        
-    }
-    
     let diseases = [
-        Decease(id: 1, disease: "Drépanocytose"),
-        Decease(id: 2, disease: "Hypertension Artérielle"),
-        Decease(id: 3, disease: "Maladies respiratoires chroniques"),
-        Decease(id: 4, disease: "Thalassémie"),
-        Decease(id: 5, disease: "Diabète"),
-        Decease(id: 6, disease: "Obésité")
+        Disease(id: 1, disease: "Drépanocytose", detailTitle: "diseaseDrepanocytoseTitle", detailBody: "diseaseDrepanocytose"),
+        Disease(id: 2, disease: "Hypertension Artérielle", detailTitle: "diseaseHypertensionTitle", detailBody: "diseaseHypertension"),
+        Disease(id: 3, disease: "Maladies respiratoires chroniques", detailTitle: "diseaseRespirationTitle", detailBody: "diseaseRespiration"),
+        Disease(id: 4, disease: "Thalassémie", detailTitle: "diseaseThalasemieTitle", detailBody: "diseaseThalasemie"),
+        Disease(id: 5, disease: "Diabète", detailTitle: "diseaseDiabeteTitle", detailBody: "diseaseDiabete"),
+        Disease(id: 6, disease: "Obésité", detailTitle: "diseaseObesiteTitle", detailBody: "diseaseObesite")
     ]
-    
-    var actionSheet: ActionSheet {
-        ActionSheet(title: Text("diagnosisTestActionSheet"), message: Text("chooseOption"), buttons: [
-            .default(Text("testOptionYes")),
-            .default(Text("testOptionNo"), action: testNo),
-            .destructive(Text("anuller"))
-        ])
-    }
-
     
     var body: some View {
         
@@ -56,15 +44,29 @@ struct DiagnosisDeceaseView: View {
             
             Spacer()
             List{
+                
                 ForEach(self.diseases){ disease in
-                    NavigationLink( destination: DiagnosisDeceaseDetailView(disease: disease)){
-                        
+                    
+                    //We return the @Binding properties that manage the view state and the info to pass to the detail view
+                    Button(action: {
+                        self.selectedDisease = disease
+                        self.isShowing = 4 /// show DiagnosisDeceaseDetailView (detail view)
+                    }){
                         HStack{
                             Text(disease.disease).padding(.vertical)
                             Spacer()
                         }
-                        
                     }
+                    
+                    /* use this in case you want ti implement a nagigation instead of having a unique navigation like is the App doing
+                     
+                     NavigationLink( destination: DiagnosisDeceaseDetailView(isShowing: self.$isShowing, disease: disease)){
+                     HStack{
+                     Text(disease.disease).padding(.vertical)
+                     Spacer()
+                     }
+                     }
+                     */
                 }
             }
             Spacer()
@@ -72,7 +74,7 @@ struct DiagnosisDeceaseView: View {
             
             Button(
                 action: {
-               self.showCovidTestActionSheet.toggle()
+                    self.showCovidTestActionSheet = true//ActionSheet Test results
             }){ 
                 
                 HStack {
@@ -95,29 +97,25 @@ struct DiagnosisDeceaseView: View {
                 ) .padding(5)
             }
             
-        }.navigationBarTitle("diagnosisTitle", displayMode: .inline)
-            .navigationBarItems(trailing: ToolbarItem().onTapGesture {
-                self.settings.textSize.toggle()
-                
-                UserDefaults.standard.set(self.settings.textSize, forKey: "textSize")
-            }).padding(.all, 10)
-            .overlay(
-                RoundedRectangle(cornerRadius: 6)
-                    .stroke(Color("colorBtnBlue"), lineWidth: 2)
+        }
         
-        ).padding(.all, 10)
-            .actionSheet(isPresented: self.$showCovidTestActionSheet, content: {                  self.actionSheet })
         
     }
 }
 
 struct DiagnosisDeceaseView_Previews: PreviewProvider {
+    @State static var isShowing = 2
+    @State static var selectedDisease = Disease(id: 2, disease: "Hypertension Artérielle", detailTitle: "", detailBody: "")
+    @State static var showCovidTestActionSheet = false
+    
     static var previews: some View {
-        DiagnosisDeceaseView()
+        DiagnosisDeceaseView(isShowing: self.$isShowing, selectedDisease: self.$selectedDisease, showCovidTestActionSheet: self.$showCovidTestActionSheet)
     }
 }
 
-struct Decease: Identifiable {
+struct Disease: Identifiable {
     var id : Int
     var disease : String
+    var detailTitle: String
+    var detailBody: String
 }
