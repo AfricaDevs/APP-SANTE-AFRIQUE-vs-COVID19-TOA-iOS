@@ -229,7 +229,7 @@ Support for bereaved family and loved ones";
 "btnNoSymptom"="AUCUN SYMPTÔME";
 "diagnosisWarningCheck"="veuillez cocher une case pour continuer";
 
-"diagnosisIntro"="Avez-vous un ou plusieurs des symptômes suivants ? (cocher la ou les cases).";
+"diagnosisIntro"="Avez-vous un ou plusieurs des symptômes suivants ?";
 "diagnosisIntro2"="Recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
 
 "diagnosisSymptom1"="Des maux de tête";
@@ -298,8 +298,43 @@ Je continue tous mes traitements en cours. Je maintiens une alimentation adapté
 /* DiagnosisDeceaseDetailView content END */
 
 /* MALARIA VIEW */
+"diagnosisMalariaTitle"="Vous souffrez peut-être du paludisme";
 "diagnosisMalaria"="Vous avez un ou plusieurs symptômes du paludisme, il est nécessaire que vous consultiez un médecin qui pourra vous faire un test et vous donner les médicaments adéquats.
 
 Si vous avez déjà consulté et effectué ce test du paludisme et qu’il s’est révélé négatif alors cliquez sur le bouton ci-dessous.";
 /* MALARIA VIEW END */
+
+/* LAST DEPTH VIEW*/
+"diagnosisLastDepth1"="Avez-vous, dans les 10 jours suivants des symptômes suivants?
+
+* une grippe,
+* des difficultés respiratoires,
+* une impression de la poitrine qui serre,
+* une impression de ne pas pouvoir respirer profondément";
+
+"btnYesRespirationDifficulties"="Oui, j’ai des difficultés à respirer";
+"btnNoRespirationDifficulties"="Non, aucune difficulté à respirer";
+
+"diagnosisLastDepth2Question"="Avez-vous au moins un des symptômes suivants ?";
+"diagnosisLastDepth3Question"="Avez-vous au moins 3 des symptômes suivants ?";
+"diagnosisCheckCases"="(cocher la ou les cases)";
+"diagnosisNoneSymptoms"="Non, aucun de ces symptômes";
+
+/* DEPTH TWO */
+"depthTwoOption1"="Perte d'odorat";
+"depthTwoOption2"="Perte du goût";
+"depthTwoOption3"="Fièvre élevée (dès 38,5°C)";
+
+/* DEPTH THREE */
+"diagnosisDepth3Symptom1"="Une toux, mal de gorge, rhume";
+"diagnosisDepth3Symptom2"="Forte fatigue";
+"diagnosisDepth3Symptom3"="souffle court";
+"diagnosisDepth3Symptom4"="Des nausées, vomissements, diarrhées";
+"diagnosisDepth3Symptom5"="Des maux de tête, migraine";
+"diagnosisDepth3Symptom6"="Douleur dans les muscles et articulations";
+"diagnosisDepth3Symptom7"="Yeux gonflés, humides, rouges";
+"diagnosisDepth3Symptom8"="Rougeurs sur la peau, rash cutané, petites vésicules";
+
+/* LAST DEPTH VIEW END*/
+
 /* END DIAGNOSIS RESOURCES */

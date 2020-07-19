@@ -10,26 +10,15 @@ import SwiftUI
 
 struct DiagnosisDeceaseDetailView: View {
     
-    @EnvironmentObject var settings: UserSettings
+    @Binding var showCovidTestActionSheet: Bool
+    var selectedDisease : Disease
     
-    var disease : Decease
+    @EnvironmentObject var settings: UserSettings
     
     var body : some View{
         VStack{
-            if self.disease.id == 1 {
-                DeceaseItemView(title: "diseaseDrepanocytoseTitle", details: "diseaseDrepanocytose")
-            } else if self.disease.id == 2 {
-                DeceaseItemView(title: "diseaseHypertensionTitle", details: "diseaseHypertension")
-            } else if self.disease.id == 3 {
-                DeceaseItemView(title: "diseaseRespirationTitle", details: "diseaseRespiration")
-            } else if self.disease.id == 4 {
-                DeceaseItemView(title: "diseaseThalasemieTitle", details: "diseaseThalasemie")
-            } else if self.disease.id == 5 {
-                DeceaseItemView(title: "diseaseDiabeteTitle", details: "diseaseDiabete")
-            } else {
-                DeceaseItemView(title: "diseaseObesiteTitle", details: "diseaseObesite")
-            }
             
+            DeceaseItemView(showCovidTestActionSheet: self.$showCovidTestActionSheet, selectedDisease: self.selectedDisease)
             
         }.navigationBarTitle("diagnosisTitle", displayMode: .inline)
             .navigationBarItems(trailing: ToolbarItem().onTapGesture {
@@ -41,61 +30,44 @@ struct DiagnosisDeceaseDetailView: View {
                 RoundedRectangle(cornerRadius: 6)
                     .stroke(Color("colorBtnBlue"), lineWidth: 2)
                 
-        ).padding(.all, 10)
+        ).padding(.all, 5)
     }
 }
 
 struct DiagnosisDeceaseDetailView_Previews: PreviewProvider {
+    @State static var showCovidTestActionSheet = false
+    @State static var selectedDisease = Disease(id: 2, disease: "Hypertension Artérielle", detailTitle: "diseaseHypertensionTitle", detailBody: "diseaseHypertension")
+    
     static var previews: some View {
-        DiagnosisDeceaseDetailView(disease: Decease(id: 1, disease: "Diabète"))
+        DiagnosisDeceaseDetailView(showCovidTestActionSheet: self.$showCovidTestActionSheet, selectedDisease: self.selectedDisease)
     }
 }
 
 struct DeceaseItemView: View{
     
-    var title: String
-    var details: String
+    @Binding var showCovidTestActionSheet: Bool
+    var selectedDisease: Disease
     
     @EnvironmentObject var settings: UserSettings
-    @State var showCovidTestActionSheet: Bool = false
     
     
-    func actionYes() -> Void {
-        
-    }
-    
-    let testActionYes = TapGesture()
-    .onEnded { _ in
-        
-    }
-    let testYesView = Text("testOptionYes")//.gesture(testActionYes)
-    
-    var actionSheet: ActionSheet {
-        ActionSheet(title: Text("diagnosisTestActionSheet"), message: Text("chooseOption"), buttons: [
-            .default(
-                Text("testOptionYes")),
-            .default(Text("testOptionNo"), action: self.actionYes),
-            .destructive(Text("anuller"))
-        ])
-    }
     var body : some View{
         VStack{
             ScrollView{
                 VStack (alignment: .leading, spacing: 10){
                     HStack{
-                        Text(NSLocalizedString(title, comment:""))
-                            .font( self.settings.textSize ? .system(size: 20) : .system(size: 22))
+                        Text(NSLocalizedString(selectedDisease.detailTitle, comment:""))
+                            .font( self.settings.textSize ? .system(size: 18) : .system(size: 21))
                             .fontWeight(.semibold)
                     }
                     
                     HStack{
-                        Text(NSLocalizedString(details, comment:""))
+                        Text(NSLocalizedString(selectedDisease.detailBody, comment:""))
                             .font(  self.settings.textSize ? .body : .system(size: 20))
                     }
                     
                     Spacer()
-                    
-                }.actionSheet(isPresented: self.$showCovidTestActionSheet, content: {                  self.actionSheet })
+                } 
             }
             
             Spacer()
@@ -106,7 +78,8 @@ struct DeceaseItemView: View{
             
             Button(
                 action: {
-                    self.showCovidTestActionSheet.toggle()
+                    self.showCovidTestActionSheet = true
+                    //ActionSheet Covid Test nagative or positive
             }){
                 HStack {
                     Spacer()
@@ -125,7 +98,7 @@ struct DeceaseItemView: View{
                     .overlay(
                         RoundedRectangle(cornerRadius: 30)
                             .stroke(Color("colorBtnBlue"), lineWidth: 5)
-                ) .padding(5)
+                ) .padding(10)
             }
             
         }
