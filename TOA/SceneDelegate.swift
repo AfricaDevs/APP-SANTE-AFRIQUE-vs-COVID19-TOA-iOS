@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import SwiftDrawer
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -26,7 +27,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController =
-                UIHostingController(rootView: contentView.environmentObject(settings))
+                UIHostingController(rootView: contentView
+                    .environmentObject(settings) )
             self.window = window
             window.makeKeyAndVisible()
         }

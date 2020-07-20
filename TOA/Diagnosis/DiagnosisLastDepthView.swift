@@ -137,6 +137,8 @@ struct DepthTwoView: View {
     @State var isChecked2: Bool = false
     @State var isChecked3: Bool = false
     
+    @State var showWarning:Bool = false
+    
     @EnvironmentObject var settings: UserSettings
     
     var body: some View {
@@ -175,7 +177,7 @@ struct DepthTwoView: View {
                         Image(systemName: self.isChecked ? "checkmark.square": "square")
                         Text("depthTwoOption1") .fontWeight(.semibold)
                             
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("black"))
                         
                         Spacer()
                     }
@@ -191,7 +193,7 @@ struct DepthTwoView: View {
                         Image(systemName: self.isChecked2 ? "checkmark.square": "square")
                         Text("depthTwoOption2") .fontWeight(.semibold)
                             
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("black"))
                         
                         Spacer()
                     }
@@ -207,7 +209,7 @@ struct DepthTwoView: View {
                         Image(systemName: self.isChecked3 ? "checkmark.square": "square")
                         Text("depthTwoOption3") .fontWeight(.semibold)
                             
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("black"))
                         
                         Spacer()
                     }
@@ -220,9 +222,16 @@ struct DepthTwoView: View {
                 
                 Spacer()
                 Button(action: {
-                    withAnimation{
-                        self.isShowing = 6 // RootView show RESULT Positive
-                    }}){
+                        if self.isChecked || self.isChecked2 || self.isChecked3{
+                            withAnimation{
+                                 self.isShowing = 6 // RootView show RESULT Positive
+                            }
+                        } else{
+                            withAnimation{
+                                self.showWarning = true
+                            }
+                        }
+                    }){
                         
                         HStack {
                             Spacer()
@@ -334,7 +343,7 @@ struct DepthThreeView: View {
                                 Image(systemName: isChecked ? "checkmark.square": "square")
                                 Text("diagnosisDepth3Symptom1")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 
                                 Spacer()
                             }
@@ -345,7 +354,7 @@ struct DepthThreeView: View {
                                 Image(systemName: isChecked2 ? "checkmark.square": "square")
                                 Text("diagnosisDepth3Symptom3")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -355,7 +364,7 @@ struct DepthThreeView: View {
                                 Image(systemName: isChecked3 ? "checkmark.square": "square")
                                 Text("diagnosisDepth3Symptom2")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -365,7 +374,7 @@ struct DepthThreeView: View {
                                 Image(systemName: isChecked4 ? "checkmark.square": "square")
                                 Text("diagnosisDepth3Symptom4")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -375,7 +384,7 @@ struct DepthThreeView: View {
                                 Image(systemName: isChecked5 ? "checkmark.square": "square")
                                 Text("diagnosisDepth3Symptom5")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -385,7 +394,7 @@ struct DepthThreeView: View {
                                 Image(systemName: isChecked6 ? "checkmark.square": "square")
                                 Text("diagnosisDepth3Symptom6")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -395,7 +404,7 @@ struct DepthThreeView: View {
                                 Image(systemName: isChecked7 ? "checkmark.square": "square")
                                 Text("diagnosisDepth3Symptom7")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                     .multilineTextAlignment(.leading)
                                 Spacer()
                             }
@@ -407,7 +416,7 @@ struct DepthThreeView: View {
                                 Image(systemName: isChecked8 ? "checkmark.square": "square")
                                 Text("diagnosisDepth3Symptom8")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                     .multilineTextAlignment(.leading)
                                 Spacer()
                             }

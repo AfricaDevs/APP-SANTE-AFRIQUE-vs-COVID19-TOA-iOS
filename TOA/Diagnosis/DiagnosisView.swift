@@ -10,20 +10,24 @@ import SwiftUI
 
 struct DiagnosisView: View {
     
-    //1-Main, 2-Malaria, 3-Diseases, 4-DiseaseDetail, 5- , 6-
+    //1-Main, 2-Malaria, 3-Diseases, 4-DiseaseDetail, /5-DiagnosisLastDepth , //6-RESULTS Positive //7-RESULTS NEGATIVE
     @State var isShowing: Int = 1
     @State var showCovidTestActionSheet: Bool = false
     @State var selectedDisease = Disease(id: 2, disease: "Hypertension Artérielle", detailTitle: "diseaseHypertensionTitle", detailBody: "diseaseHypertension")
     
-    @EnvironmentObject var settings: UserSettings
+    @EnvironmentObject var settings: UserSettings 
     
     var actionSheet: ActionSheet {
         ActionSheet(title: Text("diagnosisTestActionSheet"), message: Text("chooseOption"), buttons: [
             .default(Text("testOptionYes"), action: {
-                self.isShowing = 6
+                withAnimation{
+                    self.isShowing = 6
+                }
             }),
             .default(Text("testOptionNo"), action: {
-                self.isShowing = 5
+                withAnimation{
+                    self.isShowing = 5
+                }
             }),
             .destructive(Text("anuller"))
         ])
@@ -35,37 +39,41 @@ struct DiagnosisView: View {
         VStack{
             if self.isShowing == 1{ //Home view
                 DiagnosisHomeView(isShowing: self.$isShowing)
+                .transition(AnyTransition.scale.animation(.easeInOut(duration: 1)))
                 
             } else if self.isShowing == 2{ //2-Malaria
                 DiagnosisMalariaView(isShowing: self.$isShowing)
+                    .transition(AnyTransition.scale.animation(.easeInOut(duration: 1)))
                 
             } else if self.isShowing == 3{ // 3-Diseases
                 DiagnosisDeceaseView(isShowing: self.$isShowing, selectedDisease: self.$selectedDisease, showCovidTestActionSheet: self.$showCovidTestActionSheet)
+                .transition(AnyTransition.scale.animation(.easeInOut(duration: 1)))
                 
             } else if self.isShowing == 4{ //4-Disease Detail
                 DiagnosisDeceaseDetailView(showCovidTestActionSheet: self.$showCovidTestActionSheet, selectedDisease: self.selectedDisease)
+                .transition(AnyTransition.scale.animation(.easeInOut(duration: 1)))
                 
             } else if self.isShowing == 5{ //5-DiagnosisLastDepth
                 DiagnosisLastDepthView(isShowing:  self.$isShowing)
+                .transition(AnyTransition.scale.animation(.easeInOut(duration: 1)))
                 
             } else if self.isShowing == 6{ //6-RESULTS Positive
                 ResultPositiveView(isShowing:  self.$isShowing)
+                .transition(AnyTransition.scale.animation(.easeInOut(duration: 1)))
                 
             } else if self.isShowing == 7{ //7-RESULTS NEGATIVE
                 ResultNegativeView(isShowing:  self.$isShowing)
-                
-            } else if self.isShowing == 8{ // EXIT THE DIAGNOSIS
-                //exit
+                .transition(AnyTransition.scale.animation(.easeInOut(duration: 1)))
                 
             }
         }.actionSheet(isPresented: self.$showCovidTestActionSheet, content: {                  self.actionSheet })
             
-            .navigationBarTitle("diagnosisTitle", displayMode: .inline)
+            .navigationBarTitle( self.isShowing < 6 ? "diagnosisTitle" : "diagnosisResultTitle", displayMode: .inline)
             .navigationBarItems(trailing: ToolbarItem().onTapGesture {
                 self.settings.textSize.toggle()
                 
                 UserDefaults.standard.set(self.settings.textSize, forKey: "textSize")
-            }).padding(.all, 10)
+            }).padding(.all,  10)
             .overlay(
                 RoundedRectangle(cornerRadius: 6)
                     .stroke(Color("colorBtnBlue"), lineWidth: 2))

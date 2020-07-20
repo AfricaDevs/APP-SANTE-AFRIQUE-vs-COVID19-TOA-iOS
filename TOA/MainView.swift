@@ -17,11 +17,12 @@ import Alamofire
 
 struct MainView: View {
     
+    @Binding var showMoreActionSheet:Bool
+    
     @EnvironmentObject var settings: UserSettings
     
     @State private var scrollViewContentOffset = CGFloat(0)
     @State private var buttonOnTapAnimationStatus = false
-    @State private var showingMore = false
     @State var selection : Country = Country(id: 0, name: "Congo (Brazzaville)", iso2: "cg", iso3: "cg") //initialized country to Congo
     
     @State var mathdroApiCountryResult : CountryCases = CountryCases(confirmed: CasesSubItem(value: 0), recovered: CasesSubItem(value: 0), deaths: CasesSubItem(value: 0)) //The default value of cases in a country are 0 util the API load remote data
@@ -47,7 +48,6 @@ struct MainView: View {
                     Image("covid_worms_bg")
                         .resizable()
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight:   self.animatedViewHeight , alignment: .top)
-                    
                     
                     AnimatedView(imageName: "covid_worms_bg")
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.animatedViewHeight, alignment: .top)
@@ -87,14 +87,14 @@ struct MainView: View {
                             ZStack{
                                 LinearGradient(gradient: Gradient(colors:
                                     [
-                                        Color("colorLinearGradient1").opacity(0.3),//Color.gray.opacity(0.3),
+                                        Color("colorLinearGradient1").opacity(0.3),
                                         Color("colorLinearGradient2").opacity(0.1),
                                         Color("colorLinearGradient3").opacity(0.15),
                                         Color("colorLinearGradient4").opacity(0.3)
                                     ]
                                 ), startPoint: .top, endPoint: .bottom)
                                 
-                                RadialGradient(gradient: Gradient(colors: [Color.white.opacity(0.8), Color.black.opacity(0.1)]), center: .leading, startRadius: 10, endRadius: 120)//.padding(.top, 70)
+                                RadialGradient(gradient: Gradient(colors: [Color.white.opacity(0.8), Color.black.opacity(0.1)]), center: .leading, startRadius: 10, endRadius: 120) 
                                 
                             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.animatedViewHeight, alignment: .top)
                             
@@ -228,8 +228,9 @@ struct MainView: View {
                             Text("appMore")
                                 .font(.footnote)
                                 .onTapGesture {
-                                    self.showingMore.toggle()
-                            }/*.sheet(isPresented: self.$showingMore) {
+                                    self.showMoreActionSheet.toggle()
+                            }
+                                /*.sheet(isPresented: self.$showingMore) {
                                  AboutView()
                             }*/
                             Spacer()
@@ -285,9 +286,12 @@ struct ToolbarItem: View {
 }
 
 struct MainView_Previews: PreviewProvider {
+    
+    @State static var showMoreActionSheet:Bool = false
+    
     static var previews: some View {
         
-        MainView( )
+        MainView(showMoreActionSheet: self.$showMoreActionSheet)
     }
 }
  

@@ -31,7 +31,6 @@
 		2D4FE39224C2FB8E00505266 /* ResultNegativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4FE39124C2FB8E00505266 /* ResultNegativeView.swift */; };
 		2D5D845924B9D88500A92532 /* AnalysisButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D845824B9D88500A92532 /* AnalysisButtonView.swift */; };
 		2D5D845B24B9D89800A92532 /* PreventionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D845A24B9D89800A92532 /* PreventionButtonView.swift */; };
-		2D7A801424BBC5870011AE16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A801324BBC5870011AE16 /* AboutView.swift */; };
 		2D7A801624BBCD880011AE16 /* PreventionHandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A801524BBCD880011AE16 /* PreventionHandsView.swift */; };
 		2D7A803C24BBE0750011AE16 /* BottomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A803824BBE0740011AE16 /* BottomBarItem.swift */; };
 		2D7E5DA124BCF63200011328 /* PreventionHandsWhenItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5DA024BCF63200011328 /* PreventionHandsWhenItemModel.swift */; };
@@ -66,6 +65,7 @@
 		2DB6AE9624B2A6A50092A91A /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6AE9524B2A6A50092A91A /* CountryModel.swift */; };
 		2DB6AE9824B2BB3F0092A91A /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6AE9724B2BB3F0092A91A /* CustomImage.swift */; };
 		2DC5054224BC908300C9416B /* PreventionHandsHowItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5054124BC908300C9416B /* PreventionHandsHowItemModel.swift */; };
+		2DF29C8A24C61DA100274BC9 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF29C8924C61DA100274BC9 /* TeamView.swift */; };
 		2DFF654224BE17C200887E47 /* PreventionGarbageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF654124BE17C200887E47 /* PreventionGarbageView.swift */; };
 		2DFF654424BE57CF00887E47 /* PreventionWaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF654324BE57CF00887E47 /* PreventionWaterView.swift */; };
 /* End PBXBuildFile section */
@@ -96,7 +96,6 @@
 		2D4FE39124C2FB8E00505266 /* ResultNegativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultNegativeView.swift; sourceTree = "<group>"; };
 		2D5D845824B9D88500A92532 /* AnalysisButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisButtonView.swift; sourceTree = "<group>"; };
 		2D5D845A24B9D89800A92532 /* PreventionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionButtonView.swift; sourceTree = "<group>"; };
-		2D7A801324BBC5870011AE16 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		2D7A801524BBCD880011AE16 /* PreventionHandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionHandsView.swift; sourceTree = "<group>"; };
 		2D7A803824BBE0740011AE16 /* BottomBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarItem.swift; sourceTree = "<group>"; };
 		2D7E5DA024BCF63200011328 /* PreventionHandsWhenItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionHandsWhenItemModel.swift; sourceTree = "<group>"; };
@@ -132,6 +131,7 @@
 		2DB6AE9524B2A6A50092A91A /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		2DB6AE9724B2BB3F0092A91A /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		2DC5054124BC908300C9416B /* PreventionHandsHowItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionHandsHowItemModel.swift; sourceTree = "<group>"; };
+		2DF29C8924C61DA100274BC9 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		2DFF654124BE17C200887E47 /* PreventionGarbageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionGarbageView.swift; sourceTree = "<group>"; };
 		2DFF654324BE57CF00887E47 /* PreventionWaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionWaterView.swift; sourceTree = "<group>"; };
 		4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOA.release.xcconfig"; path = "Target Support Files/Pods-TOA/Pods-TOA.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 				2D0A293524A65AE300A36C56 /* SceneDelegate.swift */,
 				2D0A293724A65AE300A36C56 /* ContentView.swift */,
 				2DB15BD524AD8445003D2353 /* MainView.swift */,
-				2D7A801324BBC5870011AE16 /* AboutView.swift */,
 				2DB15BCE24AD6A49003D2353 /* SplashView.swift */,
+				2DF29C8924C61DA100274BC9 /* TeamView.swift */,
 				2D0A293E24A65AE700A36C56 /* LaunchScreen.storyboard */,
 				2D82FCB924B5CA6D00196A3F /* UserSettings.swift */,
 				2D2C040C24B1DDC000D6473A /* Resources */,
@@ -467,6 +467,7 @@
 				2D2C041424B1FEB900D6473A /* DataLoader.swift in Sources */,
 				2D4FE37C24C0D98700505266 /* DiagnosisView.swift in Sources */,
 				2D82FCB824B4F8F500196A3F /* PreventionDeathsView.swift in Sources */,
+				2DF29C8A24C61DA100274BC9 /* TeamView.swift in Sources */,
 				2D7E5DA324BD06AF00011328 /* BottomBar.swift in Sources */,
 				2DFF654424BE57CF00887E47 /* PreventionWaterView.swift in Sources */,
 				2D3648E224B0F1DC0029196F /* TrackableScrollView.swift in Sources */,
@@ -484,7 +485,6 @@
 				2D95EC2224B681090034199E /* CustomPieChartView.swift in Sources */,
 				2D4FE38624C2491600505266 /* DiagnosisLastDepthView.swift in Sources */,
 				2D7E5DA124BCF63200011328 /* PreventionHandsWhenItemModel.swift in Sources */,
-				2D7A801424BBC5870011AE16 /* AboutView.swift in Sources */,
 				2D4FE38E24C2562900505266 /* DiagnosisHomeView.swift in Sources */,
 				2D0A293424A65AE300A36C56 /* AppDelegate.swift in Sources */,
 				2DB15BCF24AD6A49003D2353 /* SplashView.swift in Sources */,
@@ -663,7 +663,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TOA/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PYR8254W73;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TOA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -684,10 +684,10 @@
 			baseConfigurationReference = 4DE7CDB9BC7983DA21F23E02 /* Pods-TOA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"TOA/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PYR8254W73;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TOA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -697,7 +697,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.africadevs.toa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Steve NDENDE test TOA 2p";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

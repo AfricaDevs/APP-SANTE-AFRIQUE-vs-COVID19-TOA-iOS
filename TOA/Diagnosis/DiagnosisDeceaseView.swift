@@ -49,8 +49,10 @@ struct DiagnosisDeceaseView: View {
                     
                     //We return the @Binding properties that manage the view state and the info to pass to the detail view
                     Button(action: {
+                        withAnimation{
                         self.selectedDisease = disease
                         self.isShowing = 4 /// show DiagnosisDeceaseDetailView (detail view)
+                        }
                     }){
                         HStack{
                             Text(disease.disease).padding(.vertical)

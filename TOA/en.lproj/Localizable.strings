@@ -225,8 +225,8 @@ Support for bereaved family and loved ones";
 /*MAIN VIEW */
 "diagnosisTitle"="Analysez vos symptômes";
 
-"btnNextSpaced"=" S U I V A N T ";
-"btnNoSymptom"="AUCUN SYMPTÔME";
+"btnNextSpaced"=" N E X T ";
+"btnNoSymptom"="NO SYMPTOM";
 "diagnosisWarningCheck"="veuillez cocher une case pour continuer";
 
 "diagnosisIntro"="Avez-vous un ou plusieurs des symptômes suivants ?";
@@ -257,84 +257,101 @@ Support for bereaved family and loved ones";
 
 
 /* DiagnosisDeceaseDetailView content */
-"diseaseDrepanocytoseTitle"="Je souffre de Drépanocytose";
-"diseaseDrepanocytose"="Continuer à prendre vos traitements comme d’habitude
-(hydrea/siklos, exjade, desferal…).
-* Le rythme et le protocole des transfusions doit être conservé.
-* Eviter les anti-inflammatoires susceptibles d’aggraver une infection à Covid-19.
-* Cependant, si les anti-inflammatoires constituent votre traitement journalier, il
-est nécessaire de continuer.
-* En cas de doute, n’hésitez pas à poser la question à votre pharmacien/médecin.";
+"diseaseDrepanocytoseTitle"="I suffer from sickle cell disease";
+"diseaseDrepanocytose"="You must continue to take your treatments as usual (hydrea/siklos, exjade, desferal...).
+The rhythm and protocol of transfusions must be maintained.
 
-"diseaseHypertensionTitle"="Je souffre d’Hypertension Artérielle";
-"diseaseHypertension"="Je vais consulter mon médecin pour adapter si nécessaire mon traitement pendant la pandémie.
-Si vous prenez des médicaments contre l'hypertension de la famille des bêtabloquants connus pour leur capacité à entrainer un étouffement (bronchospasme) chez les personnes déjà sensibles sur le plan respiratoire.
+The use of anti-inflammatory drugs should be avoided as it may aggravate an infection with Covid-19. However, if anti-inflammatory drugs are your daily treatment, it is necessary to continue. If in doubt, don't hesitate to ask your pharmacist/doctor.
+";
 
-La prudence recommande d'en discuter avec votre médecin pour une alternative thérapeutique. Continuez votre traitement s'il n'existe pas d'alternative efficace pour contrôler votre tension. Surtout,n'interrompez pas votre traitement sans en parler votre votre médecin";
+"diseaseHypertensionTitle"="I suffer from Arterial Hypertension";
+"diseaseHypertension"="You should consult your doctor to adjust your treatment during the pandemic if necessary.
+If you are taking hypertension medications such as converting enzyme inhibitor, even if there appears to be no risk, caution recommends to ask to your doctor for a therapeutic alternative.
 
-"diseaseRespirationTitle"="Je souffre de maladies respiratoires chroniques";
-"diseaseRespiration"="Les Bêta-bloquants peuvent provoquer un bronchospasme chez les sujets ayant des déjà des pathologies bronchiques (bronchite chronique, Asthme, BPCO...).
+Continue your treatment if there is no effective alternative to control your blood pressure. Above all, don't interrupt your treatment without telling your doctor";
 
-Si vous souffrez d'une affection bronchique chronique et que vous êtes sous bêta-bloquants pour d'autres affections, consulter votre médecin pour étudier une alternative thérapeutique. N'interrompez pas votre traitement sans en parler votre votre médecin.";
+"diseaseRespirationTitle"="I suffer from Chronic respiratory diseases";
+"diseaseRespiration"="Beta blockers can cause bronchospasm in people with bronchial diseases (chronic bronchitis, asthma, COPD...).
 
-"diseaseThalasemieTitle"="Je souffre de Thalassémie";
-"diseaseThalasemie"="Si vous avez une thalassémie majeure, vous êtes régulièrement transfusé. Ces transfusions sont nécessaires pour corriger l’anémie mais également pour prévenir d’autres complications. Elles doivent se poursuivre selon le rythme habituel.
+If you have chronic bronchial disease and if you take beta blockers for other reasons, ask your doctor for a therapeutic alternative. Do not interrupt your treatment without telling your doctor.
+";
 
-Si vous avez une thalassémie intermédiaire et que vous recevez des transfusions régulières, le médecin spécialiste décidera de maintenir ou non les transfusions régulières en fonction de votre situation médicale personnelle et des complications potentielles.
-Ne pas prendre d’anti-inflammatoires non stéroïdiens (ex. Ibuprofène) ni de vitamine C à forte dose (plus de 250 mg/j).";
+"diseaseThalasemieTitle"="I suffer from Thalassemia";
+"diseaseThalasemie"="If you have a severe thalassemia, you are regularly transfused. These transfusions are necessary to correct anemia but also to prevent further complications. They must continue at the usual rhythm.
 
-"diseaseDiabeteTitle"="Je souffre de Diabète";
-"diseaseDiabete"="Je suis susceptible de développer des formes graves de Covid-19 en cas de diabète non équilibré ou de complications. Je respecte strictement les mesures barrières et la distanciation physique. Si je ne sais pas encore le faire, je dois apprendre à reconnaître les signes d'aggravation du diabète et des complications.
+If you have a moderate thalassemia and receive regular transfusions, the specialist doctor will decide whether or not to maintain regular transfusions based on your personal medical situation and potential complications. Do not take nonsteroidal anti-inflammatory drugs (e.g. Ibuprofen) or high-dose vitamin C (more than 250 mg/d).
+";
 
-J'en parle avec mon médecin si je ne sais le faire. Je dois veiller à maintenir un bon équilibre glycémique. Je maintiens une alimentation adaptée pour prévenir le risque d'hypoglycémie et je limite la consommation d'aliments riches en acides gras saturés afin de contrôler la prise de poids. Une activité physique régulière minimale est vivement conseillée.";
+"diseaseDiabeteTitle"="I suffer from Diabetes";
+"diseaseDiabete"="You are likely to develop severe forms of Covid-19 in case of unbalanced diabetes or complications. You trictly respect barrier measures and physical distanciation. If you don't know how to do it yet, you have to learn to recognize the signs of worsening diabetes and complications.
 
-"diseaseObesiteTitle"="Je souffre d'Obésité";
-"diseaseObesite"="Je suis concerné si j'ai un IMC supérieur ou égal à 30 kg/m2 et je respecte strictement les mesures barrières et la distanciation physique. Si de plus, mon IMC est supérieur ou égal à 40 kg/m2, j'étudie sérieusement la possibilité de travailler à distance dans la période de l’épidémie en limitant au maximum possible les contacts.
+You should talk to your doctor about it. If not possible, you must make sure that you maintain a good glycemic balance.
+You maintain a suitable diet to prevent the risk of hypoglycemia and you limit the consumption of foods rich in saturated fatty acids in order to control weight gain. Minimal regular physical activity is strongly recommended.
+";
 
-Je continue tous mes traitements en cours. Je maintiens une alimentation adaptée et je limite la consommation d’aliments riches en acides gras saturés afin de contrôler la prise de poids. Une activité physique régulière minimale est vivement conseillée.";
+"diseaseObesiteTitle"="I suffer from Obesity";
+"diseaseObesite"="You are concerned if you have a BMI of 30 kg/m2 or higher and you strictly respect barrier measures and physical distanciation.
 
-"btnContinueAnalysis"="Continuer le diagnostic";
+If your BMI is greater than or equal to 40 kg/m2, you are seriously considering the possibility of working remotely during the period of the epidemic by limiting contact as much as possible. Keep all your treatments in progress.
+
+You maintain a suitable diet and limit the consumption of foods rich in saturated fatty acids in order to control weight gain. Minimal regular physical activity is strongly recommended.
+";
+
+"btnContinueAnalysis"="Continue diagnosis";
 "btnHowToProtect"="Comment se proteger?";
 /* DiagnosisDeceaseDetailView content END */
 
 /* MALARIA VIEW */
-"diagnosisMalariaTitle"="Vous souffrez peut-être du paludisme";
-"diagnosisMalaria"="Vous avez un ou plusieurs symptômes du paludisme, il est nécessaire que vous consultiez un médecin qui pourra vous faire un test et vous donner les médicaments adéquats.
+"diagnosisMalariaTitle"="You may be suffering from malaria";
+"diagnosisMalaria"="You have one or more symptoms of malaria, it is necessary that you see a doctor who can do a test and give you the appropriate medication.
 
-Si vous avez déjà consulté et effectué ce test du paludisme et qu’il s’est révélé négatif alors cliquez sur le bouton ci-dessous.";
+If you have visited and tested for malaria before and it came back negative then click on the button below.";
 /* MALARIA VIEW END */
 
 /* LAST DEPTH VIEW*/
-"diagnosisLastDepth1"="Avez-vous, dans les 10 jours suivants des symptômes suivants?
+"diagnosisLastDepth1"="Do you have,  within 10 days of flu symptoms, shortness of breath or persistent pain or pressure in the chest ?";
 
-* une grippe,
-* des difficultés respiratoires,
-* une impression de la poitrine qui serre,
-* une impression de ne pas pouvoir respirer profondément";
+"btnYesRespirationDifficulties"="Yes, I have trouble breathing";
+"btnNoRespirationDifficulties"="No,  I don’t have trouble breathing";
 
-"btnYesRespirationDifficulties"="Oui, j’ai des difficultés à respirer";
-"btnNoRespirationDifficulties"="Non, aucune difficulté à respirer";
-
-"diagnosisLastDepth2Question"="Avez-vous au moins un des symptômes suivants ?";
-"diagnosisLastDepth3Question"="Avez-vous au moins 3 des symptômes suivants ?";
+"diagnosisLastDepth2Question"="Do you have at least one of the following symptoms?";
+"diagnosisLastDepth3Question"="Do you have at least one of the following symptoms? ";
 "diagnosisCheckCases"="(cocher la ou les cases)";
 "diagnosisNoneSymptoms"="Non, aucun de ces symptômes";
 
 /* DEPTH TWO */
-"depthTwoOption1"="Perte d'odorat";
-"depthTwoOption2"="Perte du goût";
-"depthTwoOption3"="Fièvre élevée (dès 38,5°C)";
+"depthTwoOption1"="Loss of smell";
+"depthTwoOption2"="Loss of taste";
+"depthTwoOption3"="High fever (from 38.5°C)";
 
 /* DEPTH THREE */
-"diagnosisDepth3Symptom1"="Une toux, mal de gorge, rhume";
-"diagnosisDepth3Symptom2"="Forte fatigue";
-"diagnosisDepth3Symptom3"="souffle court";
-"diagnosisDepth3Symptom4"="Des nausées, vomissements, diarrhées";
-"diagnosisDepth3Symptom5"="Des maux de tête, migraine";
-"diagnosisDepth3Symptom6"="Douleur dans les muscles et articulations";
-"diagnosisDepth3Symptom7"="Yeux gonflés, humides, rouges";
-"diagnosisDepth3Symptom8"="Rougeurs sur la peau, rash cutané, petites vésicules";
-
+"diagnosisDepth3Symptom1"="cough / sore throat / cold";
+"diagnosisDepth3Symptom2"="Fatigue";
+"diagnosisDepth3Symptom3"="short breath";
+"diagnosisDepth3Symptom4"="Nausea/vomiting/diarrhea";
+"diagnosisDepth3Symptom5"="Headaches/migraine";
+"diagnosisDepth3Symptom6"="Muscles or joints pains";
+"diagnosisDepth3Symptom7"="Puffy, wet, red eyes";
+"diagnosisDepth3Symptom8"="Skin redness/skin rash/small blisters";
 /* LAST DEPTH VIEW END*/
 
+/* RESULTS */
+"diagnosisResultTitle"="Résultat du Diagnostic";
+
+/*RESULTS POSITIVE */
+"resultPositive"="I have severe symptoms of Covid-19.
+I immediately go to the nearest hospital or Covid-19 health center. If not possible, I immediatly consult a doctor or I call the dedicated hotline for Covid 19.";
+
+"resultRestart"="Récommencer mon diagnostic";
+"resultOthers"="Comment protéger les autres?";
+
+/*RESULTS NEGATIVE */
+"resultNegative"="Your dagnosis is négatif";
+"resultProtection"="Remember to protect your loved ones and fellow citizens by observing the barrier measures";
+"resultContinueProtection"="Do not let your guard down as long as the pandemic is active in the country where you are";
+
 /* END DIAGNOSIS RESOURCES */
+
+
+"mainOoptionTeam"="TEAM (Collectif TOÂ)";
+"mainOoptionCredits"="CREDITS";

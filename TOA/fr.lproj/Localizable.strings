@@ -181,3 +181,143 @@ Aliments riches en Vitamines et Zinc recommandés pour lutter contre le Covid19"
 /* PREVENTION MOVEMENT END --------- -----------  --------- -------- */
 
 /* END PREVENTION RESOURCES */
+
+
+
+
+
+
+/* DIAGNOSIS RESOURCES */
+
+/*MAIN VIEW */
+"diagnosisTitle"="Analysez vos symptômes";
+
+"btnNextSpaced"=" S U I V A N T ";
+"btnNoSymptom"="AUCUN SYMPTÔME";
+"diagnosisWarningCheck"="veuillez cocher une case pour continuer";
+
+"diagnosisIntro"="Avez-vous un ou plusieurs des symptômes suivants ?";
+"diagnosisIntro2"="Recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
+
+"diagnosisSymptom1"="Des maux de tête";
+"diagnosisSymptom2"="Une forte fatigue";
+"diagnosisSymptom3"="Une toux";
+"diagnosisSymptom4"="Des nausées";
+"diagnosisSymptom5"="Des vomissements";
+"diagnosisSymptom6"="De la diarrhée";
+"diagnosisSymptom7"="Fièvre élevée et accompagnée de frissons, de sudations, de douleurs dans les muscles et les articulations";
+
+/*MAIN VIEW  END --------- -----------  --------- -------- */
+
+
+/* DECEASES VIEW */
+"diagnosisDeceasesQuestion"="Souffrez-vous d’une des maladies reconnues suivantes?";
+"diagnosisDeceasesQuestionMore"="Indiquez et recevez aussitôt des informations adaptées sur ce qu’il est préférable de faire";
+"btnDiagnosisDeceaseNone"="Non, Aucune";
+
+"diagnosisTestActionSheet"="Vous avez effectué un test de Covid-19 et il est positif?";
+"chooseOption"="Choisissez une Option";
+"testOptionYes"="Oui, j’ai eu un test positif au Covid-19";
+"testOptionNo"="Non, je n’ai pas eu de test positif au Covid-19";
+"anuller"="Anuller";
+/* DECEASES VIEW END --------- -----------  --------- -------- */
+
+
+/* DiagnosisDeceaseDetailView content */
+"diseaseDrepanocytoseTitle"="Je souffre de Drépanocytose";
+"diseaseDrepanocytose"="Continuer à prendre vos traitements comme d’habitude
+(hydrea/siklos, exjade, desferal…).
+* Le rythme et le protocole des transfusions doit être conservé.
+* Eviter les anti-inflammatoires susceptibles d’aggraver une infection à Covid-19.
+* Cependant, si les anti-inflammatoires constituent votre traitement journalier, il
+est nécessaire de continuer.
+* En cas de doute, n’hésitez pas à poser la question à votre pharmacien/médecin.";
+
+"diseaseHypertensionTitle"="Je souffre d’Hypertension Artérielle";
+"diseaseHypertension"="Je vais consulter mon médecin pour adapter si nécessaire mon traitement pendant la pandémie.
+Si vous prenez des médicaments contre l'hypertension de la famille des bêtabloquants connus pour leur capacité à entrainer un étouffement (bronchospasme) chez les personnes déjà sensibles sur le plan respiratoire.
+
+La prudence recommande d'en discuter avec votre médecin pour une alternative thérapeutique. Continuez votre traitement s'il n'existe pas d'alternative efficace pour contrôler votre tension. Surtout,n'interrompez pas votre traitement sans en parler votre votre médecin";
+
+"diseaseRespirationTitle"="Je souffre de maladies respiratoires chroniques";
+"diseaseRespiration"="Les Bêta-bloquants peuvent provoquer un bronchospasme chez les sujets ayant des déjà des pathologies bronchiques (bronchite chronique, Asthme, BPCO...).
+
+Si vous souffrez d'une affection bronchique chronique et que vous êtes sous bêta-bloquants pour d'autres affections, consulter votre médecin pour étudier une alternative thérapeutique. N'interrompez pas votre traitement sans en parler votre votre médecin.";
+
+"diseaseThalasemieTitle"="Je souffre de Thalassémie";
+"diseaseThalasemie"="Si vous avez une thalassémie majeure, vous êtes régulièrement transfusé. Ces transfusions sont nécessaires pour corriger l’anémie mais également pour prévenir d’autres complications. Elles doivent se poursuivre selon le rythme habituel.
+
+Si vous avez une thalassémie intermédiaire et que vous recevez des transfusions régulières, le médecin spécialiste décidera de maintenir ou non les transfusions régulières en fonction de votre situation médicale personnelle et des complications potentielles.
+Ne pas prendre d’anti-inflammatoires non stéroïdiens (ex. Ibuprofène) ni de vitamine C à forte dose (plus de 250 mg/j).";
+
+"diseaseDiabeteTitle"="Je souffre de Diabète";
+"diseaseDiabete"="Je suis susceptible de développer des formes graves de Covid-19 en cas de diabète non équilibré ou de complications. Je respecte strictement les mesures barrières et la distanciation physique. Si je ne sais pas encore le faire, je dois apprendre à reconnaître les signes d'aggravation du diabète et des complications.
+
+J'en parle avec mon médecin si je ne sais le faire. Je dois veiller à maintenir un bon équilibre glycémique. Je maintiens une alimentation adaptée pour prévenir le risque d'hypoglycémie et je limite la consommation d'aliments riches en acides gras saturés afin de contrôler la prise de poids. Une activité physique régulière minimale est vivement conseillée.";
+
+"diseaseObesiteTitle"="Je souffre d'Obésité";
+"diseaseObesite"="Je suis concerné si j'ai un IMC supérieur ou égal à 30 kg/m2 et je respecte strictement les mesures barrières et la distanciation physique. Si de plus, mon IMC est supérieur ou égal à 40 kg/m2, j'étudie sérieusement la possibilité de travailler à distance dans la période de l’épidémie en limitant au maximum possible les contacts.
+
+Je continue tous mes traitements en cours. Je maintiens une alimentation adaptée et je limite la consommation d’aliments riches en acides gras saturés afin de contrôler la prise de poids. Une activité physique régulière minimale est vivement conseillée.";
+
+"btnContinueAnalysis"="Continuer le diagnostic";
+"btnHowToProtect"="Comment se proteger?";
+/* DiagnosisDeceaseDetailView content END */
+
+/* MALARIA VIEW */
+"diagnosisMalariaTitle"="Vous souffrez peut-être du paludisme";
+"diagnosisMalaria"="Vous avez un ou plusieurs symptômes du paludisme, il est nécessaire que vous consultiez un médecin qui pourra vous faire un test et vous donner les médicaments adéquats.
+
+Si vous avez déjà consulté et effectuer le test du paludisme et qu’il s’est révélé négatif alors cliquez sur le bouton ci-dessous.";
+/* MALARIA VIEW END */
+
+/* LAST DEPTH VIEW*/
+"diagnosisLastDepth1"="Avez-vous, dans les 10 jours suivants des symptômes suivants?
+
+* une grippe,
+* des difficultés respiratoires,
+* une impression de la poitrine qui serre,
+* une impression de ne pas pouvoir respirer profondément";
+
+"btnYesRespirationDifficulties"="Oui, j’ai des difficultés à respirer";
+"btnNoRespirationDifficulties"="Non, aucune difficulté à respirer";
+
+"diagnosisLastDepth2Question"="Avez-vous au moins un des symptômes suivants ?";
+"diagnosisLastDepth3Question"="Avez-vous au moins 3 des symptômes suivants ?";
+"diagnosisCheckCases"="(cocher la ou les cases)";
+"diagnosisNoneSymptoms"="Non, aucun de ces symptômes";
+
+/* DEPTH TWO */
+"depthTwoOption1"="Perte d'odorat";
+"depthTwoOption2"="Perte du goût";
+"depthTwoOption3"="Fièvre élevée (dès 38,5°C)";
+
+/* DEPTH THREE */
+"diagnosisDepth3Symptom1"="Une toux, mal de gorge, rhume";
+"diagnosisDepth3Symptom2"="Forte fatigue";
+"diagnosisDepth3Symptom3"="souffle court";
+"diagnosisDepth3Symptom4"="Des nausées, vomissements, diarrhées";
+"diagnosisDepth3Symptom5"="Des maux de tête, migraine";
+"diagnosisDepth3Symptom6"="Douleur dans les muscles et articulations";
+"diagnosisDepth3Symptom7"="Yeux gonflés, humides, rouges";
+"diagnosisDepth3Symptom8"="Rougeurs sur la peau, rash cutané, petites vésicules";
+/* LAST DEPTH VIEW END*/
+
+/* RESULTS */
+"diagnosisResultTitle"="Résultat du Diagnostic";
+
+/*RESULTS POSITIVE */
+"resultPositive"="Consultez immédiatement un médecin ou un centre de soin Covid-19 le plus proche. Ou téléphonez au numéro dédié pour le Covid 19.";
+"resultRestart"="Récommencer mon diagnostic";
+"resultOthers"="Comment protéger les autres?";
+
+/*RESULTS NEGATIVE */
+"resultNegative"="Votre diagnostic est négatif";
+"resultProtection"="Pensez à protéger vos proches et concitoyens en observant les mésures barrières";
+"resultContinueProtection"="Ne baissez pas la garde aussi longtemps que la pandémie est active dans le Pays où vous êtes";
+
+/* END DIAGNOSIS RESOURCES */
+
+
+"mainOoptionTeam"="EQUIPE (Collectif TOÂ)";
+"mainOoptionCredits"="CRÉDITS";
