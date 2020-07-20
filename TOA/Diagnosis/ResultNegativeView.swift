@@ -11,8 +11,69 @@ import SwiftUI
 struct ResultNegativeView: View {
     @Binding var isShowing: Int //parent view controller
     
+    @EnvironmentObject var settings: UserSettings
+    
     var body: some View {
-        Text("Hello Nagative")
+        GeometryReader{ geometry in
+            ZStack{
+                
+                VStack (alignment: .leading, spacing: 0){
+                    Image("covid_worms_bg")
+                        .resizable()
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+                    
+                    Image("covid_worms_bg")
+                        .resizable()
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+                }
+                
+                VStack (alignment: .leading, spacing: 0){
+                    AnimatedView(imageName: "covid_worms_bg")
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+                    
+                    AnimatedView(imageName: "covid_worms_bg")
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+                }
+                 
+                Color.black.opacity(0.7).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: geometry.size.height, alignment: .top)
+                  
+                VStack(alignment: .leading, spacing: 10){
+                    
+                Text("resultNegative")
+                    .foregroundColor(Color.white)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: self.settings.textSize ? 17 : 20))
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .padding(.all, 8)
+                    .padding(.vertical, 20)
+                    .background(Color.green.opacity(0.6))
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                .cornerRadius(10)
+                .padding(.all, 8)
+                        
+                    Text("resultContinueProtection")
+                        .foregroundColor(Color.gray)
+                        .font( self.settings.textSize ? .body : .system(size: 20))
+                        .multilineTextAlignment(.center)
+                        .padding(.all, 8)
+                    
+                    HStack(alignment: .center, spacing: 20){
+                        LottieView(animationName: "lottie_covid_mask" )
+                            .aspectRatio(contentMode: ContentMode.fit)
+                            .frame(minWidth: 0, maxWidth: 90)
+                        
+                        LottieView(animationName: "lottie_covid_hands") .aspectRatio(contentMode: ContentMode.fit)
+                            .frame(minWidth: 0, maxWidth: 90)
+                        
+                        
+                        LottieView(animationName: "lottie_social_distancing") .aspectRatio(contentMode: ContentMode.fit)
+                            .frame(minWidth: 0, maxWidth: 90)
+                    }.frame(minWidth: 0, maxWidth: .infinity)//.background(Color("colorWhiteBg"))
+                }
+                 
+            }.cornerRadius(6)
+        }
     }
 }
 

@@ -12,4 +12,5 @@ target 'TOA' do
   pod 'Charts'
   
   pod "KenBurns"
+  
 end

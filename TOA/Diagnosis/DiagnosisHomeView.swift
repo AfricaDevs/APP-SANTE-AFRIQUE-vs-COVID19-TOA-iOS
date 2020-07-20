@@ -88,7 +88,7 @@ struct DiagnosisHomeView: View {
                                 Image(systemName: isChecked ? "checkmark.square": "square")
                                 Text("diagnosisSymptom1")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 
                                 Spacer()
                             }
@@ -99,7 +99,7 @@ struct DiagnosisHomeView: View {
                                 Image(systemName: isChecked2 ? "checkmark.square": "square")
                                 Text("diagnosisSymptom3")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -112,7 +112,7 @@ struct DiagnosisHomeView: View {
                                 Image(systemName: isChecked3 ? "checkmark.square": "square")
                                 Text("diagnosisSymptom2")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -122,7 +122,7 @@ struct DiagnosisHomeView: View {
                                 Image(systemName: isChecked4 ? "checkmark.square": "square")
                                 Text("diagnosisSymptom4")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -135,7 +135,7 @@ struct DiagnosisHomeView: View {
                                 Image(systemName: isChecked5 ? "checkmark.square": "square")
                                 Text("diagnosisSymptom5")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -145,7 +145,7 @@ struct DiagnosisHomeView: View {
                                 Image(systemName: isChecked6 ? "checkmark.square": "square")
                                 Text("diagnosisSymptom6")
                                     .fontWeight(.semibold)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(Color("black"))
                                 Spacer()
                             }
                         }.frame(minWidth: 0, maxWidth: .infinity)
@@ -156,7 +156,7 @@ struct DiagnosisHomeView: View {
                             Image(systemName: isChecked7 ? "checkmark.square": "square")
                             Text("diagnosisSymptom7")
                                 .fontWeight(.semibold)
-                                .foregroundColor(.black)
+                                .foregroundColor(Color("black"))
                                 .multilineTextAlignment(.leading)
                             Spacer()
                         }
